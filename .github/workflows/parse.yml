@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'source/latest.zip'   # Chỉ trigger khi bạn push đúng file này
+  workflow_dispatch:           # Cho phép chạy thủ công từ GitHub UI
 
 jobs:
   parse:
