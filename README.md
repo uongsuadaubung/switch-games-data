@@ -1,6 +1,6 @@
 # switch-games-data
 
-Repo dữ liệu tập trung cho [Switch Games Manager](https://github.com/YOUR_USERNAME/switch_games).
+Repo dữ liệu tập trung cho [Switch Games Manager](https://github.com/uongsuadaubung/switch_games).
 
 > **Chỉ admin mới push dữ liệu. Người dùng không cần làm gì — app tự fetch.**
 
@@ -9,12 +9,12 @@ Repo dữ liệu tập trung cho [Switch Games Manager](https://github.com/YOUR_
 ```
 switch-games-data/
 ├── source/
-│   └── latest.zip          ← Admin push file ZIP HTML vào đây
+│   └── latest.zip          ← Admin push file ZIP HTML vào đây (Git LFS)
 ├── data/
 │   ├── games.json          ← Tự động tạo bởi GitHub Actions
 │   └── version.json        ← { hash, timestamp, game_count }
 ├── scripts/
-│   └── parse_zip.py        ← Parser (port từ Rust)
+│   └── parse_zip.py        ← Parser trích xuất dữ liệu từ ZIP
 └── .github/workflows/
     └── parse.yml           ← Trigger khi push latest.zip
 ```
@@ -34,14 +34,23 @@ git push
 
 ```
 # Danh sách game đầy đủ
-https://raw.githubusercontent.com/YOUR_USERNAME/switch-games-data/main/data/games.json
+https://raw.githubusercontent.com/uongsuadaubung/switch_games_data/main/data/games.json
 
 # Thông tin phiên bản (dùng để check có cập nhật không)
-https://raw.githubusercontent.com/YOUR_USERNAME/switch-games-data/main/data/version.json
+https://raw.githubusercontent.com/uongsuadaubung/switch_games_data/main/data/version.json
 ```
 
 ## Chạy parser thủ công (local)
 
 ```bash
 python scripts/parse_zip.py source/latest.zip
+```
+
+## Git LFS
+
+File `source/latest.zip` được track bằng [Git LFS](https://git-lfs.com/). Cần cài `git-lfs` trước khi clone:
+
+```bash
+git lfs install
+git clone https://github.com/uongsuadaubung/switch_games_data.git
 ```
