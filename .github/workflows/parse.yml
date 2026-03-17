@@ -1,13 +1,13 @@
-name: Parse ZIP → games.json
+name: Parse ZIP → games.json + Download Images
 
 on:
   push:
     paths:
-      - 'source/latest.zip'   # Chỉ trigger khi bạn push đúng file này
+      - 'source/latest.zip'   # Trigger khi push file ZIP mới
   workflow_dispatch:           # Cho phép chạy thủ công từ GitHub UI
 
 jobs:
-  parse:
+  parse-and-download:
     runs-on: ubuntu-latest
     permissions:
       contents: write          # Cần quyền để commit ngược lại repo
@@ -23,10 +23,13 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install dependencies
+        run: pip install Pillow
+
       - name: Parse ZIP → games.json + version.json
         run: python scripts/parse_zip.py source/latest.zip
 
-      - name: Show result
+      - name: Show parse result
         run: |
           echo "=== version.json ==="
           cat data/version.json
@@ -40,11 +43,20 @@ jobs:
           print(f'  ... total: {len(games)} games')
           "
 
-      - name: Commit & push updated data
+      - name: Download images → images/{id}.jpg
+        run: python scripts/download_images.py
+
+      - name: Show image download result
+        run: |
+          echo "=== Images folder ==="
+          ls images/ | wc -l | xargs -I{} echo "Total JPG files: {}"
+          du -sh images/ | awk '{print "Total size: " $1}'
+
+      - name: Commit & push updated data + images
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/games.json data/version.json
+          git add data/games.json data/version.json images/
           # Chỉ commit nếu có thay đổi thực sự
           git diff --cached --quiet && echo "No changes to commit" || \
             git commit -m "🎮 Update games data — $(python -c "import json; d=json.load(open('data/version.json')); print(f\"{d['game_count']} games @ {d['timestamp']}\")")"
