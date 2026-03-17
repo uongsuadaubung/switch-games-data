@@ -397,6 +397,90 @@ def compute_md5(path: str) -> str:
         return hashlib.md5(f.read()).hexdigest()
 
 
+# ─── New-game tracking helpers ────────────────────────────────────────────────
+
+TWO_WEEKS_SECONDS = 14 * 24 * 60 * 60
+
+
+def load_old_games(games_out: str) -> tuple[dict[str, dict], bool]:
+    """Đọc games.json cũ, trả về (dict key → game, file_existed)."""
+    path = Path(games_out)
+    if not path.exists():
+        return {}, False
+    try:
+        old_list = json.loads(path.read_text(encoding="utf-8"))
+        return {(g.get("game_id") or g.get("name")): g for g in old_list}, True
+    except Exception as e:
+        print(f"  ⚠️  Không thể đọc file cũ {games_out}: {e}")
+        return {}, True  # file tồn tại nhưng đọc lỗi → vẫn coi là không phải lần đầu
+
+
+def backup_old_games(games_out: str) -> None:
+    """Sao lưu games.json cũ → games.backup.json (nếu tồn tại)."""
+    src = Path(games_out)
+    if not src.exists():
+        return
+    backup_path = src.with_suffix(".backup.json")
+    try:
+        backup_path.write_bytes(src.read_bytes())
+        print(f"  💾 Backup: {backup_path}")
+    except Exception as e:
+        print(f"  ⚠️  Không thể backup: {e}")
+
+
+def apply_new_game_tracking(
+    new_games: list[dict],
+    old_map: dict[str, dict],
+    now: datetime,
+    is_first_run: bool = False,
+) -> tuple[list[dict], int, int]:
+    """
+    - is_first_run=True (chưa có games.json) → không đánh nhãn game nào là mới.
+    - Game có trong old_map → giữ nguyên is_new / added_at từ lần trước,
+      nhưng nếu added_at đã quá 2 tuần thì xóa cả hai trường.
+    - Game KHÔNG có trong old_map → đánh dấu is_new=True + added_at=now.
+    Trả về (danh sách đã xử lý, số game mới, số game hết hạn is_new).
+    """
+    if is_first_run:
+        return new_games, 0, 0
+    new_count = 0
+    expired_count = 0
+    result = []
+
+    now_ts = now.timestamp()
+
+    for game in new_games:
+        key = game.get("game_id") or game.get("name")
+        old = old_map.get(key)
+
+        if old is None:
+            # Game hoàn toàn mới — đánh dấu
+            game["is_new"] = True
+            game["added_at"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+            new_count += 1
+        else:
+            # Game đã có — kế thừa trạng thái is_new / added_at
+            if old.get("is_new") and old.get("added_at"):
+                try:
+                    added_dt = datetime.fromisoformat(
+                        old["added_at"].replace("Z", "+00:00")
+                    )
+                    age_seconds = now_ts - added_dt.timestamp()
+                    if age_seconds >= TWO_WEEKS_SECONDS:
+                        # Đã quá 2 tuần → xóa nhãn
+                        expired_count += 1
+                    else:
+                        # Vẫn còn trong 2 tuần → giữ nhãn
+                        game["is_new"] = True
+                        game["added_at"] = old["added_at"]
+                except Exception:
+                    pass  # added_at lỗi định dạng → bỏ qua, không gắn lại
+
+        result.append(game)
+
+    return result, new_count, expired_count
+
+
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
@@ -413,14 +497,29 @@ def main():
         print(f"❌ File not found: {zip_path}")
         sys.exit(1)
 
-    print(f"📦 Parsing: {zip_path}")
+    # 1️⃣  Đọc & backup dữ liệu cũ trước khi ghi đè
+    print(f"🔍 Đọc dữ liệu cũ...")
+    old_map, file_existed = load_old_games(games_out)
+    backup_old_games(games_out)
+    if not file_existed:
+        print(f"   ℹ️  Chưa có games.json — lần đầu chạy, không đánh nhãn game mới")
+    else:
+        print(f"   Số game cũ: {len(old_map)}")
+
+    print(f"\n📦 Parsing: {zip_path}")
     games = read_zip_html(zip_path)
+
+    # 2️⃣  So sánh & đánh dấu game mới / hết hạn nhãn
+    now = datetime.now(timezone.utc)
+    games, new_count, expired_count = apply_new_game_tracking(
+        games, old_map, now, is_first_run=not file_existed
+    )
 
     # Tính MD5 của ZIP (để app có thể so sánh phiên bản)
     zip_hash = compute_md5(zip_path)
-    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    timestamp = now.strftime("%Y-%m-%dT%H:%M:%SZ")
 
-    # Ghi games.json
+    # 3️⃣  Ghi games.json
     Path(games_out).parent.mkdir(parents=True, exist_ok=True)
     Path(games_out).write_text(
         json.dumps(games, ensure_ascii=False, indent=2),
@@ -439,9 +538,11 @@ def main():
     )
 
     print(f"\n✅ Done!")
-    print(f"   Games  : {len(games)}")
-    print(f"   Hash   : {zip_hash}")
-    print(f"   Output : {games_out}, {version_out}")
+    print(f"   Games tổng  : {len(games)}")
+    print(f"   Games mới   : {new_count} 🆕")
+    print(f"   Hết hạn mới : {expired_count} (đã xóa is_new)")
+    print(f"   Hash        : {zip_hash}")
+    print(f"   Output      : {games_out}, {version_out}")
 
     # Xoá ZIP sau khi parse xong (dùng --keep-zip để giữ lại)
     if not keep_zip:
@@ -450,6 +551,15 @@ def main():
             print(f"   🗑️  Đã xoá: {zip_path}")
         except OSError as e:
             print(f"   ⚠️  Không thể xoá ZIP: {e}")
+
+    # 4️⃣  Xóa file backup (không cần giữ lại sau khi mọi thứ hoàn tất)
+    backup_path = Path(games_out).with_suffix(".backup.json")
+    if backup_path.exists():
+        try:
+            backup_path.unlink()
+            print(f"   🗑️  Đã xoá backup: {backup_path}")
+        except OSError as e:
+            print(f"   ⚠️  Không thể xoá backup: {e}")
 
 
 if __name__ == "__main__":
