@@ -1,6 +1,6 @@
 # switch-games-data
 
-Repo dữ liệu tập trung cho [Switch Games Manager](https://github.com/uongsuadaubung/switch_games).
+Repo dữ liệu tập trung cho [Switch Games Manager](https://github.com/uongsuadaubung/switch-games).
 
 > **Chỉ admin mới push dữ liệu. Người dùng không cần làm gì — app tự fetch.**
 
@@ -48,13 +48,13 @@ git push
 
 ```
 # Danh sách game đầy đủ (kèm image_url, links tải, ...)
-https://raw.githubusercontent.com/uongsuadaubung/switch_games_data/main/data/games.json
+https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/data/games.json
 
 # Thông tin phiên bản (dùng để check có cập nhật không)
-https://raw.githubusercontent.com/uongsuadaubung/switch_games_data/main/data/version.json
+https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/data/version.json
 
 # Ảnh game
-https://raw.githubusercontent.com/uongsuadaubung/switch_games_data/main/images/{game_id}.jpg
+https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/{game_id}.jpg
 ```
 
 ## Chạy parser thủ công (local)

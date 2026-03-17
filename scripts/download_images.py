@@ -11,7 +11,7 @@ Luồng hoạt động:
 
 Usage:
     python scripts/download_images.py
-    python scripts/download_images.py --repo uongsuadaubung/switch_games_data
+    python scripts/download_images.py --repo uongsuadaubung/switch-games-data
     python scripts/download_images.py --dry-run
     python scripts/download_images.py --limit 10
     python scripts/download_images.py --force   # tải lại dù file đã tồn tại
@@ -36,7 +36,7 @@ except ImportError:
 
 # ─── Config ───────────────────────────────────────────────────────────────────
 
-DEFAULT_REPO   = "uongsuadaubung/switch_games_data"
+DEFAULT_REPO   = "uongsuadaubung/switch-games-data"
 DEFAULT_BRANCH = "main"
 RAW_BASE       = "https://raw.githubusercontent.com/{repo}/{branch}/images/{filename}"
 
