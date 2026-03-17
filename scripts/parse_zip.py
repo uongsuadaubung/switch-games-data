@@ -11,6 +11,7 @@ Usage:
 import zipfile
 import json
 import hashlib
+import os
 import sys
 import re
 from pathlib import Path
@@ -404,6 +405,7 @@ def main():
         sys.exit(1)
 
     zip_path = sys.argv[1]
+    keep_zip = "--keep-zip" in sys.argv
     games_out  = "data/games.json"
     version_out = "data/version.json"
 
@@ -440,6 +442,14 @@ def main():
     print(f"   Games  : {len(games)}")
     print(f"   Hash   : {zip_hash}")
     print(f"   Output : {games_out}, {version_out}")
+
+    # Xoá ZIP sau khi parse xong (dùng --keep-zip để giữ lại)
+    if not keep_zip:
+        try:
+            os.remove(zip_path)
+            print(f"   🗑️  Đã xoá: {zip_path}")
+        except OSError as e:
+            print(f"   ⚠️  Không thể xoá ZIP: {e}")
 
 
 if __name__ == "__main__":

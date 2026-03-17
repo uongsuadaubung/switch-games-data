@@ -15,8 +15,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          lfs: true
 
       - name: Setup Python 3.12
         uses: actions/setup-python@v5
@@ -56,6 +54,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Xoá ZIP khỏi Git index (file đã bị xoá bởi parse_zip.py)
+          git rm --cached source/latest.zip 2>/dev/null || true
           git add data/games.json data/version.json images/
           # Chỉ commit nếu có thay đổi thực sự
           git diff --cached --quiet && echo "No changes to commit" || \
