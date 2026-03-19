@@ -5648,6 +5648,36 @@
     }
   },
   {
+    "name": "Detective Pikachu Returns",
+    "game_id": "",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/detective_pikachu_returns.jpg",
+    "size": "9 GB",
+    "genres": [
+      "Phiêu lưu"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=Gas-lTR7WLE",
+    "sheets": [
+      "Game phiêu lưu,hành động,mô phỏng 💎",
+      "Tổng hợp full game ❤️"
+    ],
+    "links": {
+      "base": [
+        {
+          "label": "Base",
+          "filename": "bai hoc chinh",
+          "url": "https://drive.google.com/drive/folders/1Jpt15xbmZJJwJUwQmwLksyeH9sychLJ7?usp=drive_link"
+        }
+      ],
+      "update": [],
+      "dlc": [],
+      "viet_hoa": [],
+      "required_firmware": "16.0.3"
+    },
+    "is_new": true,
+    "added_at": "2026-03-19T05:25:08Z"
+  },
+  {
     "name": "Detention",
     "game_id": "01005C700990A000",
     "is_viet_hoa": false,
@@ -19957,8 +19987,6 @@
     "sheets": [
       "Game Việt Hóa 😍",
       "Game nhập vai,giải đố,chiến thuật 😎",
-      "Game phiêu lưu,hành động,mô phỏng 💎",
-      "Game âm nhạc,thể thao,thẻ bài 😚",
       "Tổng hợp full game ❤️"
     ],
     "links": {
@@ -19967,16 +19995,6 @@
           "label": "Base",
           "filename": "bai hoc chinh",
           "url": "https://drive.google.com/drive/folders/1ySRQg9Q9Nt_FU60BejoaqJ5IX9pkUSht?usp=drive_link"
-        },
-        {
-          "label": "Base",
-          "filename": "bai hoc chinh",
-          "url": "https://drive.google.com/drive/folders/1Jpt15xbmZJJwJUwQmwLksyeH9sychLJ7?usp=drive_link"
-        },
-        {
-          "label": "Base",
-          "filename": "the bai ma thuat.rar",
-          "url": "https://drive.google.com/file/d/1mCwFdOqfGNm03il6tzsUNUtsjfTY3SR8/view?usp=drive_link"
         }
       ],
       "update": [
@@ -19984,11 +20002,6 @@
           "label": "Update (1.1.0)",
           "filename": "cap nhat 2d vui nhe.rar",
           "url": "https://drive.google.com/file/d/16bfX4H2J19a_gm-F-6ORhayQzbIN7WxE/view?usp=drive_link"
-        },
-        {
-          "label": "Update (1.0.1)",
-          "filename": "cap nhat the bai ma thuat.rar",
-          "url": "https://drive.google.com/file/d/1DkbbsBWHRjX5s62IzMnAf0RIH5QxzPEK/view?usp=drive_link"
         }
       ],
       "dlc": [],
@@ -23701,6 +23714,42 @@
       "viet_hoa": [],
       "required_firmware": "18.0.0"
     }
+  },
+  {
+    "name": "Yu-Gi-Oh! Legacy of the Duelist: Link Evolution",
+    "game_id": "",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/yu-gi-oh_legacy_of_the_duelist_link_evolution.jpg",
+    "size": "1.69 GB",
+    "genres": [
+      "Thẻ bài"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=gAWkZ2f390c",
+    "sheets": [
+      "Game âm nhạc,thể thao,thẻ bài 😚",
+      "Tổng hợp full game ❤️"
+    ],
+    "links": {
+      "base": [
+        {
+          "label": "Base",
+          "filename": "the bai ma thuat.rar",
+          "url": "https://drive.google.com/file/d/1mCwFdOqfGNm03il6tzsUNUtsjfTY3SR8/view?usp=drive_link"
+        }
+      ],
+      "update": [
+        {
+          "label": "Update (1.0.1)",
+          "filename": "cap nhat the bai ma thuat.rar",
+          "url": "https://drive.google.com/file/d/1DkbbsBWHRjX5s62IzMnAf0RIH5QxzPEK/view?usp=drive_link"
+        }
+      ],
+      "dlc": [],
+      "viet_hoa": [],
+      "required_firmware": "8.1.0"
+    },
+    "is_new": true,
+    "added_at": "2026-03-19T05:25:08Z"
   },
   {
     "name": "and Roger",
