@@ -371,16 +371,22 @@ def read_zip_html(zip_path: str) -> list[dict]:
 
             for game in games:
                 key = game["game_id"] or game["name"]
+
+                # --- Xử lý tách các game trùng ID thành các game độc lập ---
+                if key in games_map and game["game_id"] and key == game["game_id"]:
+                    existing = games_map[key]
+                    if existing["name"].lower() != game["name"].lower():
+                        print(f"    🚨 TÁCH GAME LỖI ID: Trùng '{key}' giữa '{existing['name']}' và '{game['name']}'. Tước bỏ ID của game sau, chuyển qua dùng Tên để định danh!")
+                        game["game_id"] = ""
+                        key = game["name"]
+                
+                # Sau khi chốt được Key cuối cùng (là ID, hoặc đã fallback về Tên)
                 if key in games_map:
                     existing = games_map[key]
-                    
-                    # Báo động nếu 2 tên game khác nhau nhưng dùng chung 1 ID (Tránh lỗi do người nhập liệu)
-                    if game["game_id"] and key == game["game_id"]:
-                        if existing["name"].lower() != game["name"].lower():
-                            print(f"    🚨 CẢNH BÁO LỖI NHẬP (Trùng ID): '{key}' đang chứa 2 game khác tên là '{existing['name']}' và '{game['name']}'. Dữ liệu đang bị gộp cứng!")
-                            
                     if game["sheets"][0] not in existing["sheets"]:
                         existing["sheets"].append(game["sheets"][0])
+                    # Nếu một trong các sheet có đánh dấu việt hoá, thì game này tính là việt hoá
+                    existing["is_viet_hoa"] = existing["is_viet_hoa"] or game["is_viet_hoa"]
                     merge_links(existing["links"]["base"],     game["links"]["base"])
                     merge_links(existing["links"]["update"],   game["links"]["update"])
                     merge_links(existing["links"]["dlc"],      game["links"]["dlc"])
