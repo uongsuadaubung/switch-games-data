@@ -764,7 +764,7 @@
   {
     "name": "Animal Crossing: New Horizons",
     "game_id": "01006F8002326000",
-    "is_viet_hoa": false,
+    "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01006F8002326000.jpg",
     "size": "10.7 GB",
     "genres": [
@@ -772,13 +772,15 @@
     ],
     "review_url": "https://www.youtube.com/watch?v=HpG4hedNmz8",
     "sheets": [
+      "Game Việt Hóa 😍",
       "Game phiêu lưu,hành động,mô phỏng 💎",
+      "Game vừa ủn lên 🤧",
       "Tổng hợp full game ❤️"
     ],
     "links": {
       "base": [
         {
-          "label": "Base",
+          "label": "Base (Required Firmware: 20.5.0)",
           "filename": "bai hoc chinh",
           "url": "https://drive.google.com/drive/folders/1Mdx75giBPDI6I61s3ibvesY_dJRNfStF?usp=drive_link"
         }
@@ -797,8 +799,14 @@
           "url": "https://drive.google.com/file/d/1g2rXU7n_ReClckcK-h5Jj1icszaX7oAr/view?usp=drive_link"
         }
       ],
-      "viet_hoa": [],
-      "required_firmware": "20.5.0"
+      "viet_hoa": [
+        {
+          "label": "Việt hóa từ Hồ Kiệt",
+          "filename": "yeu tieng viet.rar",
+          "url": "https://drive.google.com/file/d/1JGJuD0XMjEL5sTqLEa_MusuAI9_2yyzn/view?usp=drive_link"
+        }
+      ],
+      "required_firmware": ""
     }
   },
   {
@@ -1450,7 +1458,7 @@
     "name": "BALL x PIT",
     "game_id": "010086A022444000",
     "is_viet_hoa": false,
-    "image_url": "",
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010086A022444000.jpg",
     "size": "566 MB",
     "genres": [
       "Phiêu lưu",
@@ -2019,6 +2027,44 @@
       "viet_hoa": [],
       "required_firmware": "10.2.0"
     }
+  },
+  {
+    "name": "Big Brain Academy Brain vs Brain",
+    "game_id": "0100620012D6E000",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100620012D6E000.jpg",
+    "size": "709 MB",
+    "genres": [
+      "Giải đố"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=anK_uPgcgrw",
+    "sheets": [
+      "Game chơi 2-4 người 🔥",
+      "Game nhập vai,giải đố,chiến thuật 😎",
+      "Game vừa ủn lên 🤧",
+      "Tổng hợp full game ❤️"
+    ],
+    "links": {
+      "base": [
+        {
+          "label": "Base",
+          "filename": "hai nao the.rar",
+          "url": "https://drive.google.com/file/d/165hlAnVt-wkAL7pTxNxYaSwmx85XKeMr/view?usp=drive_link"
+        }
+      ],
+      "update": [
+        {
+          "label": "Update (1.0.2)",
+          "filename": "cap nhat hai nao the.rar",
+          "url": "https://drive.google.com/file/d/1v6_TVUEMGiuK_ATZ2z-qeamRvb1CMAwV/view?usp=drive_link"
+        }
+      ],
+      "dlc": [],
+      "viet_hoa": [],
+      "required_firmware": "13.1.0"
+    },
+    "is_new": true,
+    "added_at": "2026-03-19T04:26:08Z"
   },
   {
     "name": "Big Helmet Heroes",
@@ -3287,6 +3333,44 @@
     }
   },
   {
+    "name": "Chants of Sennaar",
+    "game_id": "0100543019CB0000",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100543019CB0000.jpg",
+    "size": "689 MB",
+    "genres": [
+      "Phiêu lưu",
+      "Giải đố"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=dVwXdyTloDQ",
+    "sheets": [
+      "Game nhập vai,giải đố,chiến thuật 😎",
+      "Game vừa ủn lên 🤧",
+      "Tổng hợp full game ❤️"
+    ],
+    "links": {
+      "base": [
+        {
+          "label": "Base",
+          "filename": "phiu liu giai do.rar",
+          "url": "https://drive.google.com/file/d/1kXCot1rRiZiu-QWKxj5bttzeTtFUI2SI/view?usp=drive_link"
+        }
+      ],
+      "update": [
+        {
+          "label": "Update (1.0.3)",
+          "filename": "cap nhat phiu liu giai do.rar",
+          "url": "https://drive.google.com/file/d/1gwlW_VCZxTf-VkMXWWHoWKjgQ1g6d52F/view?usp=drive_link"
+        }
+      ],
+      "dlc": [],
+      "viet_hoa": [],
+      "required_firmware": "16.0.3"
+    },
+    "is_new": true,
+    "added_at": "2026-03-19T04:26:08Z"
+  },
+  {
     "name": "Charming Hearts",
     "game_id": "0100093022F5C000",
     "is_viet_hoa": false,
@@ -4262,6 +4346,7 @@
     "sheets": [
       "Game Việt Hóa 😍",
       "Game phiêu lưu,hành động,mô phỏng 💎",
+      "Game vừa ủn lên 🤧",
       "Tổng hợp full game ❤️"
     ],
     "links": {
@@ -4279,7 +4364,7 @@
           "url": "https://drive.google.com/file/d/1zXheiyhpE6zWpdt-ZzXXWhIcFZBJrEQY/view?usp=drive_link"
         },
         {
-          "label": "Update (1.4.6) + DLC Pack (5 DLCs): (không nhận việt hóa)",
+          "label": "Update (1.5.24) + DLC Pack (5 DLCs): (không nhận việt hóa)",
           "filename": "cap nhat moi nhat con cuu long.rar",
           "url": "https://drive.google.com/file/d/1tURhqJ3RlcubrM3KFxQ2lOXtoCTPe1Ic/view?usp=drive_link"
         }
@@ -6565,40 +6650,41 @@
     "review_url": "https://www.youtube.com/watch?v=5bn5jdE_TEI",
     "sheets": [
       "Game chơi 2-4 người 🔥",
+      "Game vừa ủn lên 🤧",
       "Game âm nhạc,thể thao,thẻ bài 😚",
       "Tổng hợp full game ❤️"
     ],
     "links": {
       "base": [
         {
-          "label": "Base (Required Firmware: 20.3.0)",
+          "label": "Base (Required Firmware: 20.5.0)",
           "filename": "bai hoc chinh",
           "url": "https://drive.google.com/drive/folders/1icbro6J7JppNWTc7Rtaedxt5S_ihXr68?usp=drive_link"
         },
         {
-          "label": "Base (Required Firmware: 20.3.0)",
+          "label": "Base (Required Firmware: 20.5.0)",
           "filename": "bai hoc chinh",
           "url": "https://drive.google.com/drive/folders/1nFcCwDvD6u2R84ffN1E40tHv-6JACl63?usp=drive_link"
         }
       ],
       "update": [
         {
-          "label": "Update (1.80.11a0)",
+          "label": "Update (1.83.c362)",
           "filename": "bai hoc them",
           "url": "https://drive.google.com/drive/folders/1OFQBX555PcTD8Sn_zQO9LIj4vzI6i_Yw?usp=drive_link"
         },
         {
-          "label": "Update (1.80.11a0)",
+          "label": "Update (1.83.c362)",
           "filename": "bai hoc them",
           "url": "https://drive.google.com/drive/folders/1ZD-33-WIIVbn5Bup2w2YbV2inmgeuAMk?usp=drive_link"
         },
         {
-          "label": "Update (1.80.11a0)",
+          "label": "Update (1.83.c362)",
           "filename": "60 ep be et",
           "url": "https://drive.google.com/drive/folders/10Lp1XpRzqPAuGdstVTmCTrdAeg13tnRr?usp=drive_link"
         },
         {
-          "label": "Update (1.80.11a0)",
+          "label": "Update (1.83.c362)",
           "filename": "Chuyen nhuong moi nhat",
           "url": "https://drive.google.com/drive/folders/1Z5viY0lF07FaHzm-jp344fhkne3C3_yr?usp=drive_link"
         }
@@ -7231,6 +7317,7 @@
     "review_url": "https://www.youtube.com/watch?v=WKMP4Xz3Hcc",
     "sheets": [
       "Game chơi 2-4 người 🔥",
+      "Game vừa ủn lên 🤧",
       "Game âm nhạc,thể thao,thẻ bài 😚",
       "Tổng hợp full game ❤️"
     ],
@@ -7247,6 +7334,11 @@
           "label": "Update (1.0.3)",
           "filename": "cap nhat ko dc ban do.rar",
           "url": "https://drive.google.com/file/d/1IWi0R5cB7Bv0GZ9H4aHUrEorwEhUv3ZF/view?usp=drive_link"
+        },
+        {
+          "label": "Update (1.0.3)",
+          "filename": "chuyen nhuong moi nhat.rar",
+          "url": "https://drive.google.com/file/d/1cVsk63GWmUZGDKMc3YU5rxfim9Xc3ZtE/view?usp=drive_link"
         }
       ],
       "dlc": [],
@@ -7851,7 +7943,7 @@
   {
     "name": "Fire Emblem Engage",
     "game_id": "0100A6301214E000",
-    "is_viet_hoa": false,
+    "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100A6301214E000.jpg",
     "size": "16.5 GB",
     "genres": [
@@ -7860,13 +7952,15 @@
     ],
     "review_url": "https://www.youtube.com/watch?v=IOm2tcZdhSI",
     "sheets": [
+      "Game Việt Hóa 😍",
       "Game nhập vai,giải đố,chiến thuật 😎",
+      "Game vừa ủn lên 🤧",
       "Tổng hợp full game ❤️"
     ],
     "links": {
       "base": [
         {
-          "label": "Base",
+          "label": "Base (Required Firmware: 15.0.1)",
           "filename": "bai hoc chinh",
           "url": "https://drive.google.com/drive/folders/1ELeKU-kE1h3eV4QUewbjK1m2V-wkSSkP?usp=drive_link"
         }
@@ -7885,8 +7979,14 @@
           "url": "https://drive.google.com/file/d/1DdGNG8RIGebWj0c2d79WvxUw7vMtP1iB/view?usp=drive_link"
         }
       ],
-      "viet_hoa": [],
-      "required_firmware": "15.0.1"
+      "viet_hoa": [
+        {
+          "label": "Việt hóa được lấy từ LPhamDev97",
+          "filename": "yeu tieng viet.rar",
+          "url": "https://drive.google.com/file/d/1vW04FobGiVkCZyI_CZFxnMH-mRbwkHQk/view?usp=drive_link"
+        }
+      ],
+      "required_firmware": ""
     }
   },
   {
@@ -7984,6 +8084,7 @@
     "sheets": [
       "Game Việt Hóa 😍",
       "Game nhập vai,giải đố,chiến thuật 😎",
+      "Game vừa ủn lên 🤧",
       "Tổng hợp full game ❤️"
     ],
     "links": {
@@ -8009,7 +8110,7 @@
       "dlc": [],
       "viet_hoa": [
         {
-          "label": "Việt hóa bởi Team Devil Cat",
+          "label": "Việt hóa được lấy từ LPhamDev97",
           "filename": "yeu tieng viet.rar",
           "url": "https://drive.google.com/file/d/15jxQ1q8lHfsl7uSXWvc_AkSuHH3P2eSh/view?usp=drive_link"
         }
@@ -8296,6 +8397,45 @@
       "viet_hoa": [],
       "required_firmware": "18.1.0"
     }
+  },
+  {
+    "name": "Forgotton Anne",
+    "game_id": "010059E00B93C000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010059E00B93C000.jpg",
+    "size": "3.95 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Đi cảnh"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=8eo4F33MDBI",
+    "sheets": [
+      "Game Việt Hóa 😍",
+      "Game phiêu lưu,hành động,mô phỏng 💎",
+      "Game vừa ủn lên 🤧",
+      "Tổng hợp full game ❤️"
+    ],
+    "links": {
+      "base": [
+        {
+          "label": "Base",
+          "filename": "bi lang quen.rar",
+          "url": "https://drive.google.com/file/d/1wnE2-p4OQmJVKknP0CqRlEYaMl9a9bpP/view?usp=drive_link"
+        }
+      ],
+      "update": [],
+      "dlc": [],
+      "viet_hoa": [
+        {
+          "label": "Việt hóa được port bởi The Red Team",
+          "filename": "yeu tieng viet.rar",
+          "url": "https://drive.google.com/file/d/1TTfGG8C81kST1hA1MiORk8VYHtae2NuI/view?usp=drive_link"
+        }
+      ],
+      "required_firmware": "9.0.1"
+    },
+    "is_new": true,
+    "added_at": "2026-03-19T04:26:08Z"
   },
   {
     "name": "GTA 3 – The Definitive Edition",
@@ -8878,6 +9018,7 @@
     "sheets": [
       "Game chơi 2-4 người 🔥",
       "Game phiêu lưu,hành động,mô phỏng 💎",
+      "Game vừa ủn lên 🤧",
       "Tổng hợp full game ❤️"
     ],
     "links": {
@@ -8890,7 +9031,7 @@
       ],
       "update": [
         {
-          "label": "Update (1.02)",
+          "label": "Update (1.05)",
           "filename": "cap nhat doi khang met nghi.rar",
           "url": "https://drive.google.com/file/d/1sWwDfZVlYD4tlBqOgnnR8ip6Hs45ujQr/view?usp=drive_link"
         }
@@ -12763,6 +12904,44 @@
     }
   },
   {
+    "name": "Matchpoint – Tennis Championships",
+    "game_id": "010088D014258000",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010088D014258000.jpg",
+    "size": "3.39 GB",
+    "genres": [
+      "Thể thao"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=f2iOFBL-mHg",
+    "sheets": [
+      "Game chơi 2-4 người 🔥",
+      "Game vừa ủn lên 🤧",
+      "Game âm nhạc,thể thao,thẻ bài 😚",
+      "Tổng hợp full game ❤️"
+    ],
+    "links": {
+      "base": [
+        {
+          "label": "Base",
+          "filename": "danh telit.rar",
+          "url": "https://drive.google.com/file/d/1iGjTOqlNadSwfR5bWbxbeq8VOc43_rHe/view?usp=drive_link"
+        }
+      ],
+      "update": [
+        {
+          "label": "Update (1.8.75410)",
+          "filename": "cap nhat danh telit.rar",
+          "url": "https://drive.google.com/file/d/1ejQC6C9FfQYSSQ-x5WZMtUk1dGDKtMco/view?usp=drive_link"
+        }
+      ],
+      "dlc": [],
+      "viet_hoa": [],
+      "required_firmware": "14.1.0"
+    },
+    "is_new": true,
+    "added_at": "2026-03-19T04:26:08Z"
+  },
+  {
     "name": "Mega Man 11",
     "game_id": "0100B0C0086B0000",
     "is_viet_hoa": true,
@@ -14785,6 +14964,7 @@
     "review_url": "https://www.youtube.com/watch?v=zCPUMrfO4cE",
     "sheets": [
       "Game phiêu lưu,hành động,mô phỏng 💎",
+      "Game vừa ủn lên 🤧",
       "Tổng hợp full game ❤️"
     ],
     "links": {
@@ -14797,17 +14977,18 @@
       ],
       "update": [
         {
-          "label": "Update (1.7.1)",
+          "label": "Update (1.8.5)",
           "filename": "cap nhat di tim kho bau.rar",
           "url": "https://drive.google.com/file/d/1CDOGKStgnmlB4KvPUdgsAfYkaEpSwP75/view?usp=drive_link"
-        },
+        }
+      ],
+      "dlc": [
         {
-          "label": "Update (1.7.1)",
+          "label": "DLC Pack (22 DLCs)",
           "filename": "bo sung di tim kho bau.rar",
           "url": "https://drive.google.com/file/d/16ZVKSv4zQpC0DvzQ6WXIEglvY4v9NGUn/view?usp=drive_link"
         }
       ],
-      "dlc": [],
       "viet_hoa": [],
       "required_firmware": "16.1.0"
     }
@@ -15869,6 +16050,38 @@
       "viet_hoa": [],
       "required_firmware": "20.3.0"
     }
+  },
+  {
+    "name": "Pokemon Fire Red and Leaf Green",
+    "game_id": "0100554023408000",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100554023408000.jpg",
+    "size": "66.5 MB",
+    "genres": [
+      "Phiêu lưu",
+      "Nhập vai"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=D_81Zi88UTo",
+    "sheets": [
+      "Game nhập vai,giải đố,chiến thuật 😎",
+      "Game vừa ủn lên 🤧",
+      "Tổng hợp full game ❤️"
+    ],
+    "links": {
+      "base": [
+        {
+          "label": "Base",
+          "filename": "huyen thoai ko tuoi.rar",
+          "url": "https://drive.google.com/file/d/1aY4jkRgzKqMPO3Cms9vBHTLs6DFdCB_D/view?usp=drive_link"
+        }
+      ],
+      "update": [],
+      "dlc": [],
+      "viet_hoa": [],
+      "required_firmware": "21.1.0"
+    },
+    "is_new": true,
+    "added_at": "2026-03-19T04:26:08Z"
   },
   {
     "name": "Pokemon Legends Z-A",
@@ -18457,6 +18670,45 @@
       "viet_hoa": [],
       "required_firmware": "10.1.0"
     }
+  },
+  {
+    "name": "Snipperclips Plus Cut It Out Together",
+    "game_id": "01008E20047DC000",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01008E20047DC000.jpg",
+    "size": "1.30 GB",
+    "genres": [
+      "Tương tác",
+      "Gia đình"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=WpgN8v6-76s",
+    "sheets": [
+      "Game chơi 2-4 người 🔥",
+      "Game nhập vai,giải đố,chiến thuật 😎",
+      "Game vừa ủn lên 🤧",
+      "Tổng hợp full game ❤️"
+    ],
+    "links": {
+      "base": [
+        {
+          "label": "Base",
+          "filename": "doi ta co nhao.rar",
+          "url": "https://drive.google.com/file/d/14qJEjw7Cb_Bd5fZM092EHl5ez1cvzrAi/view?usp=drive_link"
+        }
+      ],
+      "update": [
+        {
+          "label": "Update (1.1.0)",
+          "filename": "cap nhat doi ta co nhao.rar",
+          "url": "https://drive.google.com/file/d/1dGaS_IyHr5S1kS_N4kHyHuNpVB-MwN50/view?usp=drive_link"
+        }
+      ],
+      "dlc": [],
+      "viet_hoa": [],
+      "required_firmware": "6.2.0"
+    },
+    "is_new": true,
+    "added_at": "2026-03-19T04:26:08Z"
   },
   {
     "name": "SnowRunner",
