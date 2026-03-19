@@ -5649,9 +5649,9 @@
   },
   {
     "name": "Detective Pikachu Returns",
-    "game_id": "",
+    "game_id": "010007500F27C000",
     "is_viet_hoa": false,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/detective_pikachu_returns.jpg",
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010007500F27C000.jpg",
     "size": "9 GB",
     "genres": [
       "Phiêu lưu"
@@ -19975,9 +19975,9 @@
   },
   {
     "name": "TRIANGLE STRATEGY",
-    "game_id": "010022400BE5A000",
+    "game_id": "0100CC80140F8000",
     "is_viet_hoa": true,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010022400BE5A000.jpg",
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100CC80140F8000.jpg",
     "size": "7.03 GB",
     "genres": [
       "Chiến thuật",
@@ -20013,7 +20013,9 @@
         }
       ],
       "required_firmware": "12.0.0"
-    }
+    },
+    "is_new": true,
+    "added_at": "2026-03-19T08:03:16Z"
   },
   {
     "name": "TUNIC",
@@ -23717,9 +23719,9 @@
   },
   {
     "name": "Yu-Gi-Oh! Legacy of the Duelist: Link Evolution",
-    "game_id": "",
+    "game_id": "0100C9300F4B6000",
     "is_viet_hoa": false,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/yu-gi-oh_legacy_of_the_duelist_link_evolution.jpg",
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100C9300F4B6000.jpg",
     "size": "1.69 GB",
     "genres": [
       "Thẻ bài"
