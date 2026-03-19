@@ -255,6 +255,33 @@ def main():
         )
         print(f"   Đã cập nhật {total_updated} image_url trong {GAMES_JSON.name}")
 
+    # ── PHASE 4: Clean up unused images ───────────────────────────────────────
+    print()
+    print("─" * 60)
+    print("🧹 Phase 4 — Xoá ảnh rác (không có trong games.json)...")
+    valid_filenames = {safe_filename(g.get("game_id", ""), g.get("name", "")) + ".jpg" for g in games}
+    deleted_images = 0
+    
+    if IMAGES_DIR.exists():
+        for img_path in IMAGES_DIR.iterdir():
+            if img_path.is_file() and img_path.name not in valid_filenames:
+                if not args.dry_run:
+                    import subprocess
+                    subprocess.run(["git", "rm", "-f", "--ignore-unmatch", str(img_path)], 
+                                   check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                    if img_path.exists():
+                        try:
+                            img_path.unlink()
+                        except FileNotFoundError:
+                            pass
+                print(f"   🗑️  Đã xoá: {img_path.name}")
+                deleted_images += 1
+                
+    if deleted_images == 0:
+        print("   ✨ Không có ảnh rác nào cần xoá.")
+    else:
+        print(f"   ✅ Đã xoá {deleted_images} ảnh rác.")
+
     print(f"""
 {"─" * 60}
 📊 Kết quả:
@@ -262,6 +289,7 @@ def main():
    Tải thành công               : {success}
    Lỗi (xoá image_url)          : {url_cleared}
    Bỏ qua (raw URL / trống)     : {len(already_raw)}
+   Đã xoá ảnh rác               : {deleted_images}
 {"─" * 60}
 """)
 
