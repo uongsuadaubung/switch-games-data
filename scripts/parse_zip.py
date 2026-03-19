@@ -453,6 +453,10 @@ def apply_new_game_tracking(
         key = game.get("game_id") or game.get("name")
         old = old_map.get(key)
 
+        # Fallback tìm bằng name nếu truy vấn bằng id không thấy (game cũ chưa có id)
+        if old is None and game.get("game_id") and game.get("name"):
+            old = old_map.get(game.get("name"))
+
         if old is None:
             # Game hoàn toàn mới — đánh dấu
             game["is_new"] = True

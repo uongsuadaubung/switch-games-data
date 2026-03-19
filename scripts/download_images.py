@@ -140,22 +140,47 @@ def main():
     already_local = []   # có file JPG trên disk, chỉ cần cập nhật URL
     need_download = []   # chưa có file → cần tải
 
+    # ── PHASE 1: Scan ─────────────────────────────────────────────────────────
+
     for game in games:
         name    = game.get("name", "")
         game_id = game.get("game_id", "")
         url     = game.get("image_url", "")
 
-        if not url:
-            already_raw.append(game)   # không có URL, bỏ qua
-            continue
-
-        if is_raw_github_url(url, args.repo, args.branch):
-            already_raw.append(game)
-            continue
-
         filename = safe_filename(game_id, name) + ".jpg"
         out_path = IMAGES_DIR / filename
         raw_url  = RAW_BASE.format(repo=args.repo, branch=args.branch, filename=filename)
+
+        # Đổi tên file nếu game vừa được thêm ID
+        if game_id:
+            old_filename = safe_filename("", name) + ".jpg"
+            old_path = IMAGES_DIR / old_filename
+            if old_filename != filename and old_path.exists():
+                if not args.dry_run:
+                    import subprocess
+                    subprocess.run(["git", "mv", str(old_path), str(out_path)], check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                    if old_path.exists():
+                        old_path.rename(out_path)
+                print(f"  🔄  Đổi tên ảnh: {old_filename} -> {filename}")
+
+        if not url:
+            # Nếu url rỗng nhưng file ảnh đã tồn tại trên disk (do đổi tên), cần cập nhật lại raw_url
+            if out_path.exists() and not args.force:
+                already_local.append((game, out_path, raw_url))
+            else:
+                already_raw.append(game)   # không có URL, bỏ qua
+            continue
+
+        if is_raw_github_url(url, args.repo, args.branch):
+            # Nếu URL đã là raw, check xem nó đã đúng filename mới chưa (vì vừa được đổi đuôi thành id.jpg)
+            if url != raw_url:
+                if out_path.exists() and not args.force:
+                    already_local.append((game, out_path, raw_url))
+                else:
+                    need_download.append((game, out_path, raw_url, url))
+            else:
+                already_raw.append(game)
+            continue
 
         if out_path.exists() and not args.force:
             already_local.append((game, out_path, raw_url))
