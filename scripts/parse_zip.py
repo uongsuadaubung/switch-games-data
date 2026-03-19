@@ -373,6 +373,12 @@ def read_zip_html(zip_path: str) -> list[dict]:
                 key = game["game_id"] or game["name"]
                 if key in games_map:
                     existing = games_map[key]
+                    
+                    # Báo động nếu 2 tên game khác nhau nhưng dùng chung 1 ID (Tránh lỗi do người nhập liệu)
+                    if game["game_id"] and key == game["game_id"]:
+                        if existing["name"].lower() != game["name"].lower():
+                            print(f"    🚨 CẢNH BÁO LỖI NHẬP (Trùng ID): '{key}' đang chứa 2 game khác tên là '{existing['name']}' và '{game['name']}'. Dữ liệu đang bị gộp cứng!")
+                            
                     if game["sheets"][0] not in existing["sheets"]:
                         existing["sheets"].append(game["sheets"][0])
                     merge_links(existing["links"]["base"],     game["links"]["base"])
