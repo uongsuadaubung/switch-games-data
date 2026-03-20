@@ -546,7 +546,7 @@
     "review_url": "https://www.youtube.com/watch?v=HpG4hedNmz8",
     "links": [
       {
-        "label": "Base (Required Firmware: 20.5.0)",
+        "label": "Base",
         "file_name": "bai hoc chinh",
         "url": "https://drive.google.com/drive/folders/1Mdx75giBPDI6I61s3ibvesY_dJRNfStF?usp=drive_link"
       },
@@ -566,7 +566,7 @@
         "url": "https://drive.google.com/file/d/1JGJuD0XMjEL5sTqLEa_MusuAI9_2yyzn/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "20.5.0"
   },
   {
     "name": "Anno Mutationem",
@@ -601,7 +601,7 @@
         "url": "https://drive.google.com/file/d/1U1Ag4mvW3IqHws2E3wcWmAGw4FCUkMDq/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "14.1.0"
   },
   {
     "name": "Another Crab's Treasure",
@@ -903,7 +903,7 @@
     "review_url": "https://www.youtube.com/watch?v=zULQeJbT2AE",
     "links": [
       {
-        "label": "Base (Required Firmware: 16.1.0)",
+        "label": "Base",
         "file_name": "thich chat chem.rar",
         "url": "https://drive.google.com/file/d/1OfWWvE0r1U5nNiP6IEyKfGulPho692RE/view?usp=drive_link"
       },
@@ -923,7 +923,7 @@
         "url": "https://drive.google.com/file/d/1X-FyiWdAqrgdp5Yl1N8_HPi-Htn8Ibq7/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "16.1.0"
   },
   {
     "name": "Astral Chain",
@@ -1650,7 +1650,7 @@
         "url": "https://drive.google.com/file/d/1kd44qAgsVgHx3r0qdbr6MAzOcz9r-cBp/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "17.0.0"
   },
   {
     "name": "Boomerang Fu",
@@ -2941,7 +2941,7 @@
         "url": "https://drive.google.com/file/d/1z6219O25RloAKd6NNM1rJzfcDm9v_gtb/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "12.1.0"
   },
   {
     "name": "Crow Country",
@@ -3095,7 +3095,7 @@
         "url": "https://drive.google.com/file/d/1My4inpbr06SjfUN9nWJ7qbQmPzsKcgOh/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "17.0.1"
   },
   {
     "name": "Cuphead",
@@ -3130,7 +3130,7 @@
         "url": "https://drive.google.com/file/d/1__qHq_kRKoh4gVKJM0FRH-n2BDGdg6ar/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "7.0.1"
   },
   {
     "name": "DAVE THE DIVER",
@@ -3170,7 +3170,7 @@
         "url": "https://drive.google.com/file/d/1xVHxQe2wqzmqd_OUPdhltuWfZr_wsdy3/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "19.0.1"
   },
   {
     "name": "DAYMARE: 1994 Sandcastle",
@@ -3405,7 +3405,7 @@
     "review_url": "https://www.youtube.com/watch?v=goXw1DgSAJc",
     "links": [
       {
-        "label": "Base (Required Firmware: 17.0.0)",
+        "label": "Base",
         "file_name": "bai hoc chinh",
         "url": "https://drive.google.com/drive/folders/109YM5eQMl44a5Bpl6Rc1ZvxX1XzGCqlv?usp=drive_link"
       },
@@ -3425,7 +3425,7 @@
         "url": "https://drive.google.com/file/d/1XFOm4BxX5KKHCSFBW3CHqAzvChI54yzo/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "17.0.0"
   },
   {
     "name": "DRAGON QUEST I and II HD-2D Remake",
@@ -3572,7 +3572,7 @@
     "review_url": "https://www.youtube.com/watch?v=6bwW83BWR8k",
     "links": [
       {
-        "label": "Base (Required Firmware: 15.0.1)",
+        "label": "Base",
         "file_name": "lenh denh tren bien.rar",
         "url": "https://drive.google.com/file/d/1mBNcwfCFFRTcIzqgtilWdF0YSLqMGCRS/view?usp=drive_link"
       },
@@ -3592,7 +3592,7 @@
         "url": "https://drive.google.com/file/d/13bQIH0Mk5Yre9TdizlhrNptjUflSOsOv/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "15.0.1"
   },
   {
     "name": "DYNASTY WARRIORS 8 Xtreme Legends DE",
@@ -3685,7 +3685,7 @@
     "review_url": "https://www.youtube.com/watch?v=t3Grie9GlAY",
     "links": [
       {
-        "label": "Base (Required Firmware: 18.0.0)",
+        "label": "Base",
         "file_name": "ham nguc toi thui.rar",
         "url": "https://drive.google.com/file/d/1iFd7SLIsCUhas5coKLh9j7BOJ3KPuwix/view?usp=drive_link"
       },
@@ -3705,7 +3705,7 @@
         "url": "https://drive.google.com/file/d/1cnW8BJdUrj3X8HJ6cVtmqD-CIv3JLjvp/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "18.0.0"
   },
   {
     "name": "Darkest Dungeon: Ancestral Edition",
@@ -3720,7 +3720,7 @@
     "review_url": "https://www.youtube.com/watch?v=LLKcXG8Xsyw",
     "links": [
       {
-        "label": "Base (Required Firmware: 9.0.1)",
+        "label": "Base",
         "file_name": "ham nguc tam toi.rar",
         "url": "https://drive.google.com/file/d/1ggnwqq0AxLJLSEUG9WKdIGOHYiOchJk2/view?usp=drive_link"
       },
@@ -3740,7 +3740,7 @@
         "url": "https://drive.google.com/file/d/1PdaWHKS8hph7pkhqGs6ZiEgbU54yVTOt/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "9.0.1"
   },
   {
     "name": "Darksiders 2: Deathinitive Edition",
@@ -3880,7 +3880,7 @@
         "url": "https://drive.google.com/file/d/1D7a8BGmZFRT9NHjo59QYz9R-2AXHdfp-/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "7.0.1"
   },
   {
     "name": "Dead or Alive Xtreme 3: Scarlet",
@@ -3944,7 +3944,7 @@
         "url": "https://drive.google.com/file/d/1a_l92x8bPvtdyRa_UOcudBLXZEYBuId7/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "18.0.0"
   },
   {
     "name": "Demon Slayer -Kimetsu no Yaiba-",
@@ -3978,7 +3978,7 @@
         "url": "https://drive.google.com/file/d/1AVqE8jeZ8_eFvk7OXzSfBgVX7fm5D5-a/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "14.1.0"
   },
   {
     "name": "Demon Slayer -Kimetsu no Yaiba-",
@@ -4744,7 +4744,7 @@
     "review_url": "https://www.youtube.com/watch?v=5bn5jdE_TEI",
     "links": [
       {
-        "label": "Base (Required Firmware: 20.5.0)",
+        "label": "Base",
         "file_name": "bai hoc chinh",
         "url": "https://drive.google.com/drive/folders/1icbro6J7JppNWTc7Rtaedxt5S_ihXr68?usp=drive_link"
       },
@@ -4774,7 +4774,7 @@
         "url": "https://drive.google.com/drive/folders/1Z5viY0lF07FaHzm-jp344fhkne3C3_yr?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "20.5.0"
   },
   {
     "name": "ENDER LILIES: Quietus of the Knights",
@@ -4869,7 +4869,7 @@
     "review_url": "https://www.youtube.com/watch?v=StCeLWCZRp0",
     "links": [
       {
-        "label": "Base (Required Firmware: 17.0.1)",
+        "label": "Base",
         "file_name": "phia dong kia.rar",
         "url": "https://drive.google.com/file/d/1OZs9VVlL7sP6iJ3IKi23ldedTm3Jvt8h/view?usp=drive_link"
       },
@@ -4889,7 +4889,7 @@
         "url": "https://drive.google.com/file/d/1DM1IP3lMBg_ZLqJTWj4Edb7gkDmyItQ0/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "17.0.1"
   },
   {
     "name": "Eiyuden Chronicle: Hundred Heroes –",
@@ -5188,7 +5188,7 @@
     "review_url": "https://www.youtube.com/watch?v=0-dtwj-vs8Q",
     "links": [
       {
-        "label": "Base (Required Firmware: 13.1.0)",
+        "label": "Base",
         "file_name": "bai hoc chinh",
         "url": "https://drive.google.com/drive/folders/1tfGafr-tmDMyghvgpicwqixlQrF2iDKr?usp=drive_link"
       },
@@ -5208,7 +5208,7 @@
         "url": "https://drive.google.com/file/d/1pEE4liJQ4fSLGaAplrv6LnJC5dsr4RjP/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "13.1.0"
   },
   {
     "name": "FIFA 23 Legacy Edition",
@@ -5673,7 +5673,7 @@
     "review_url": "https://www.youtube.com/watch?v=IOm2tcZdhSI",
     "links": [
       {
-        "label": "Base (Required Firmware: 15.0.1)",
+        "label": "Base",
         "file_name": "bai hoc chinh",
         "url": "https://drive.google.com/drive/folders/1ELeKU-kE1h3eV4QUewbjK1m2V-wkSSkP?usp=drive_link"
       },
@@ -5693,7 +5693,7 @@
         "url": "https://drive.google.com/file/d/1vW04FobGiVkCZyI_CZFxnMH-mRbwkHQk/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "15.0.1"
   },
   {
     "name": "Fire Emblem Warriors",
@@ -5788,7 +5788,7 @@
         "url": "https://drive.google.com/file/d/15jxQ1q8lHfsl7uSXWvc_AkSuHH3P2eSh/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "8.0.1"
   },
   {
     "name": "Fishing Star World Tour",
@@ -6214,7 +6214,7 @@
         "url": "https://drive.google.com/file/d/1xiZ0-0tULrz_Yv77khaq1IovdXiV-Qbo/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "14.1.0"
   },
   {
     "name": "Ghost in the Pool",
@@ -6308,7 +6308,7 @@
     "review_url": "https://www.youtube.com/watch?v=DW60E5zGdyY",
     "links": [
       {
-        "label": "Base (Required Firmware: 12.1.0)",
+        "label": "Base",
         "file_name": "ke trong mo.rar",
         "url": "https://drive.google.com/file/d/1p6KZk1eP4nFEv76AIxm3Frr0gjRq3pkC/view?usp=drive_link"
       },
@@ -6328,7 +6328,7 @@
         "url": "https://drive.google.com/file/d/1Z0oEvs_ujtcVmDUZOInhPGYLpy0Qh_N6/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "12.1.0"
   },
   {
     "name": "Gravity Circuit",
@@ -6388,7 +6388,7 @@
         "url": "https://drive.google.com/file/d/1TNVnAhX6nQkiXVaN8456Gr_nSbEsP32D/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "10.1.0"
   },
   {
     "name": "Grounded: Fully Yoked Edition",
@@ -6930,7 +6930,7 @@
     "review_url": "https://www.youtube.com/watch?v=eS8ucPQzn0c",
     "links": [
       {
-        "label": "Base (Required Firmware: 20.3.0)",
+        "label": "Base",
         "file_name": "gem dang hot.rar",
         "url": "https://drive.google.com/file/d/1e63Kv5AHCMHigIr9X1gCNpOCdPXD6xYr/view?usp=drive_link"
       },
@@ -6955,12 +6955,12 @@
         "url": "https://drive.google.com/file/d/1e-xlBzvpaYXzZ3KLvVQob3UJwupL7YCi/view?usp=drive_link"
       },
       {
-        "label": "Update (1.0.28716)",
+        "label": "Việt hóa được port bởi Cánh Cụt Team",
         "file_name": "yeu tieng viet.rar",
         "url": "https://drive.google.com/file/d/1_cjcP1tyDIJlhEqoAZz2lrMgSgplpUwh/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "20.3.0"
   },
   {
     "name": "Horizon Chase 2",
@@ -7334,7 +7334,7 @@
         "url": "https://drive.google.com/file/d/1Btf-vZb1eBG-q69Rt77xLew1dRbjE-fm/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "14.1.0"
   },
   {
     "name": "JUMP FORCE Deluxe Edition",
@@ -7467,7 +7467,7 @@
     "review_url": "https://www.youtube.com/watch?v=UFhuDBeHrVY",
     "links": [
       {
-        "label": "Base (Required Firmware: 19.0.1)",
+        "label": "Base",
         "file_name": "ca hay giut giut.rar",
         "url": "https://drive.google.com/file/d/1R_y_6yRB-K14bKZdTc6KXEhrLWP4EWkw/view?usp=drive_link"
       },
@@ -7487,7 +7487,7 @@
         "url": "https://drive.google.com/drive/folders/1My5vZ98y3hKaLnoifFINgLRVC_OOOhXb?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "19.0.1"
   },
   {
     "name": "Just Shapes & Beats",
@@ -7637,7 +7637,7 @@
     "review_url": "https://www.youtube.com/watch?v=tRqaKXM2LwI",
     "links": [
       {
-        "label": "Base (Required Firmware: 17.0.1)",
+        "label": "Base",
         "file_name": "bai hoc chinh",
         "url": "https://drive.google.com/drive/folders/1hIkbi2vukfqHTMLr7MSHHBWOhmePpUQH?usp=drive_link"
       },
@@ -7657,7 +7657,7 @@
         "url": "https://drive.google.com/file/d/1AV53IyC4umzZIYNgK25sYycxGdrBzEv8/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "17.0.1"
   },
   {
     "name": "Kingdom Rush",
@@ -8240,7 +8240,7 @@
     "review_url": "https://www.youtube.com/watch?v=jUpXNqSOKs4",
     "links": [
       {
-        "label": "Base (Required Firmware: 14.1.0)",
+        "label": "Base",
         "file_name": "su that ton thuong.rar",
         "url": "https://drive.google.com/file/d/1Y70SBEkMAgj-hCfEj-8CKlXAjYF-5SCG/view?usp=drive_link"
       },
@@ -8260,7 +8260,7 @@
         "url": "https://drive.google.com/file/d/1xnfyaay3RuLmB5kHb0-XuDtxumsUN0GH/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "14.1.0"
   },
   {
     "name": "Little Kitty, Big City",
@@ -9230,7 +9230,7 @@
         "url": "https://drive.google.com/file/d/1SY7THx736FhiZYmiUMnFRLRQK7eGKxKv/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "12.1.0"
   },
   {
     "name": "Mega Man Battle Network Legacy Collection Vol. 1",
@@ -9993,7 +9993,7 @@
     "review_url": "https://www.youtube.com/watch?v=blbhP2yM5iE",
     "links": [
       {
-        "label": "Base (Required Firmware: 16.1.0)",
+        "label": "Base",
         "file_name": "xay dung que huong.rar",
         "url": "https://drive.google.com/file/d/1Nkvx4xgIt5KAKrYfEoYk5Fc0cz0iuKWB/view?usp=drive_link"
       },
@@ -10013,7 +10013,7 @@
         "url": "https://drive.google.com/file/d/1wU9iTArmgiwhisZuahcVyI1Fb4Qi3zWc/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "16.1.0"
   },
   {
     "name": "NARUTO SHIPPUDEN: Ultimate Ninja STORM 4",
@@ -10306,7 +10306,7 @@
         "url": "https://drive.google.com/file/d/1IZUkL9CnrM0BA9OoEWf22ueqHeE0QP2O/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "14.1.0"
   },
   {
     "name": "Night Striker GEAR",
@@ -10467,7 +10467,7 @@
     "review_url": "https://www.youtube.com/watch?v=R1AtKxaXKmY",
     "links": [
       {
-        "label": "Base (Required Firmware: 8.1.0)",
+        "label": "Base",
         "file_name": "bac dau.rar",
         "url": "https://drive.google.com/file/d/1TWj4dg5taQi4wfeoXjXFG94UEibfq4gO/view?usp=drive_link"
       },
@@ -10487,7 +10487,7 @@
         "url": "https://drive.google.com/file/d/1fksbWjJcLVNhf_knlTYCW8mMiY_3J0PU/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "8.1.0"
   },
   {
     "name": "OCTOPATH TRAVELER",
@@ -10777,7 +10777,7 @@
     "review_url": "https://www.youtube.com/watch?v=rREb7qt17Fg",
     "links": [
       {
-        "label": "Base (Required Firmware: 10.0.4)",
+        "label": "Base",
         "file_name": "di canh moi ngay.rar",
         "url": "https://drive.google.com/file/d/15L2GA3o4zjlbpHvm6bkJk_9X49dNdF1w/view?usp=drive_link"
       },
@@ -10797,7 +10797,7 @@
         "url": "https://drive.google.com/file/d/1BCwh6W3-LQJyR3b1qAJnraorB8SR4U6W/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "10.0.4"
   },
   {
     "name": "Out of Sight",
@@ -11679,7 +11679,7 @@
     "review_url": "https://www.youtube.com/watch?v=iNhfNcm6cXA",
     "links": [
       {
-        "label": "Base (Required Firmware: 17.0.1)",
+        "label": "Base",
         "file_name": "giay phep doc duoc.rar",
         "url": "https://drive.google.com/file/d/1cFFJTHnwEEUJP7XWe4WQwX28IK3LM0Zb/view?usp=drive_link"
       },
@@ -11699,7 +11699,7 @@
         "url": "https://drive.google.com/file/d/13LahphL1Clv4xDxANHUIuWfr11UPoU_6/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "17.0.1"
   },
   {
     "name": "Power Rangers: Battle for the Grid",
@@ -11870,7 +11870,7 @@
     "review_url": "https://www.youtube.com/watch?v=rXmmcD8MYHM",
     "links": [
       {
-        "label": "Base (Required Firmware: 18.0.0)",
+        "label": "Base",
         "file_name": "bai hoc chinh",
         "url": "https://drive.google.com/drive/folders/1d_oHs5qJj88eA_gr0T_FrLlbAXRAmdMb?usp=drive_link"
       },
@@ -11890,7 +11890,7 @@
         "url": "https://drive.google.com/file/d/1xslYSKJIQdz2nbxC-5A9nExg94qDJzid/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "18.0.0"
   },
   {
     "name": "Rabbids: Party of Legends",
@@ -12433,7 +12433,7 @@
     "review_url": "https://www.youtube.com/watch?v=cLgKrCLrAcw",
     "links": [
       {
-        "label": "Base (Required Firmware: 20.0.1)",
+        "label": "Base",
         "file_name": "nghe thuat bao thu.rar",
         "url": "https://drive.google.com/file/d/1WjGxbrJwPT-mW07wuzm2Sgpl8x37GSag/view?usp=drive_link"
       },
@@ -12453,7 +12453,7 @@
         "url": "https://drive.google.com/file/d/1RLWCCwFjxrFeP2YWiPi0IYBlT4XzmzPp/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "20.0.1"
   },
   {
     "name": "SONIC X SHADOW GENERATIONS",
@@ -13000,7 +13000,7 @@
     "review_url": "https://www.youtube.com/watch?v=l6T15RVdbLY",
     "links": [
       {
-        "label": "Base (Required Firmware: 12.1.0)",
+        "label": "Base",
         "file_name": "bai hoc chinh",
         "url": "https://drive.google.com/drive/folders/1hU3hFsxZiITs5CNxCVlkgnYhzHeTgY7u?usp=drive_link"
       },
@@ -13020,7 +13020,7 @@
         "url": "https://drive.google.com/file/d/1AbiwSlu0DFCdKDnUN86vF9_3kZ9913Wi/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "12.1.0"
   },
   {
     "name": "Shin Megami Tensei V: Vengeance",
@@ -15094,7 +15094,7 @@
         "url": "https://drive.google.com/file/d/1r1TAB3C2MW5oZshPcwO8McQXMqflzdJh/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "7.0.1"
   },
   {
     "name": "The Legend of Zelda: Echoes of Wisdom",
@@ -15239,7 +15239,7 @@
     "review_url": "https://www.youtube.com/watch?v=TpKNeyZspY8",
     "links": [
       {
-        "label": "Base (Required Firmware: 15.0.1)",
+        "label": "Base",
         "file_name": "lol huyen thoai.rar",
         "url": "https://drive.google.com/file/d/1YiUAJPrpZQyVkaDIuaxmMOE8TVxZ0dCU/view?usp=drive_link"
       },
@@ -15259,7 +15259,7 @@
         "url": "https://drive.google.com/file/d/1IyhmtLnOj6MAB9dyxXLRRh-OELBUkW6U/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "15.0.1"
   },
   {
     "name": "The Messenger",
@@ -15377,7 +15377,7 @@
     "review_url": "https://www.youtube.com/watch?v=8wE9DgZpLtM",
     "links": [
       {
-        "label": "Base (Required Firmware: 9.2.0)",
+        "label": "Base",
         "file_name": "bai hoc chinh",
         "url": "https://drive.google.com/drive/folders/1kwnQAoqPYKkjgsiqtfvnzLln7WulvYg0?usp=drive_link"
       },
@@ -15397,7 +15397,7 @@
         "url": "https://drive.google.com/file/d/17tDFtGr6ayjOb3IVJ5z1LOuDBMEpjmGR/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "9.2.0"
   },
   {
     "name": "The Smurfs 2 – The Prisoner of the Green Stone",
@@ -15623,7 +15623,7 @@
     "review_url": "https://www.youtube.com/watch?v=wUCir6nEi2Q",
     "links": [
       {
-        "label": "Base (Required Firmware: 8.0.1)",
+        "label": "Base",
         "file_name": "bai hoc chinh",
         "url": "https://drive.google.com/drive/folders/1QXZ9SbA4i6iU-h53HM-5Q8uLxHXiZw2r?usp=drive_link"
       },
@@ -15643,7 +15643,7 @@
         "url": "https://drive.google.com/file/d/1LK5GvndW6dQg2rf4dPUwUWc_ntQKVLZ4/view?usp=drive_link"
       }
     ],
-    "required_firmware": ""
+    "required_firmware": "8.0.1"
   },
   {
     "name": "To The Moon",
