@@ -36,11 +36,30 @@ def extract_expected(cell_html: str) -> tuple[list[str], str]:
     for br in ("<br>", "<br/>", "<br />", "<BR>", "<BR/>"):
         normalised = normalised.replace(br, "\n")
 
+    # ─── Gộp các dòng thuần text liên tiếp (multi-line header) ────────────
+    raw_segments = [s.strip() for s in normalised.split('\n')]
+    merged_segments: list[str] = []
+    for seg in raw_segments:
+        if not seg:
+            continue
+        has_link = '<a ' in seg.lower()
+        if has_link or not merged_segments:
+            merged_segments.append(seg)
+        else:
+            prev = merged_segments[-1]
+            prev_has_link = '<a ' in prev.lower()
+            prev_plain = strip_tags(prev).strip()
+            prev_ends_colon = prev_plain.endswith(':')
+            if prev_has_link or prev_ends_colon:
+                merged_segments.append(seg)
+            else:
+                merged_segments[-1] = prev + ' ' + seg
+
     expected_labels: list[str] = []
     expected_fw = ""
     seen_labels: set[str] = set()   # tránh thêm duplicate header
 
-    for segment in normalised.split("\n"):
+    for segment in merged_segments:
         segment = segment.strip()
         if not segment:
             continue

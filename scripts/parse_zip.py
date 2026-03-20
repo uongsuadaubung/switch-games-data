@@ -251,6 +251,34 @@ def parse_links_cell(cell_html: str) -> dict:
     for br in ("<br>", "<br/>", "<br />", "<BR>", "<BR/>"):
         normalised = normalised.replace(br, "\n")
 
+    # ─── Gộp các dòng thuần text liên tiếp (multi-line header) ────────────────
+    # Ví dụ: "Pokémon Scarlet: The Hidden Treasure of Area Zero DLC\n
+    #          (Part 1: The Teal Mask + Part 2: The Indigo Disk +\n
+    #          New Uniform Set):"
+    # → gộp thành 1 segment duy nhất.
+    raw_segments = [s.strip() for s in normalised.split('\n')]
+    merged_segments: list[str] = []
+    for seg in raw_segments:
+        if not seg:
+            continue
+        has_link = '<a ' in seg.lower()
+        if has_link or not merged_segments:
+            # Dòng có link hoặc dòng đầu tiên → bắt đầu segment mới
+            merged_segments.append(seg)
+        else:
+            # Dòng thuần text → kiểm tra dòng trước cũng thuần text không
+            prev = merged_segments[-1]
+            prev_has_link = '<a ' in prev.lower()
+            prev_plain = strip_tags(prev).strip()
+            prev_ends_colon = prev_plain.endswith(':')
+            if prev_has_link or prev_ends_colon:
+                # Dòng trước có link hoặc đã kết thúc bằng ':' (header hoàn chỉnh)
+                # → segment mới
+                merged_segments.append(seg)
+            else:
+                # Dòng trước cũng thuần text chưa kết thúc → gộp lại (nối bằng space)
+                merged_segments[-1] = prev + ' ' + seg
+
     current_label = "Base"
     label_from_header = False  # True nếu current_label được đặt từ header line
     label_used = False         # True nếu current_label đã được dùng bởi ít nhất 1 link
@@ -265,7 +293,7 @@ def parse_links_cell(cell_html: str) -> dict:
                 "url": "",
             })
 
-    for segment in normalised.split('\n'):
+    for segment in merged_segments:
         segment = segment.strip()
         if not segment:
             continue
