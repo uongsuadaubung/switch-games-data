@@ -91,11 +91,13 @@ def extract_links_from_cell(cell_html: str) -> list[tuple[str, str]]:
     return result
 
 
-def extract_backup_link(segment_after_main: str) -> tuple[str, str] | None:
+def extract_backup_link(segment_after_main: str) -> tuple[str, str, str] | None:
     """
     Tìm link dự phòng nằm trong cặp () ngay sau link chính.
     segment_after_main: phần HTML sau </a> của link chính trong cùng một segment.
-    Trả về (file_name, url) hoặc None.
+    Trả về (label, file_name, url) hoặc None.
+    label là text trước <a> bên trong () (ví dụ "dự phòng", "link 2"...);
+    nếu không có text trước <a> thì label = "".
     """
     # Tìm nội dung trong cặp ngoặc đơn đầu tiên: ( ... )
     s = segment_after_main
@@ -111,7 +113,13 @@ def extract_backup_link(segment_after_main: str) -> tuple[str, str] | None:
     if links:
         text, href = links[0]
         filename = text if text else (href.split('/')[-1] or href)
-        return filename, href
+        # Tìm text trước <a> trong inside → dùng làm label
+        first_a = inside.lower().find('<a ')
+        if first_a != -1:
+            before_a = strip_tags(inside[:first_a]).strip().rstrip(':').strip()
+        else:
+            before_a = ""
+        return before_a, filename, href
     return None
 
 
@@ -383,26 +391,52 @@ def parse_links_cell(cell_html: str) -> dict:
             pos = after_close_a
 
             file_name = link_text if link_text else (href.split('/')[-1] or href)
+
+            # ─── Kiểm tra label inline sau </a>: dạng (Label text) không có link ─
+            # Ví dụ: <a href="...">file.rar</a>(Link dự phòng)  → label = "Link dự phòng"
+            remaining = segment[after_close_a:]
+            inline_label = current_label
+            paren_s = remaining.find('(')
+            paren_e = remaining.find(')', paren_s) if paren_s != -1 else -1
+            if paren_s != -1 and paren_e != -1:
+                paren_content = remaining[paren_s + 1:paren_e]
+                # Chỉ dùng làm label nếu KHÔNG có <a> bên trong (tức là không phải backup link có URL)
+                if '<a ' not in paren_content.lower():
+                    label_candidate = strip_tags(paren_content).strip()
+                    if label_candidate:
+                        inline_label = label_candidate
+                        pos = after_close_a + paren_e + 1  # advance qua cặp ()
+
             link_obj: dict = {
-                "label": current_label,
+                "label": inline_label,
                 "file_name": file_name,
                 "url": href,
             }
 
             # Tìm link dự phòng trong phần còn lại sau </a>: (<a href="...">...</a>)
-            remaining = segment[after_close_a:]
-            backup = extract_backup_link(remaining)
-            if backup:
-                link_obj["backup_file_name"] = backup[0]
-                link_obj["backup_url"] = backup[1]
-                # Advance pos qua backup link để không xử lý lại
-                bp_start = remaining.find('(')
-                bp_end = remaining.find(')', bp_start) if bp_start != -1 else -1
-                if bp_end != -1:
-                    pos = after_close_a + bp_end + 1
+            # Chỉ xử lý nếu không đã tiêu thụ () cho inline_label ở trên
+            backup = None
+            if inline_label == current_label:
+                backup = extract_backup_link(remaining)
+                if backup:
+                    # Advance pos qua backup link để không xử lý lại
+                    bp_start = remaining.find('(')
+                    bp_end = remaining.find(')', bp_start) if bp_start != -1 else -1
+                    if bp_end != -1:
+                        pos = after_close_a + bp_end + 1
 
             links.append(link_obj)
             label_used = True
+
+            # Nếu có backup link → tạo entry riêng
+            # label = text bên trong () trước <a>, fallback "dự phòng"
+            if backup:
+                backup_label, backup_fname, backup_href = backup
+                links.append({
+                    "label": backup_label if backup_label else "dự phòng",
+                    "file_name": backup_fname,
+                    "url": backup_href,
+                })
 
     return {
         "links": links,

@@ -28,9 +28,12 @@ ERR = "❌"
 def extract_expected(cell_html: str) -> tuple[list[str], str]:
     """
     Từ HTML raw của cột Link tải, trả về:
-      - expected_labels : list label theo thứ tự xuất hiện (dòng kết thúc ':' không kèm link)
+      - expected_labels : list label theo thứ tự xuất hiện
       - expected_fw     : chuỗi required_firmware (hoặc "")
-    Logic giống parse_links_cell để tạo ra cùng 1 tập label.
+    Logic mirror parse_links_cell() để khớp cùng tập label:
+      1. Header line kết thúc ':' → label từ phần trước dấu ':'
+      2. Fallback keyword header (Base/Update/DLC/...) không link
+      3. Inline label: <a>...</a>(Label text) sau link chính
     """
     normalised = cell_html
     for br in ("<br>", "<br/>", "<br />", "<BR>", "<BR/>"):
@@ -57,7 +60,7 @@ def extract_expected(cell_html: str) -> tuple[list[str], str]:
 
     expected_labels: list[str] = []
     expected_fw = ""
-    seen_labels: set[str] = set()   # tránh thêm duplicate header
+    seen_labels: set[str] = set()
 
     for segment in merged_segments:
         segment = segment.strip()
@@ -75,9 +78,7 @@ def extract_expected(cell_html: str) -> tuple[list[str], str]:
 
         # Header: kết thúc ':' — trích label trước dấu ':'
         ends_colon = plain.endswith(":")
-        # Header có hoặc không có link kèm theo
         if ends_colon:
-            # Tìm phần trước link đầu tiên (nếu có)
             first_a = segment.lower().find("<a ")
             if first_a != -1:
                 header_part = strip_tags(segment[:first_a]).strip()
@@ -89,16 +90,62 @@ def extract_expected(cell_html: str) -> tuple[list[str], str]:
                 seen_labels.add(label)
             continue
 
-        # Fallback keyword header không có ':'  (Base, Update, DLC… không link)
+        # Fallback keyword header không có ':' (Base, Update, DLC… không link)
         _kw = ("base", "update", "dlc", "việt hóa", "viet hoa")
-        lower_seg_links = "<a " in segment.lower()
-        if not lower_seg_links and len(plain) < 120:
+        has_link = "<a " in segment.lower()
+        if not has_link and len(plain) < 120:
             if any(plain_lower.startswith(k) for k in _kw):
                 colon_idx = plain.find(":")
                 label = plain[:colon_idx].strip() if colon_idx != -1 else plain
                 if label and label not in seen_labels:
                     expected_labels.append(label)
                     seen_labels.add(label)
+            continue
+
+        if not has_link:
+            continue
+
+        # ─── Duyệt từng <a> trong segment, tìm inline label dạng </a>(Label) ──
+        # Mirror chính xác logic trong parse_links_cell() của parse_zip.py
+        lower_seg = segment.lower()
+        pos = 0
+        while True:
+            a_start = lower_seg.find("<a ", pos)
+            if a_start == -1:
+                break
+
+            # Nếu link nằm trong () → đây là backup link có URL → skip
+            text_before = segment[:a_start]
+            last_open  = text_before.rfind("(")
+            last_close = text_before.rfind(")")
+            if last_open != -1 and last_open > last_close:
+                a_tag_end = segment.find(">", a_start) + 1
+                close_a   = lower_seg.find("</a>", a_tag_end)
+                pos = close_a + 4 if close_a != -1 else len(segment)
+                continue
+
+            a_tag_end     = segment.find(">", a_start) + 1
+            close_a       = lower_seg.find("</a>", a_tag_end)
+            after_close_a = close_a + 4 if close_a != -1 else len(segment)
+            pos = after_close_a
+
+            # Phần sau </a>: tìm (plain text không có <a>) → inline label
+            remaining = segment[after_close_a:]
+            paren_s = remaining.find("(")
+            paren_e = remaining.find(")", paren_s) if paren_s != -1 else -1
+            if paren_s != -1 and paren_e != -1:
+                paren_content = remaining[paren_s + 1:paren_e]
+                if "<a " not in paren_content.lower():
+                    lbl = strip_tags(paren_content).strip()
+                    if lbl and lbl not in seen_labels:
+                        expected_labels.append(lbl)
+                        seen_labels.add(lbl)
+                    pos = after_close_a + paren_e + 1  # advance qua ()
+
+    # Fallback: nếu cell có link nhưng không tìm ra header nào
+    # → parse_links_cell() dùng label mặc định "Base"
+    if not expected_labels and "<a " in cell_html.lower():
+        expected_labels.append("Base")
 
     return expected_labels, expected_fw
 
@@ -177,7 +224,7 @@ def compare_block(
         for el, pl, mark in visible_label_rows:
             lines.append(f"  {el:<{w_html}}  │  {pl:<{w_parse}}  │  {mark}")
     elif only_mismatch:
-        lines.append(f"  {'(tất cả label khớp)':<{w_html}}  │  {'':>{w_parse}}  │")
+        lines.append(f"  {'(tất cả label khớp)':<{w_html}}  │  {'':<{w_parse}}  │")
 
     if show_fw:
         lines.append(sep)
