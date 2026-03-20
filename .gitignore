@@ -10,3 +10,9 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+
+# Test scripts & output
+test/
+/source/all.html
+.agents/
+compare_links_output.txt

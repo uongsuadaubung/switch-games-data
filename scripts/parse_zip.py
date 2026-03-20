@@ -46,6 +46,21 @@ def strip_tags(html: str) -> str:
     return decode_html("".join(out))
 
 
+def extract_firmware_from_label(label: str) -> tuple[str, str]:
+    """
+    Nếu label chứa '(Required Firmware: X.Y.Z)', tách ra:
+      - clean_label : label bỏ phần (Required Firmware: ...)
+      - firmware    : chuỗi version
+    Trả về (clean_label, firmware). Nếu không có → (label, "").
+    """
+    m = re.search(r'\(Required Firmware:\s*([^\)]+)\)', label, re.IGNORECASE)
+    if m:
+        firmware = m.group(1).strip()
+        clean = (label[:m.start()].strip() + ' ' + label[m.end():].strip()).strip()
+        return clean, firmware
+    return label, ""
+
+
 def extract_attr(html: str, attr: str) -> str | None:
     """Extract value of an HTML attribute (e.g. href, src). Port của extract_attr() trong Rust."""
     lower = html.lower()
@@ -301,6 +316,14 @@ def parse_links_cell(cell_html: str) -> dict:
                 "url": "",
             })
 
+    def _set_label(raw_label: str):
+        """Set current_label, đồng thời tách firmware inline nếu có."""
+        nonlocal current_label, required_firmware
+        clean, fw = extract_firmware_from_label(raw_label)
+        current_label = clean
+        if fw and not required_firmware:
+            required_firmware = fw
+
     for segment in merged_segments:
         segment = segment.strip()
         if not segment:
@@ -319,30 +342,33 @@ def parse_links_cell(cell_html: str) -> dict:
         ends_with_colon = plain.endswith(':')
 
         # ─── Header thuần: kết thúc bằng ':' và KHÔNG chứa link ───────────────
-        # Ví dụ: "Base:", "Update (1.1.0):", "Việt hóa được port bởi Bánh Mì:"
+        # Ví dụ: "Base:", "Update (1.1.0):", "Base (Required Firmware: 20.3.0):"
         if ends_with_colon and not segment_links:
             new_label = plain.rstrip(':').strip()
             # Nếu label cũ chưa được dùng bởi link nào → flush ra empty entry
             _flush_unused_label()
-            current_label = new_label
+            _set_label(new_label)
             label_from_header = True
             label_used = False
             continue
 
         # ─── Header có link inline ─────────────────────────────────────────────
         # Ví dụ: "Base (Required Firmware: 20.5.0): <a>..."
-        # Ví dụ: "Base: (lưu ý...) <a>..." — plain kết thúc bằng ':' nhưng link là ở sau
-        if ends_with_colon and segment_links:
+        # Ví dụ: "Việt hóa được port bởi X: <a>file.rar</a>" — plain KHÔNG kết thúc ':'
+        #         nhưng phần header trước <a> thì kết thúc ':'
+        if segment_links:
             first_a = segment.lower().find('<a ')
             if first_a != -1:
                 header_part = strip_tags(segment[:first_a]).strip()
             else:
                 header_part = plain
-            _flush_unused_label()
-            current_label = header_part.rstrip(':').strip()
-            label_from_header = True
-            label_used = False
-            # Không continue — tiếp tục xử lý links bên dưới
+            header_part_ends_colon = header_part.endswith(':')
+            if ends_with_colon or header_part_ends_colon:
+                _flush_unused_label()
+                _set_label(header_part.rstrip(':').strip())
+                label_from_header = True
+                label_used = False
+                # Không continue — tiếp tục xử lý links bên dưới
 
         # ─── Fallback keyword header (không có dấu ':', không có link) ─────────
         # Xử lý: "Base: (lưu ý...)", "Base: (Required Firmware: X.Y.Z)"
@@ -350,13 +376,15 @@ def parse_links_cell(cell_html: str) -> dict:
         if not segment_links and len(plain) < 120:
             _kw = ("base", "update", "dlc", "việt hóa", "viet hoa")
             if any(plain_lower.startswith(k) for k in _kw):
-                # Nếu có ':' trong plain → lấy phần trước ':' đầu tiên làm label
-                colon_idx = plain.find(':')
+                # Extract firmware từ TOÀN BỘ plain trước (bắt "Base: (Required Firmware: X.Y.Z)")
+                plain_no_fw, fw_from_plain = extract_firmware_from_label(plain)
+                if fw_from_plain and not required_firmware:
+                    required_firmware = fw_from_plain
+                # Lấy phần trước ':' đầu tiên làm label (bỏ firmware đã tách)
+                colon_idx = plain_no_fw.find(':')
                 _flush_unused_label()
-                if colon_idx != -1:
-                    current_label = plain[:colon_idx].strip()
-                else:
-                    current_label = plain
+                raw = plain_no_fw[:colon_idx].strip() if colon_idx != -1 else plain_no_fw
+                current_label = raw.strip() or "Base"
                 label_from_header = True
                 label_used = False
                 continue

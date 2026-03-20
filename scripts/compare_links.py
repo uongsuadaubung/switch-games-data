@@ -17,6 +17,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from parse_zip import (
     parse_links_cell, parse_game_name_cell,
     cell_text, extract_cells, extract_rows, strip_tags,
+    extract_firmware_from_label,
 )
 
 OK  = "✅"
@@ -76,27 +77,51 @@ def extract_expected(cell_html: str) -> tuple[list[str], str]:
             expected_fw = parts[1].strip() if len(parts) > 1 else ""
             continue
 
+        # Fallback keyword header dạng "Base: (Required Firmware: X.Y.Z)" không kết thúc ':'
+        # Cần extract firmware từ full plain trước khi tách label
+        has_link_early = "<a " in segment.lower()
+        if not has_link_early and len(plain) < 120:
+            _kw_early = ("base", "update", "dlc", "việt hóa", "viet hoa")
+            if any(plain_lower.startswith(k) for k in _kw_early):
+                _, fw_early = extract_firmware_from_label(plain)
+                if fw_early and not expected_fw:
+                    expected_fw = fw_early
+
         # Header: kết thúc ':' — trích label trước dấu ':'
+        # Cũng check header_part (text trước <a>) kết thúc ':' để bắt
+        # trường hợp "Label: <a>file</a>" — plain không kết thúc ':' nhưng header thì có
+        has_link = "<a " in segment.lower()
         ends_colon = plain.endswith(":")
-        if ends_colon:
-            first_a = segment.lower().find("<a ")
-            if first_a != -1:
-                header_part = strip_tags(segment[:first_a]).strip()
-            else:
-                header_part = plain
-            label = header_part.rstrip(":").strip()
+        first_a = segment.lower().find("<a ")
+        if first_a != -1:
+            header_part = strip_tags(segment[:first_a]).strip()
+        else:
+            header_part = plain
+        header_part_ends_colon = header_part.endswith(":")
+
+        if ends_colon or (has_link and header_part_ends_colon):
+            raw_label = header_part.rstrip(":").strip()
+            clean_label, fw = extract_firmware_from_label(raw_label)
+            if fw and not expected_fw:
+                expected_fw = fw
+            label = clean_label
             if label and label not in seen_labels:
                 expected_labels.append(label)
                 seen_labels.add(label)
-            continue
+            if ends_colon and not has_link:
+                continue
+            # Nếu có link → không continue, để xử lý inline label bên dưới
 
         # Fallback keyword header không có ':' (Base, Update, DLC… không link)
         _kw = ("base", "update", "dlc", "việt hóa", "viet hoa")
-        has_link = "<a " in segment.lower()
         if not has_link and len(plain) < 120:
             if any(plain_lower.startswith(k) for k in _kw):
                 colon_idx = plain.find(":")
-                label = plain[:colon_idx].strip() if colon_idx != -1 else plain
+                raw_label = plain[:colon_idx].strip() if colon_idx != -1 else plain
+                clean_label, fw = extract_firmware_from_label(raw_label)
+                if fw and not expected_fw:
+                    expected_fw = fw
+                label = clean_label
                 if label and label not in seen_labels:
                     expected_labels.append(label)
                     seen_labels.add(label)
