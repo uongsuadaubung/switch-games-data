@@ -91,6 +91,30 @@ def extract_links_from_cell(cell_html: str) -> list[tuple[str, str]]:
     return result
 
 
+def extract_backup_link(segment_after_main: str) -> tuple[str, str] | None:
+    """
+    Tìm link dự phòng nằm trong cặp () ngay sau link chính.
+    segment_after_main: phần HTML sau </a> của link chính trong cùng một segment.
+    Trả về (file_name, url) hoặc None.
+    """
+    # Tìm nội dung trong cặp ngoặc đơn đầu tiên: ( ... )
+    s = segment_after_main
+    paren_start = s.find('(')
+    if paren_start == -1:
+        return None
+    paren_end = s.find(')', paren_start)
+    if paren_end == -1:
+        return None
+    inside = s[paren_start + 1:paren_end]
+    # Kiểm tra có <a href=...> bên trong không
+    links = extract_links_from_cell(inside)
+    if links:
+        text, href = links[0]
+        filename = text if text else (href.split('/')[-1] or href)
+        return filename, href
+    return None
+
+
 def cell_text(cell_html: str) -> str:
     """Text content của một TD, <br> → newline. Port của cell_text()."""
     s = cell_html
@@ -202,11 +226,24 @@ def parse_size_genres(raw: str) -> tuple[str, list[str]]:
 
 
 def parse_links_cell(cell_html: str) -> dict:
-    """Parse cột 'Link tải'. Port của parse_links_cell()."""
-    base = []
-    update = []
-    dlc = []
-    viet_hoa = []
+    """
+    Parse cột 'Link tải'.
+    Trả về:
+      {
+        "links": [
+          {
+            "label": "Base",          # phần trước dấu ':' của dòng header
+            "file_name": "abc.rar",   # text của <a>, fallback về tên file trong URL
+            "url": "https://...",
+            "backup_url": "https://...",     # tùy chọn, link trong () sau link chính
+            "backup_file_name": "...",       # tùy chọn
+          },
+          ...
+        ],
+        "required_firmware": "16.0.3"  # hoặc ""
+      }
+    """
+    links: list[dict] = []
     required_firmware = ""
 
     # Chuẩn hóa <br> → newline
@@ -214,11 +251,19 @@ def parse_links_cell(cell_html: str) -> dict:
     for br in ("<br>", "<br/>", "<br />", "<BR>", "<BR/>"):
         normalised = normalised.replace(br, "\n")
 
-    current_section = "base"
     current_label = "Base"
+    label_from_header = False  # True nếu current_label được đặt từ header line
+    label_used = False         # True nếu current_label đã được dùng bởi ít nhất 1 link
 
-    # Keywords để fallback nhận ra section header kể cả thiếu dấu ':'
-    _SECTION_KEYWORDS = ("base", "update", "dlc", "việt hóa", "viet hoa", "required firmware")
+    def _flush_unused_label():
+        """Nếu label hiện tại từ header mà chưa link nào dùng → thêm entry rỗng."""
+        nonlocal label_used
+        if label_from_header and not label_used and links:
+            links.append({
+                "label": current_label,
+                "file_name": "",
+                "url": "",
+            })
 
     for segment in normalised.split('\n'):
         segment = segment.strip()
@@ -228,65 +273,111 @@ def parse_links_cell(cell_html: str) -> dict:
         plain = strip_tags(segment).strip()
         plain_lower = plain.lower()
 
-        # is_header: có dấu ':' Ở CUỐI, hoặc bắt đầu bằng keyword section
-        # (fallback cho trường hợp thiếu dấu ':', chỉ áp dụng cho dòng ngắn < 80 ký tự
-        #  để tránh nhầm với text game có chứa các từ này)
+        # ─── Phát hiện Required Firmware ───────────────────────────────────────
+        if plain_lower.startswith("required firmware"):
+            parts = plain.split(':', 1)
+            required_firmware = parts[1].strip() if len(parts) > 1 else ""
+            continue
+
+        segment_links = extract_links_from_cell(segment)
         ends_with_colon = plain.endswith(':')
-        is_fw_header = plain_lower.startswith("required firmware")
-        is_keyword_header = (
-            not ends_with_colon
-            and len(plain) < 80
-            and not extract_links_from_cell(segment)  # dòng không chứa link → khả năng cao là header
-            and any(plain_lower.startswith(k) for k in _SECTION_KEYWORDS)
-        )
-        is_header = ends_with_colon or is_fw_header or is_keyword_header
 
-        if is_header:
-            clean = plain.rstrip(':').strip()
-            clean_lower = clean.lower()
+        # ─── Header thuần: kết thúc bằng ':' và KHÔNG chứa link ───────────────
+        # Ví dụ: "Base:", "Update (1.1.0):", "Việt hóa được port bởi Bánh Mì:"
+        if ends_with_colon and not segment_links:
+            new_label = plain.rstrip(':').strip()
+            # Nếu label cũ chưa được dùng bởi link nào → flush ra empty entry
+            _flush_unused_label()
+            current_label = new_label
+            label_from_header = True
+            label_used = False
+            continue
 
-            if is_fw_header or clean_lower.startswith("required firmware"):
-                parts = plain.split(':', 1)
-                required_firmware = parts[1].strip() if len(parts) > 1 else ""
-                current_section = ""  # không thêm links vào section này
-            elif clean_lower.startswith("base") and ("+ update" in clean_lower or "+update" in clean_lower):
-                current_section = "base"
-                current_label = clean
-            elif clean_lower.startswith("base"):
-                current_section = "base"
-                current_label = clean
-            elif clean_lower.startswith("update"):
-                current_section = "update"
-                current_label = clean
-            elif clean_lower.startswith("dlc") or "dlc pack" in clean_lower:
-                current_section = "dlc"
-                current_label = clean
-            elif "việt hóa" in clean_lower or "viet hoa" in clean_lower:
-                current_section = "viet_hoa"
-                current_label = clean
-
-        links = extract_links_from_cell(segment)
-        for text, href in links:
-            if not current_section:
-                continue
-            filename = text if text else (href.split('/')[-1] or href)
-            link = {"label": current_label, "filename": filename, "url": href}
-            if current_section == "base":
-                base.append(link)
-            elif current_section == "update":
-                update.append(link)
-            elif current_section == "dlc":
-                dlc.append(link)
-            elif current_section == "viet_hoa":
-                viet_hoa.append(link)
+        # ─── Header có link inline ─────────────────────────────────────────────
+        # Ví dụ: "Base (Required Firmware: 20.5.0): <a>..."
+        # Ví dụ: "Base: (lưu ý...) <a>..." — plain kết thúc bằng ':' nhưng link là ở sau
+        if ends_with_colon and segment_links:
+            first_a = segment.lower().find('<a ')
+            if first_a != -1:
+                header_part = strip_tags(segment[:first_a]).strip()
             else:
-                base.append(link)
+                header_part = plain
+            _flush_unused_label()
+            current_label = header_part.rstrip(':').strip()
+            label_from_header = True
+            label_used = False
+            # Không continue — tiếp tục xử lý links bên dưới
+
+        # ─── Fallback keyword header (không có dấu ':', không có link) ─────────
+        # Xử lý: "Base: (lưu ý...)", "Base: (Required Firmware: X.Y.Z)"
+        # → bắt đầu bằng keyword, có ':' ở giữa, không có link
+        if not segment_links and len(plain) < 120:
+            _kw = ("base", "update", "dlc", "việt hóa", "viet hoa")
+            if any(plain_lower.startswith(k) for k in _kw):
+                # Nếu có ':' trong plain → lấy phần trước ':' đầu tiên làm label
+                colon_idx = plain.find(':')
+                _flush_unused_label()
+                if colon_idx != -1:
+                    current_label = plain[:colon_idx].strip()
+                else:
+                    current_label = plain
+                label_from_header = True
+                label_used = False
+                continue
+
+        # ─── Xử lý links trong segment ─────────────────────────────────────────
+        if not segment_links:
+            continue
+
+        lower_seg = segment.lower()
+        pos = 0
+        for link_text, href in segment_links:
+            # Tìm vị trí <a> của link này trong segment (từ pos hiện tại)
+            a_start = lower_seg.find('<a ', pos)
+            if a_start == -1:
+                break
+
+            # Kiểm tra xem link này có nằm bên trong '(' không (tức là backup link)
+            # Tìm '(' gần nhất trước a_start
+            text_before = segment[:a_start]
+            last_paren_open = text_before.rfind('(')
+            last_paren_close = text_before.rfind(')')
+            if last_paren_open != -1 and last_paren_open > last_paren_close:
+                # Link này nằm trong (), đây là backup → skip
+                a_tag_end = segment.find('>', a_start) + 1
+                close_a = lower_seg.find('</a>', a_tag_end)
+                pos = close_a + 4 if close_a != -1 else len(segment)
+                continue
+
+            a_tag_end = segment.find('>', a_start) + 1
+            close_a = lower_seg.find('</a>', a_tag_end)
+            after_close_a = close_a + 4 if close_a != -1 else len(segment)
+            pos = after_close_a
+
+            file_name = link_text if link_text else (href.split('/')[-1] or href)
+            link_obj: dict = {
+                "label": current_label,
+                "file_name": file_name,
+                "url": href,
+            }
+
+            # Tìm link dự phòng trong phần còn lại sau </a>: (<a href="...">...</a>)
+            remaining = segment[after_close_a:]
+            backup = extract_backup_link(remaining)
+            if backup:
+                link_obj["backup_file_name"] = backup[0]
+                link_obj["backup_url"] = backup[1]
+                # Advance pos qua backup link để không xử lý lại
+                bp_start = remaining.find('(')
+                bp_end = remaining.find(')', bp_start) if bp_start != -1 else -1
+                if bp_end != -1:
+                    pos = after_close_a + bp_end + 1
+
+            links.append(link_obj)
+            label_used = True
 
     return {
-        "base": base,
-        "update": update,
-        "dlc": dlc,
-        "viet_hoa": viet_hoa,
+        "links": links,
         "required_firmware": required_firmware,
     }
 
@@ -317,7 +408,7 @@ def parse_html_file(html: str, sheet_name: str) -> list[dict]:
         review_links = extract_links_from_cell(cells[3])
         review_url = review_links[0][1] if review_links else ""
 
-        links = parse_links_cell(cells[4])
+        links_data = parse_links_cell(cells[4])
 
         name, game_id, is_viet_hoa = parse_game_name_cell(col_a)
         if not name:
@@ -331,8 +422,8 @@ def parse_html_file(html: str, sheet_name: str) -> list[dict]:
             "size": size,
             "genres": genres,
             "review_url": review_url,
-            "sheets": [sheet_name],
-            "links": links,
+            "links": links_data["links"],
+            "required_firmware": links_data["required_firmware"],
         })
 
     return games
@@ -341,10 +432,10 @@ def parse_html_file(html: str, sheet_name: str) -> list[dict]:
 # ─── ZIP Reading + Merge (port từ parser/zip.rs) ──────────────────────────────
 
 def merge_links(existing: list, incoming: list):
-    """Merge links, dedup theo URL. Port của merge_links()."""
-    existing_keys = {(l["url"] or l["filename"]) for l in existing}
+    """Merge links, dedup theo URL."""
+    existing_keys = {(l["url"] or l["file_name"]) for l in existing}
     for link in incoming:
-        key = link["url"] or link["filename"]
+        key = link["url"] or link["file_name"]
         if key not in existing_keys:
             existing.append(link)
             existing_keys.add(key)
@@ -383,16 +474,11 @@ def read_zip_html(zip_path: str) -> list[dict]:
                 # Sau khi chốt được Key cuối cùng (là ID, hoặc đã fallback về Tên)
                 if key in games_map:
                     existing = games_map[key]
-                    if game["sheets"][0] not in existing["sheets"]:
-                        existing["sheets"].append(game["sheets"][0])
                     # Nếu một trong các sheet có đánh dấu việt hoá, thì game này tính là việt hoá
                     existing["is_viet_hoa"] = existing["is_viet_hoa"] or game["is_viet_hoa"]
-                    merge_links(existing["links"]["base"],     game["links"]["base"])
-                    merge_links(existing["links"]["update"],   game["links"]["update"])
-                    merge_links(existing["links"]["dlc"],      game["links"]["dlc"])
-                    merge_links(existing["links"]["viet_hoa"], game["links"]["viet_hoa"])
-                    if not existing["links"]["required_firmware"]:
-                        existing["links"]["required_firmware"] = game["links"]["required_firmware"]
+                    merge_links(existing["links"], game["links"])
+                    if not existing["required_firmware"]:
+                        existing["required_firmware"] = game["required_firmware"]
                     if not existing["review_url"]:
                         existing["review_url"] = game["review_url"]
                 else:
@@ -500,12 +586,15 @@ def apply_new_game_tracking(
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: python scripts/parse_zip.py <zip_path>")
-        sys.exit(1)
-
-    zip_path = sys.argv[1]
     keep_zip = "--keep-zip" in sys.argv
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+
+    if args:
+        zip_path = args[0]
+    else:
+        zip_path = "source/latest.zip"
+        print(f"ℹ️  Không có argument — dùng mặc định: {zip_path}")
+
     games_out  = "data/games.json"
     version_out = "data/version.json"
 
