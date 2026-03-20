@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 parse_zip.py — Port chính xác từ Rust parser (src-tauri/src/parser/)
-Đọc ZIP chứa HTML files, parse danh sách game, xuất ra games.json + version.json
+Đọc ZIP chứa HTML files, parse danh sách game, xuất ra games.json
 
 Usage:
     python scripts/parse_zip.py <zip_path>
@@ -10,7 +10,6 @@ Usage:
 
 import zipfile
 import json
-import hashlib
 import os
 import sys
 import re
@@ -578,12 +577,6 @@ def read_zip_html(zip_path: str) -> list[dict]:
     return games
 
 
-# ─── Version helpers ──────────────────────────────────────────────────────────
-
-def compute_md5(path: str) -> str:
-    with open(path, "rb") as f:
-        return hashlib.md5(f.read()).hexdigest()
-
 
 # ─── New-game tracking helpers ────────────────────────────────────────────────
 
@@ -686,7 +679,6 @@ def main():
         print(f"ℹ️  Không có argument — dùng mặc định: {zip_path}")
 
     games_out  = "data/games.json"
-    version_out = "data/version.json"
 
     if not Path(zip_path).exists():
         print(f"❌ File not found: {zip_path}")
@@ -710,10 +702,6 @@ def main():
         games, old_map, now, is_first_run=not file_existed
     )
 
-    # Tính MD5 của ZIP (để app có thể so sánh phiên bản)
-    zip_hash = compute_md5(zip_path)
-    timestamp = now.strftime("%Y-%m-%dT%H:%M:%SZ")
-
     # 3️⃣  Ghi games.json
     Path(games_out).parent.mkdir(parents=True, exist_ok=True)
     Path(games_out).write_text(
@@ -721,23 +709,11 @@ def main():
         encoding="utf-8"
     )
 
-    # Ghi version.json
-    version = {
-        "hash": zip_hash,
-        "timestamp": timestamp,
-        "game_count": len(games),
-    }
-    Path(version_out).write_text(
-        json.dumps(version, ensure_ascii=False, indent=2),
-        encoding="utf-8"
-    )
-
     print(f"\n✅ Done!")
     print(f"   Games tổng  : {len(games)}")
     print(f"   Games mới   : {new_count} 🆕")
     print(f"   Hết hạn mới : {expired_count} (đã xóa is_new)")
-    print(f"   Hash        : {zip_hash}")
-    print(f"   Output      : {games_out}, {version_out}")
+    print(f"   Output      : {games_out}")
 
     # Xoá ZIP sau khi parse xong (dùng --keep-zip để giữ lại)
     if not keep_zip:
