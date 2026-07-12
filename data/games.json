@@ -3266,35 +3266,6 @@
     "required_firmware": "18.1.0"
   },
   {
-    "name": "DEEMO -Reborn-",
-    "game_id": "01008B10132A2000",
-    "is_viet_hoa": false,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01008B10132A2000.jpg",
-    "size": "4.49 GB",
-    "genres": [
-      "Âm nhạc"
-    ],
-    "review_url": "https://www.youtube.com/watch?v=3s17qqLwzg0",
-    "links": [
-      {
-        "label": "Base",
-        "file_name": "lac lu nhip dieu.rar",
-        "url": "https://drive.google.com/file/d/1-yHisVlIlZVqSmuqjAQFPdghWzZK7MKO/view?usp=drive_link"
-      },
-      {
-        "label": "Update (1.0.3)",
-        "file_name": "cap nhat lac lu nhip dieu.rar",
-        "url": "https://drive.google.com/file/d/1pW4I9NKfZYC7bJk80Y6LnPws7LZpd0mP/view?usp=drive_link"
-      },
-      {
-        "label": "DLC Pack",
-        "file_name": "bo sung lac lu nhip dieu.rar",
-        "url": "https://drive.google.com/file/d/1iSs1raZ1b8MlYcLccrwdYibuPtwxU_I6/view?usp=drive_link"
-      }
-    ],
-    "required_firmware": "10.1.0"
-  },
-  {
     "name": "DOOM Eternal",
     "game_id": "0100B1A00D8CE000",
     "is_viet_hoa": false,
@@ -4691,30 +4662,6 @@
     "required_firmware": "6.2.0"
   },
   {
-    "name": "Dungeons 4 – Nintendo Switch Edition",
-    "game_id": "0100F7901971C000",
-    "is_viet_hoa": false,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100F7901971C000.jpg",
-    "size": "5.36 GB",
-    "genres": [
-      "Chiến thuật"
-    ],
-    "review_url": "https://www.youtube.com/watch?v=PI0jqQcC34U",
-    "links": [
-      {
-        "label": "Base",
-        "file_name": "nguc toi bon.rar",
-        "url": "https://drive.google.com/file/d/1g_r1MGiZqrvhl6XRsAdK8fVpVce82L4S/view?usp=drive_link"
-      },
-      {
-        "label": "Update (1.7.4)",
-        "file_name": "cap nhat nguc toi bon.rar",
-        "url": "https://drive.google.com/file/d/1PJLatXjLTR95u-hSum9dNEVG8xiGP2Sp/view?usp=drive_link"
-      }
-    ],
-    "required_firmware": "18.1.0"
-  },
-  {
     "name": "Dusk Diver 2",
     "game_id": "01008AF016240000",
     "is_viet_hoa": false,
@@ -4924,31 +4871,6 @@
     "required_firmware": "17.0.1"
   },
   {
-    "name": "Eiyuden Chronicle: Hundred Heroes –",
-    "game_id": "0100ED9018F3E000",
-    "is_viet_hoa": false,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100ED9018F3E000.jpg",
-    "size": "24.3 GB",
-    "genres": [
-      "Phiêu lưu",
-      "Nhập vai"
-    ],
-    "review_url": "https://www.youtube.com/watch?v=IC021J1lOE0",
-    "links": [
-      {
-        "label": "Base",
-        "file_name": "bai hoc chinh",
-        "url": "https://drive.google.com/drive/folders/1Zqx_EAvyeuHzlFmxDyd3e9EQRKPMpRZV?usp=drive_link"
-      },
-      {
-        "label": "Update (1.0.3)",
-        "file_name": "cap nhat mot tram chien binh.rar",
-        "url": "https://drive.google.com/file/d/1gIBK9MVfuQvXEdB7ustxs-cAE6EQkHfU/view?usp=drive_link"
-      }
-    ],
-    "required_firmware": "17.0.1"
-  },
-  {
     "name": "Eldest Souls",
     "game_id": "010093C00F30A000",
     "is_viet_hoa": true,
@@ -5032,26 +4954,6 @@
       }
     ],
     "required_firmware": "12.0.2"
-  },
-  {
-    "name": "Endless Ocean Luminous",
-    "game_id": "010067B017588000",
-    "is_viet_hoa": false,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010067B017588000.jpg",
-    "size": "7.43 GB",
-    "genres": [
-      "Phiêu lưu",
-      "Mô phỏng"
-    ],
-    "review_url": "https://www.youtube.com/watch?v=MHxaSD2IEWQ&",
-    "links": [
-      {
-        "label": "Base",
-        "file_name": "dai duong xanh.rar",
-        "url": "https://drive.google.com/file/d/1ShraNI_68sjr_ajBCyqiL3x8kjnrOsOT/view?usp=drive_link"
-      }
-    ],
-    "required_firmware": "17.0.1"
   },
   {
     "name": "Enter the Gungeon",
@@ -5404,30 +5306,6 @@
     "required_firmware": "8.0.1"
   },
   {
-    "name": "FREEDOM WARS Remastered",
-    "game_id": "010075201F578000",
-    "is_viet_hoa": false,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010075201F578000.jpg",
-    "size": "4.83 GB",
-    "genres": [
-      "Hành động"
-    ],
-    "review_url": "https://www.youtube.com/watch?v=EMLG39qzK1k",
-    "links": [
-      {
-        "label": "Base",
-        "file_name": "dap nhau tu do.rar",
-        "url": "https://drive.google.com/file/d/1f-5s_0aELRfAn8jhSfFDipdHYtVVjVmk/view?usp=drive_link"
-      },
-      {
-        "label": "Update (1.9.0)",
-        "file_name": "cap nhat dap nhau tu do.rar",
-        "url": "https://drive.google.com/file/d/1XDuwSdi4Od8S8jcr1EglrgLONdPoatpq/view?usp=drive_link"
-      }
-    ],
-    "required_firmware": "19.0.0"
-  },
-  {
     "name": "Fabledom",
     "game_id": "0100B6001E6D6000",
     "is_viet_hoa": true,
@@ -5485,31 +5363,6 @@
       }
     ],
     "required_firmware": "16.0.3"
-  },
-  {
-    "name": "Farmagia",
-    "game_id": "010037C01E2A2000",
-    "is_viet_hoa": false,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010037C01E2A2000.jpg",
-    "size": "4.4 GB",
-    "genres": [
-      "Hành động",
-      "Nhập vai"
-    ],
-    "review_url": "https://www.youtube.com/watch?v=q4jhniT-KZ8",
-    "links": [
-      {
-        "label": "Base",
-        "file_name": "trang trai zui ze.rar",
-        "url": "https://drive.google.com/file/d/1UsEfhwTR6-rEbr-fFH1kSYU-7jOdAtCx/view?usp=drive_link"
-      },
-      {
-        "label": "Update (1.0.1)",
-        "file_name": "cap nhat trang trai zui ze.rar",
-        "url": "https://drive.google.com/file/d/1LxVBQxpUq4mC_ig4d7oJXIvymEs9AXDe/view?usp=drive_link"
-      }
-    ],
-    "required_firmware": "18.1.0"
   },
   {
     "name": "Fate Samurai Remnant",
@@ -13402,25 +13255,6 @@
     "required_firmware": "18.1.0"
   },
   {
-    "name": "Shuyan Saga",
-    "game_id": "01004FB01BD32000",
-    "is_viet_hoa": false,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01004FB01BD32000.jpg",
-    "size": "1.86 GB",
-    "genres": [
-      "Hành động"
-    ],
-    "review_url": "https://www.youtube.com/watch?v=8NnPTALJB7Y",
-    "links": [
-      {
-        "label": "Base",
-        "file_name": "vo nghe tai ba.rar",
-        "url": "https://drive.google.com/file/d/1XU96VI36qs9HGvrifdV0AS3fscex9XZz/view?usp=drive_link"
-      }
-    ],
-    "required_firmware": "16.0.3"
-  },
-  {
     "name": "Sid Meier’s Civilization VII",
     "game_id": "0100C3601518C000",
     "is_viet_hoa": false,
@@ -15707,30 +15541,6 @@
     "required_firmware": "20.1.0"
   },
   {
-    "name": "The Settlers: New Allies",
-    "game_id": "0100F3200E7CA000",
-    "is_viet_hoa": false,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100F3200E7CA000.jpg",
-    "size": "7.26 GB",
-    "genres": [
-      "Chiến thuật"
-    ],
-    "review_url": "https://www.youtube.com/watch?v=kjl0M92k0jo",
-    "links": [
-      {
-        "label": "Base",
-        "file_name": "bai hoc chinh",
-        "url": "https://drive.google.com/drive/folders/1pyCyanHFt_NuzuNE7J0MMOdue9vmAFNi?usp=drive_link"
-      },
-      {
-        "label": "Update (1.0.5)",
-        "file_name": "cap nhat dong minh tac chien.rar",
-        "url": "https://drive.google.com/file/d/1LrvhMn7nwpkJdpOQ3mKP-FIeUcakDPEY/view?usp=drive_link"
-      }
-    ],
-    "required_firmware": "16.0.3"
-  },
-  {
     "name": "The Sinking City",
     "game_id": "010028D00BA1A000",
     "is_viet_hoa": true,
@@ -15794,25 +15604,6 @@
       }
     ],
     "required_firmware": "16.1.0"
-  },
-  {
-    "name": "The Stanley Parable: Ultra Deluxe",
-    "game_id": "010029300E5C4800",
-    "is_viet_hoa": false,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010029300E5C4800.jpg",
-    "size": "2.47 GB",
-    "genres": [
-      "Phiêu lưu"
-    ],
-    "review_url": "https://www.youtube.com/watch?v=YxbWjA0BOjs",
-    "links": [
-      {
-        "label": "Base + Update (1.10)",
-        "file_name": "hai nao.rar",
-        "url": "https://drive.google.com/file/d/1eXMWs44WDr1f8E31PqLxecBuK7sFO5_W/view?usp=drive_link"
-      }
-    ],
-    "required_firmware": "18.1.0"
   },
   {
     "name": "The Survivalists",
