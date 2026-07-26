@@ -387,6 +387,32 @@
     "required_firmware": "18.1.0"
   },
   {
+    "name": "Absolum",
+    "game_id": "0100A83022A22000",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100A83022A22000.jpg",
+    "size": "2.61 GB",
+    "genres": [
+      "Hành động"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=0yxQCVFUXfw",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "dc khen nhieu.rar",
+        "url": "https://drive.google.com/file/d/1-2DDkvat9Ji4GDTFjqBtg0e493mR2zCs/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.1.2)",
+        "file_name": "cap nhat dc khen nhieu.rar",
+        "url": "https://drive.google.com/file/d/1xaVbriQ_pdJwirRJMyd0LH8-9po6Qe3E/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "20.5.0",
+    "is_new": true,
+    "added_at": "2026-07-26T02:47:31Z"
+  },
+  {
     "name": "Ace Attorney Investigations Collection",
     "game_id": "010005501E68C000",
     "is_viet_hoa": false,
@@ -1641,6 +1667,38 @@
     "required_firmware": "19.0.0"
   },
   {
+    "name": "Blazblue Entropy Effect X",
+    "game_id": "01003DA0254A4000",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01003DA0254A4000.jpg",
+    "size": "4.56 GB",
+    "genres": [
+      "Hành động",
+      "Nhập vai"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=h6Rh2g1cvlA",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "di canh zui.rar",
+        "url": "https://drive.google.com/file/d/11wnrsVNy2LKuvRb3Pz0zl_ewjdYcKnKH/view?usp=drive_link"
+      },
+      {
+        "label": "Update (20250819.52)",
+        "file_name": "cap nhat di canh zui.rar",
+        "url": "https://drive.google.com/file/d/16gm0csLP1BsF7M22S02QwnR6eZwfX6ZD/view?usp=drive_link"
+      },
+      {
+        "label": "DLC Pack (44 DLCs)",
+        "file_name": "bo sung di canh zui.rar",
+        "url": "https://drive.google.com/file/d/1ZTadgk37gTRhzjva8V8qpGEJ9Yr63kRv/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.0.0",
+    "is_new": true,
+    "added_at": "2026-07-26T02:47:31Z"
+  },
+  {
     "name": "Bloodstained: Ritual of the Night",
     "game_id": "0100BF500207C000",
     "is_viet_hoa": true,
@@ -1674,6 +1732,32 @@
       }
     ],
     "required_firmware": "17.0.0"
+  },
+  {
+    "name": "Blossom Voyage",
+    "game_id": "0100AC30219A4000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100AC30219A4000.jpg",
+    "size": "3.93 GB",
+    "genres": [
+      "Mô phỏng"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=DbrQTqgVyJE",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "lai tan gai.rar",
+        "url": "https://drive.google.com/file/d/1J2RFfVDIXrdA9ac66WS3zH94KAcSpL28/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi hybrid 2b",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/16392qvjDP6UuDrC0J5em48Jq1ck3riTE/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.1.0",
+    "is_new": true,
+    "added_at": "2026-07-26T02:47:31Z"
   },
   {
     "name": "Boomerang Fu",
@@ -3219,27 +3303,22 @@
         "url": "https://drive.google.com/file/d/1Q8Q6cKKu1I23CW1O_FmIP7HUgncDK-0A/view?usp=drive_link"
       },
       {
-        "label": "Update (1.0.2.699) (nhận việt hóa)",
+        "label": "Update (1.0.6.1182)",
         "file_name": "cap nhat tho lan muu sinh.rar",
         "url": "https://drive.google.com/file/d/1e57zFoj05aBgIng0elHw7Qb554RnUoHs/view?usp=drive_link"
       },
       {
-        "label": "3 DLCs, DREDGE + GODZILLA Content Pack included",
+        "label": "DLC Pack (6 DLCs)",
         "file_name": "bo sung tho lan muu sinh.rar",
         "url": "https://drive.google.com/file/d/1AArJuyvTrTT_GrWZ6eqgqPqigjxi3PWl/view?usp=drive_link"
       },
       {
-        "label": "Việt hóa được port bởi The Red Team",
+        "label": "Việt hóa được port bởi 2B từ ViệtPatchSwitchTeam",
         "file_name": "yeu tieng viet.rar",
         "url": "https://drive.google.com/file/d/1uw31sK9r721jeKtOwBmcEkaBSd_mUHox/view?usp=drive_link"
-      },
-      {
-        "label": "Update (1.0.3.978) + 4 DLCs (không nhận việt hóa)",
-        "file_name": "cap nhat va bo sung tho lan muu sinh moi nhat.rar",
-        "url": "https://drive.google.com/file/d/1xVHxQe2wqzmqd_OUPdhltuWfZr_wsdy3/view?usp=drive_link"
       }
     ],
-    "required_firmware": "19.0.1"
+    "required_firmware": "22.1.0"
   },
   {
     "name": "DAYMARE: 1994 Sandcastle",
@@ -3391,17 +3470,22 @@
     "review_url": "https://www.youtube.com/watch?v=SqOH3zqtfCM",
     "links": [
       {
-        "label": "Base + Update 2.0.73 + DLC Pack",
-        "file_name": "bi rong huyen thoai",
-        "url": "https://drive.google.com/drive/folders/1Hv9gJSAWWMvRyuVYs7FfldnHo-a1714e?usp=drive_link"
+        "label": "Base",
+        "file_name": "bai hoc chinh",
+        "url": "https://drive.google.com/drive/folders/16C7HkldLDpVgo2temYQpPFJHDYo1RVJK?usp=drive_link"
       },
       {
-        "label": "Link dự phòng",
-        "file_name": "bi rong huyen thoai",
-        "url": "https://drive.google.com/drive/folders/1KxaIR8rheEMUDCmtWIg3VlzpvViLxe5D?usp=drive_link"
+        "label": "Update 2.0.76",
+        "file_name": "cap nhat bi rong huyen thoai.rar",
+        "url": "https://drive.google.com/file/d/1Low09Y2bJ6lqnAHKwTzeHpA6gTXlQjY8/view?usp=drive_link"
+      },
+      {
+        "label": "DLC Pack (10 DLCs)",
+        "file_name": "bo sung bi rong huyen thoai.rar",
+        "url": "https://drive.google.com/file/d/1aVDyArHOKxb22ZYOUrcGIqQv_Hdhc1-j/view?usp=drive_link"
       }
     ],
-    "required_firmware": "20.3.0"
+    "required_firmware": "20.5.0"
   },
   {
     "name": "DRAGON BALL Xenoverse 2",
@@ -4166,6 +4250,42 @@
       }
     ],
     "required_firmware": "12.1.0"
+  },
+  {
+    "name": "Digimon Story Time Stranger",
+    "game_id": "010062E01FE0C000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010062E01FE0C000.jpg",
+    "size": "12.16 GB",
+    "genres": [
+      "Nhập vai"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=vXA85-0sZW0",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "bai hoc chinh",
+        "url": "https://drive.google.com/drive/folders/1Z1DbPfIIw8SUVrTDT4Z1fOTLQdTrSNd2?usp=drive_link"
+      },
+      {
+        "label": "Update (1.2.1)",
+        "file_name": "cap nhat quai vat dau nhau.rar",
+        "url": "https://drive.google.com/file/d/1WNeK3ANfqc-Qvj4NK1BIUhKRJ2POPBeU/view?usp=drive_link"
+      },
+      {
+        "label": "DLC Pack (11 DLCs)",
+        "file_name": "bo sung quai vat dau nhau.rar",
+        "url": "https://drive.google.com/file/d/1qTMkK6CGNooIWLnZ40cuCkVZ7mxbB7VR/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi Hali12",
+        "file_name": "yeu tieng viet.zip",
+        "url": "https://drive.google.com/file/d/1Ta1_IN2_v20aysBdBMV2jwU-QpKhVbaf/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.1.0",
+    "is_new": true,
+    "added_at": "2026-07-26T02:47:31Z"
   },
   {
     "name": "Disco Elysium – The Final Cut",
@@ -6322,6 +6442,32 @@
     "required_firmware": "10.1.0"
   },
   {
+    "name": "Grindstone",
+    "game_id": "0100538012496000",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100538012496000.jpg",
+    "size": "2.83 GB",
+    "genres": [
+      "Giải đố"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=0xD4Xsonu30",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "giai do hai hai.rar",
+        "url": "https://drive.google.com/file/d/1pv4a9I7eOQcTmr2JFbLzFV413WtKKDfy/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.1.35)",
+        "file_name": "cap nhat giai do hai hai.rar",
+        "url": "https://drive.google.com/file/d/1a8z0UKrIL4kQ9uZ2kSTDp7PPzGQDh9i6/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "14.1.2",
+    "is_new": true,
+    "added_at": "2026-07-26T02:47:31Z"
+  },
+  {
     "name": "Grounded: Fully Yoked Edition",
     "game_id": "01006F301AE9C000",
     "is_viet_hoa": true,
@@ -6866,19 +7012,9 @@
         "url": "https://drive.google.com/file/d/1e63Kv5AHCMHigIr9X1gCNpOCdPXD6xYr/view?usp=drive_link"
       },
       {
-        "label": "link dự phòng",
-        "file_name": "gem dang hot.rar",
-        "url": "https://drive.google.com/file/d/1B607lcEDgKu_yBJTQaGR1_ahkuJ95KHm/view?usp=drive_link"
-      },
-      {
         "label": "Update (1.0.28716)",
         "file_name": "cap nhat gem dang hot.rar",
         "url": "https://drive.google.com/file/d/1a0XZB34nWx56GUTOJp40GZN8pjJba7nC/view?usp=drive_link"
-      },
-      {
-        "label": "link dự phòng",
-        "file_name": "cap nhat gem dang hot.rar",
-        "url": "https://drive.google.com/file/d/1X1ILDrf4zwUf35qrcARN04RBNOApGMj_/view?usp=drive_link"
       },
       {
         "label": "phải xem mới cài đc",
@@ -6921,6 +7057,32 @@
       }
     ],
     "required_firmware": "17.0.0"
+  },
+  {
+    "name": "Hotline Miami Collection",
+    "game_id": "0100D0E00E51E000",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100D0E00E51E000.jpg",
+    "size": "1.24 GB",
+    "genres": [
+      "Hành động"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=aZlFrsWjOk8",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "indi hay nha.rar",
+        "url": "https://drive.google.com/file/d/1APUpTqPq4dVccXUqsD6nL_dfKz2QLoCQ/view?usp=drive_link"
+      },
+      {
+        "label": "Update (2.03)",
+        "file_name": "cap nhat indi hay nha.rar",
+        "url": "https://drive.google.com/file/d/1ZTbjB4S6JPqjUIyTZGJxJhk7HfKxYI-o/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "8.1.0",
+    "is_new": true,
+    "added_at": "2026-07-26T02:47:31Z"
   },
   {
     "name": "Human: Fall Flat",
@@ -8530,11 +8692,6 @@
         "label": "Base",
         "file_name": "nguoi em mexico.rar",
         "url": "https://drive.google.com/file/d/1TJX99atj7Bn6_Jz2FmCEdjMB-oJAxZZF/view?usp=drive_link"
-      },
-      {
-        "label": "Link dự phòng",
-        "file_name": "nguoi em mexico.rar",
-        "url": "https://drive.google.com/file/d/1sdxicjkHcfBmUBAwwytaSZETd_945fjZ/view?usp=drive_link"
       }
     ],
     "required_firmware": "16.0.0"
@@ -9650,6 +9807,33 @@
       }
     ],
     "required_firmware": "19.0.1"
+  },
+  {
+    "name": "Mina the Hollower",
+    "game_id": "0100DCD01F306000",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100DCD01F306000.jpg",
+    "size": "869 MB",
+    "genres": [
+      "Phiêu lưu",
+      "Đi cảnh"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=kukGgc92guA",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "cu bi cuon.rar",
+        "url": "https://drive.google.com/file/d/1ivjykWChbPf4ewbiR1Y8D1g18Q_sVxe8/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.5)",
+        "file_name": "cap nhat cu bi cuon.rar",
+        "url": "https://drive.google.com/file/d/1sgLIQ75YslP7Q4bCRYi0PNsfr-Fl3xWe/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.1.0",
+    "is_new": true,
+    "added_at": "2026-07-26T02:47:31Z"
   },
   {
     "name": "Minami Lane",
@@ -10992,7 +11176,7 @@
   {
     "name": "Outward Definitive Edition",
     "game_id": "0100AFB01AAF0000",
-    "is_viet_hoa": false,
+    "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100AFB01AAF0000.jpg",
     "size": "10.1 GB",
     "genres": [
@@ -11007,9 +11191,14 @@
         "url": "https://drive.google.com/drive/folders/1B5ZwgbVKYHDVBj-d6sYDwdpdtCBfNfhK?usp=drive_link"
       },
       {
-        "label": "Update (1.0.2)",
+        "label": "Update (1.1)",
         "file_name": "cap nhat cung phieu luu.rar",
         "url": "https://drive.google.com/file/d/1DEREwsAXEl1Tsua_XRiRPcq2dkvkeV6I/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi Bánh Mì",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/11dKiY7v3_rpJqbPxYc9hOQG36bKnrFDH/view?usp=drive_link"
       }
     ],
     "required_firmware": "17.0.1"
@@ -11135,6 +11324,25 @@
       }
     ],
     "required_firmware": "18.1.0"
+  },
+  {
+    "name": "PPSSPP",
+    "game_id": "",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/ppsspp.jpg",
+    "size": "1 GB",
+    "genres": [],
+    "review_url": "",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "cam tay soni",
+        "url": "https://drive.google.com/drive/folders/1oAJ4Ci6TOgoYOD6CVcbvaVahdp6d1wZ2?usp=drive_link"
+      }
+    ],
+    "required_firmware": "",
+    "is_new": true,
+    "added_at": "2026-07-26T02:47:31Z"
   },
   {
     "name": "Pacify",
@@ -11439,6 +11647,32 @@
     "required_firmware": "11.0.1"
   },
   {
+    "name": "Pizza Possum",
+    "game_id": "01005B201AA4E000",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01005B201AA4E000.jpg",
+    "size": "1.23 GB",
+    "genres": [
+      "Hành động"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=xg_O7Fc57CY",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "pida pida.rar",
+        "url": "https://drive.google.com/file/d/1tjpPoF0uLFTnIlzO_wrbM4yiOVj8cTLd/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.1)",
+        "file_name": "cap nhat pida pida.rar",
+        "url": "https://drive.google.com/file/d/1Qxn0eduITeTdfb60PpwbN9uPQGgJXNgY/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "16.1.0",
+    "is_new": true,
+    "added_at": "2026-07-26T02:47:31Z"
+  },
+  {
     "name": "Planet of Lana",
     "game_id": "01003AD01D316000",
     "is_viet_hoa": false,
@@ -11470,14 +11704,19 @@
     "review_url": "https://www.youtube.com/watch?v=eRo-JSlYH7Y",
     "links": [
       {
-        "label": "Base + Update 1.1.0 + DLC",
-        "file_name": "vuon hoa khung dien",
-        "url": "https://drive.google.com/drive/folders/15kqAO8367TLeFqH2LOFi4m03Ds0aGHqj?usp=drive_link"
+        "label": "Base",
+        "file_name": "vuon hoa khung dien.zip",
+        "url": "https://drive.google.com/file/d/16DrI31TvJntNdMi6cTVeEfktiDk0DHWV/view?usp=drive_link"
       },
       {
-        "label": "link dự phòng",
-        "file_name": "vuon hoa khung dien",
-        "url": "https://drive.google.com/drive/folders/1sqb0MJ-cfEkqd2JuzFQgzzlfQbm9DZ5_?usp=drive_link"
+        "label": "Update (1.1.0)",
+        "file_name": "cap nhat vuon hoa khung dien.zip",
+        "url": "https://drive.google.com/file/d/1W14SQL9uVU0RTA10aBzXp40fUbCUL1dp/view?usp=drive_link"
+      },
+      {
+        "label": "DLC",
+        "file_name": "bo sung vuon hoa khung dien.zip",
+        "url": "https://drive.google.com/file/d/1tQ-Jyze5W8NOcn8_TyRXbBBr1FJd3FS5/view?usp=drive_link"
       }
     ],
     "required_firmware": "20.5.0"
@@ -12238,6 +12477,46 @@
       }
     ],
     "required_firmware": "18.1.0"
+  },
+  {
+    "name": "Retroarch",
+    "game_id": "",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/retroarch.jpg",
+    "size": "3 GB",
+    "genres": [],
+    "review_url": "",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "gem co hoai niem",
+        "url": "https://drive.google.com/drive/folders/1UFoYP09xGzjr9_wu-NrQ8Q6VYkDjbMo6?usp=drive_link"
+      }
+    ],
+    "required_firmware": "",
+    "is_new": true,
+    "added_at": "2026-07-26T02:47:31Z"
+  },
+  {
+    "name": "Rhythm Heaven Groove",
+    "game_id": "0100D9F01D474000",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100D9F01D474000.jpg",
+    "size": "3.2 GB",
+    "genres": [
+      "Âm nhạc"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=z0s0jbEn1fM",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "gem hai hai.rar",
+        "url": "https://drive.google.com/file/d/1q2SjNuX5KEzfZgbNBM0lH8hr4qxjg-0m/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "21.0.0",
+    "is_new": true,
+    "added_at": "2026-07-26T02:47:31Z"
   },
   {
     "name": "Ring Fit Adventure",
@@ -13651,6 +13930,42 @@
       }
     ],
     "required_firmware": "16.1.0"
+  },
+  {
+    "name": "Splatoon 3",
+    "game_id": "0100C2500FC20000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100C2500FC20000.jpg",
+    "size": "12.51 GB",
+    "genres": [
+      "Hành động"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=Z3qjATCE2dk",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "ban sung son.rar",
+        "url": "https://drive.google.com/file/d/1nGpjTaaeOEP9N4XwVDg0w27rqOzRYCE4/view?usp=drive_link"
+      },
+      {
+        "label": "Update (11.2.0)",
+        "file_name": "bai hoc them",
+        "url": "https://drive.google.com/drive/folders/1kVQbBi_XG36xUIQqyOidVu83V09txLTO?usp=drive_link"
+      },
+      {
+        "label": "DLC Pack (3 DLCs)",
+        "file_name": "bo sung ban sung son.rar",
+        "url": "https://drive.google.com/file/d/1__GmPxaGVJMVJjkNi_9-3WtBemAqclBB/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi HYB từ ViệtPatchSwitchTeam",
+        "file_name": "yeu tieng viet.zip",
+        "url": "https://drive.google.com/file/d/1eDQUfV_DdWJRhghiurt-_gnqB66VWqM7/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.1.0",
+    "is_new": true,
+    "added_at": "2026-07-26T02:47:31Z"
   },
   {
     "name": "Stardew Valley",
@@ -15928,14 +16243,14 @@
     "review_url": "https://www.youtube.com/watch?v=fBH0UCJ9e20",
     "links": [
       {
-        "label": "Base + Update (1.0.1)",
-        "file_name": "tro nay hot",
-        "url": "https://drive.google.com/drive/folders/1U4cGhlvQe-TDFbROd61n68qJrUvkj_Xt?usp=drive_link"
+        "label": "Base",
+        "file_name": "tro nay hot.rar",
+        "url": "https://drive.google.com/file/d/1noV-fkiadH253Bsh5BA8oWdqbd9wihPx/view?usp=drive_link"
       },
       {
-        "label": "Base + Update (1.0.1) (Link dự phòng)",
-        "file_name": "tro nay hot",
-        "url": "https://drive.google.com/drive/folders/12mX3HUBLcvR4zILfJXhgMKF7xyAa8Oex?usp=drive_link"
+        "label": "Update (1.0.1)",
+        "file_name": "cap nhat tro nay hot.rar",
+        "url": "https://drive.google.com/file/d/1epgsb8HgD21e6O9ki_8hETlH1h2lYnF8/view?usp=drive_link"
       },
       {
         "label": "Việt hóa được port bởi Hali12",
@@ -16139,6 +16454,37 @@
     "required_firmware": "16.0.2"
   },
   {
+    "name": "Tropico 6",
+    "game_id": "0100FBE0113CC000",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100FBE0113CC000.jpg",
+    "size": "7.9 GB",
+    "genres": [
+      "Mô phỏng"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=hnYRIHhQboE",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "khu vui choi.rar",
+        "url": "https://drive.google.com/file/d/1gX5b6afKpwntEY7mL-RUaeKlO3nnE6HH/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.6)",
+        "file_name": "cap nhat khu vui choi.rar",
+        "url": "https://drive.google.com/file/d/1lo6NwELKydErB24reZBgRhjjpRvnd8_U/view?usp=drive_link"
+      },
+      {
+        "label": "DLC Pack (3 DLCs)",
+        "file_name": "bo sung khu vui choi.rar",
+        "url": "https://drive.google.com/file/d/1AuRHYOQ5mz8JefJym1o6DC5fRZqiavO8/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "15.0.1",
+    "is_new": true,
+    "added_at": "2026-07-26T02:47:31Z"
+  },
+  {
     "name": "Twilight Monk",
     "game_id": "0100D7C021496000",
     "is_viet_hoa": false,
@@ -16272,6 +16618,32 @@
       }
     ],
     "required_firmware": "9.0.1"
+  },
+  {
+    "name": "Untitled Goose",
+    "game_id": "010082400BCC6000",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010082400BCC6000.jpg",
+    "size": "1.15 GB",
+    "genres": [
+      "Mô phỏng"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=2FXS4QzTGTQ",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "ngong dien.rar",
+        "url": "https://drive.google.com/file/d/1R_ngVcEr_qtFeAjikvV4sMyuXJGnNmNf/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.1.2)",
+        "file_name": "cap nhat ngong dien.rar",
+        "url": "https://drive.google.com/file/d/1s-UOgpJdH48Z8L_lgJlK5bj8CjK3e1nw/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "8.1.0",
+    "is_new": true,
+    "added_at": "2026-07-26T02:47:31Z"
   },
   {
     "name": "Valiant Hearts: Coming Home",
@@ -16853,7 +17225,7 @@
   {
     "name": "Yoshi’s Crafted World",
     "game_id": "01006000040C2000",
-    "is_viet_hoa": false,
+    "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01006000040C2000.jpg",
     "size": "5.86 GB",
     "genres": [
@@ -16871,6 +17243,11 @@
         "label": "Update (1.0.1)",
         "file_name": "cap nhat xay dung cute.rar",
         "url": "https://drive.google.com/file/d/1G1GlSjt5rN5kFIQ-luFcX32PMYLUWTaQ/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa ko rõ từ team nào (góp ý cho sốp nếu b biết nhé 😍)",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1JsARtzXIHbvfYCh8uw0RlPrZCJs9ZHPt/view?usp=drive_link"
       }
     ],
     "required_firmware": "8.1.0"
