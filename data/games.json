@@ -1607,7 +1607,7 @@
   {
     "name": "Blasphemous",
     "game_id": "0100698009C6E000",
-    "is_viet_hoa": false,
+    "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100698009C6E000.jpg",
     "size": "7.1 GB",
     "genres": [
@@ -1618,28 +1618,33 @@
     "links": [
       {
         "label": "Base",
-        "file_name": "2d khoai san.rar",
-        "url": "https://drive.google.com/file/d/1g7a3mmkQ2cZ5sV241H2MIFNuO70LAuyk/view?usp=drive_link"
+        "file_name": "siu pham pixel.rar",
+        "url": "https://drive.google.com/file/d/1BNvZi2u_oU5y5tG73-xqu8avz5iA0AbM/view?usp=drive_link"
       },
       {
         "label": "Update (1.0.8)",
-        "file_name": "cap nhat 2d khoai san.rar",
-        "url": "https://drive.google.com/file/d/1J3xVeONXCAPme8sxPrZtXZwwQPyO8Kub/view?usp=drive_link"
+        "file_name": "cap nhat siu pham pixel.rar",
+        "url": "https://drive.google.com/file/d/1iFjiFz6WK745448LdPnGi9K67UmhMT1f/view?usp=drive_link"
       },
       {
         "label": "The Golden Burden DLC",
-        "file_name": "bo sung 2d khoai san.rar",
-        "url": "https://drive.google.com/file/d/1tdB3eaG_nz9x9GrHObDNajyk_ltJJnpm/view?usp=drive_link"
+        "file_name": "bo sung siu pham pixel.rar",
+        "url": "https://drive.google.com/file/d/1JlBbIwQdk0gje3Beto7eDLQRNkTZz9m7/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa port by TheRedTeam",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1FLWR3YRSjP4pjgu9FTMd2jF50lWSJpd7/view?usp=drive_link"
       }
     ],
-    "required_firmware": "10.1.0"
+    "required_firmware": "13.1.0"
   },
   {
     "name": "Blasphemous 2",
     "game_id": "010040801A4C8000",
     "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010040801A4C8000.jpg",
-    "size": "2.2 GB",
+    "size": "2.56 GB",
     "genres": [
       "Phiêu lưu",
       "Hành động"
@@ -1652,12 +1657,12 @@
         "url": "https://drive.google.com/file/d/1z273ekldahaZB_K6bEjp18f_oAAfAnf6/view?usp=drive_link"
       },
       {
-        "label": "Update (1.0.7) + Mea Culpa DLC (cài update sẽ mất vh)",
+        "label": "Update (1.0.7) + Mea Culpa DLC",
         "file_name": "cap nhat ki thuat 2d.rar",
         "url": "https://drive.google.com/file/d/1b2mOT7IaxsBoN7GD_ZLLKyjRpJaMX0cD/view?usp=drive_link"
       },
       {
-        "label": "Việt hóa port by TheRedTeam (chỉ nhận ở Base game 1.0)",
+        "label": "Việt hóa port by TheRedTeam",
         "file_name": "yeu tieng viet.rar",
         "url": "https://drive.google.com/file/d/1RYGcczrxxLFxIl33Whf3oN5rbwabMU98/view?usp=drive_link"
       }
@@ -1933,6 +1938,37 @@
     "required_firmware": "18.0.1"
   },
   {
+    "name": "Bye Sweet Carole",
+    "game_id": "0100D66024594000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100D66024594000.jpg",
+    "size": "4.9 GB",
+    "genres": [
+      "Phiêu lưu"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=d1PgE_LX_QA",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "co tich 2d.rar",
+        "url": "https://drive.google.com/file/d/1LwBTtqcinDvqfis_xzUWS6ryYk8JL1Jq/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.2)",
+        "file_name": "cap nhat co tich 2d.rar",
+        "url": "https://drive.google.com/file/d/1zQ1JQkkj6s_IFy9x-eQLQJFtiK9-oZ8H/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi TheRedTeam",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1_kS4LEf1KAo6WnLYEjN-o7iGgImvdz6l/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "20.5.0",
+    "is_new": true,
+    "added_at": "2026-09-15T03:28:01Z"
+  },
+  {
     "name": "Bō: Path of the Teal Lotus",
     "game_id": "0100E0601DC2A000",
     "is_viet_hoa": false,
@@ -1951,30 +1987,6 @@
       }
     ],
     "required_firmware": "18.0.0"
-  },
-  {
-    "name": "CLANNAD",
-    "game_id": "0100A3A00CC7E000",
-    "is_viet_hoa": false,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100A3A00CC7E000.jpg",
-    "size": "5.41 GB",
-    "genres": [
-      "visual novel"
-    ],
-    "review_url": "https://www.youtube.com/watch?v=r45bRz8zeWU",
-    "links": [
-      {
-        "label": "Base",
-        "file_name": "toan thay gai.rar",
-        "url": "https://drive.google.com/file/d/1Iuuda_VGfYEZxF_jyVr-NBiebgJcGKiv/view?usp=drive_link"
-      },
-      {
-        "label": "Update (1.0.7)",
-        "file_name": "cap nhat toan thay gai.rar",
-        "url": "https://drive.google.com/file/d/1JAH434lcL00bfwC6KFYM_eLFX2EevnH-/view?usp=drive_link"
-      }
-    ],
-    "required_firmware": "8.1.0"
   },
   {
     "name": "COCOON",
@@ -2661,25 +2673,6 @@
       }
     ],
     "required_firmware": "8.0.1"
-  },
-  {
-    "name": "Clannad Side Stories",
-    "game_id": "01007B501372C000",
-    "is_viet_hoa": false,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01007B501372C000.jpg",
-    "size": "1.4 GB",
-    "genres": [
-      "visual novel"
-    ],
-    "review_url": "https://www.youtube.com/watch?v=PC68ILrSRhQ",
-    "links": [
-      {
-        "label": "Base",
-        "file_name": "nhu xem fim.rar",
-        "url": "https://drive.google.com/file/d/1oLiCGa9TV3qSAnEhCTxprGED3KgoA3LH/view?usp=drive_link"
-      }
-    ],
-    "required_firmware": "10.2.0"
   },
   {
     "name": "Clock Tower: Rewind",
@@ -4671,6 +4664,37 @@
     "required_firmware": "18.1.0"
   },
   {
+    "name": "Dordogne",
+    "game_id": "01009D001688C000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01009D001688C000.jpg",
+    "size": "3.28 GB",
+    "genres": [
+      "Phiêu lưu"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=LPsvhOrN0zg",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "gem nghe thuat.rar",
+        "url": "https://drive.google.com/file/d/1uBWjj7aePtg-rjofMv0bI3DBGDS9rQBZ/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.0.3)",
+        "file_name": "cap nhat gem nghe thuat.rar",
+        "url": "https://drive.google.com/file/d/1oypcAxg5Jo3RvK1Gcjp67sQvcBlDKy2A/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi TheRedTeam",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/18vV_nmsJ9mTolhpX-Rw_rqKXJ1bvdnYz/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "16.0.3",
+    "is_new": true,
+    "added_at": "2026-09-15T03:28:01Z"
+  },
+  {
     "name": "Double Dragon Revive",
     "game_id": "01006AE02236C000",
     "is_viet_hoa": false,
@@ -5255,6 +5279,42 @@
       }
     ],
     "required_firmware": "13.1.0"
+  },
+  {
+    "name": "FATAL FRAME: Mask of the Lunar Eclipse",
+    "game_id": "0100DAE019110000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100DAE019110000.jpg",
+    "size": "8.07 GB",
+    "genres": [
+      "Phiêu lưu"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=_PeflURGSUc",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "bai hoc chinh",
+        "url": "https://drive.google.com/drive/folders/15uL3uYnRx5Sx9KzT_Kx7hZYOe2SzrCtI?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.3)",
+        "file_name": "cap nhat lai kinh di r.rar",
+        "url": "https://drive.google.com/file/d/1LWIycQIFo9sNCseDPmIFZJR44SEvsz6K/view?usp=drive_link"
+      },
+      {
+        "label": "DLC Pack (4 DLCs)",
+        "file_name": "bo sung lai kinh di r.rar",
+        "url": "https://drive.google.com/file/d/1iOjBt4ODoyRGjKsMrmfKTrFTLsp3cwri/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi TheRedTeam",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1YOpBIjcmdWkwZrU-0B27GMThbJPH-R5N/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "16.0.1",
+    "is_new": true,
+    "added_at": "2026-09-15T03:28:01Z"
   },
   {
     "name": "FIFA 23 Legacy Edition",
@@ -7693,6 +7753,32 @@
     "required_firmware": "8.1.0"
   },
   {
+    "name": "Karate Survivor",
+    "game_id": "010063D02273E000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010063D02273E000.jpg",
+    "size": "341 MB",
+    "genres": [
+      "Hành động"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=KLdqFn4Gr-4",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "tap vo nao.rar",
+        "url": "https://drive.google.com/file/d/1ZzNotfbeUoEMUwQOOcoXYJTy34xbyvEo/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi Bánh Team",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1KMISHczktfWwoMG7vBzVRb3mRd9CZ735/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "20.1.0",
+    "is_new": true,
+    "added_at": "2026-09-15T03:28:01Z"
+  },
+  {
     "name": "Katana ZERO",
     "game_id": "010029600D56A000",
     "is_viet_hoa": false,
@@ -7974,6 +8060,43 @@
       }
     ],
     "required_firmware": "15.0.1"
+  },
+  {
+    "name": "Knights of Braveland",
+    "game_id": "010064001A6EE000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010064001A6EE000.jpg",
+    "size": "2.65 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Hành động"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=r2X6Bufhxx8",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "hiep si xu la.rar",
+        "url": "https://drive.google.com/file/d/1350SdUHhuryvcfzrvsYiRjryukQN9occ/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.1.7)",
+        "file_name": "cap nhat hiep si xu la.rar",
+        "url": "https://drive.google.com/file/d/17aVGPu5aIIMdQjx0Okm_Hjw6HXpUCz4U/view?usp=drive_link"
+      },
+      {
+        "label": "DLC Pack (4 DLCs)",
+        "file_name": "bo sung hiep si xu la.rar",
+        "url": "https://drive.google.com/file/d/1tQ2MfREVIvEOMJLkFu5R_W-XVMALu0pY/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi Bánh Team",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1yVRUYqgxYuJ8lfP3LNvwQwTxc6N3HXMD/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "17.0.0",
+    "is_new": true,
+    "added_at": "2026-09-15T03:28:01Z"
   },
   {
     "name": "L.A. Noire",
@@ -9008,6 +9131,37 @@
       }
     ],
     "required_firmware": "9.0.1"
+  },
+  {
+    "name": "Maid Cafe on Electric Street",
+    "game_id": "010058A02438E000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010058A02438E000.jpg",
+    "size": "1.19 GB",
+    "genres": [
+      "Phiêu lưu"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=etc6S3m3ybE",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "caphe hau gai.rar",
+        "url": "https://drive.google.com/file/d/1KYQdbPmBoibq3DF0nd-xMJWaSusTJvI9/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.11)",
+        "file_name": "cap nhat caphe hau gai.rar",
+        "url": "https://drive.google.com/file/d/1TU-MTXoafQgfofruQxWvvaF3T7PqofGR/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi Nguyễn Minh Vương",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/16xzujjKMCyjzkq8RL20b4sVqRauowDTL/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "20.5.0",
+    "is_new": true,
+    "added_at": "2026-09-15T03:28:01Z"
   },
   {
     "name": "Mandragora: Whispers of the Witch Tree",
@@ -10135,6 +10289,38 @@
     "required_firmware": "11.0.1"
   },
   {
+    "name": "Moss: The Forgotten Relic",
+    "game_id": "01003E201E810000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01003E201E810000.jpg",
+    "size": "9.13 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Giải đố"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=6H5E1e4PZzQ",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "di vat lang quen.rar",
+        "url": "https://drive.google.com/file/d/1o1x4z2mE8ALx8hGBI0WejLJKBih1L1Op/view?usp=drive_link"
+      },
+      {
+        "label": "Update (2026.06.162954)",
+        "file_name": "cap nhat di vat lang quen.rar",
+        "url": "https://drive.google.com/file/d/1JVcLDKU2--cymeJR3rlPX6N0U7EIVwUj/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi Bánh Team",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1ydDkpdpXCQxj01AUxOA2nVEZUUnoSp3G/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.5.0",
+    "is_new": true,
+    "added_at": "2026-09-15T03:28:01Z"
+  },
+  {
     "name": "MotoGP 25",
     "game_id": "01006C7021024000",
     "is_viet_hoa": false,
@@ -10378,10 +10564,10 @@
   },
   {
     "name": "Neighbours back From Hell",
-    "game_id": "010065F00F55A000",
+    "game_id": "01008C20131E2000",
     "is_viet_hoa": true,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010065F00F55A000.jpg",
-    "size": "3.03 GB",
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01008C20131E2000.jpg",
+    "size": "2.47 GB",
     "genres": [
       "Hành động",
       "Giải đố"
@@ -10389,17 +10575,19 @@
     "review_url": "https://www.youtube.com/watch?v=4CzrP9h88QM",
     "links": [
       {
-        "label": "Base + Update 1.0.5",
-        "file_name": "pha dam hang xom",
-        "url": "https://drive.google.com/drive/folders/1PbvvXsQbE8LnfWVUsGhyVREFyBMVAs2b?usp=drive_link"
+        "label": "Base",
+        "file_name": "pha dam hang xom.rar",
+        "url": "https://drive.google.com/file/d/1S-8KnH0fHGeBg6YH7gzs3Dtqr-1-pRnX/view?usp=drive_link"
       },
       {
-        "label": "Việt hóa được port bởi LPhamDev97",
+        "label": "Việt hóa port by TheRedTeam",
         "file_name": "yeu tieng viet.rar",
         "url": "https://drive.google.com/file/d/1-1UlvIDo16SXymmLxNXHDODra_w09xuU/view?usp=drive_link"
       }
     ],
-    "required_firmware": "10.1.0"
+    "required_firmware": "10.1.0",
+    "is_new": true,
+    "added_at": "2026-09-15T03:28:01Z"
   },
   {
     "name": "Neon Abyss",
@@ -11675,6 +11863,38 @@
     "required_firmware": "17.0.0"
   },
   {
+    "name": "Planet of Lana 2",
+    "game_id": "010015401F89E000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010015401F89E000.jpg",
+    "size": "11.3 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Giải đố"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=1h_9IjQbSsc",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "bai hoc chinh",
+        "url": "https://drive.google.com/drive/folders/1MPwcbPE2Ldy7hDkX_2B6rkieIem6hKud?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.2)",
+        "file_name": "cap nhat hanh tinh la.rar",
+        "url": "https://drive.google.com/file/d/1BE0nGDlDlQZPiYL95hegcmsTBBN_LWiQ/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi Bánh Team",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1GSIf27WmzME5wfs1HLQl9LYNiuSAoiFJ/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.1.0",
+    "is_new": true,
+    "added_at": "2026-09-15T03:28:01Z"
+  },
+  {
     "name": "Plants vs. Zombies Replanted",
     "game_id": "01008C50239BE000",
     "is_viet_hoa": false,
@@ -12243,6 +12463,37 @@
     "required_firmware": "14.1.0"
   },
   {
+    "name": "Raji An Ancient Epic",
+    "game_id": "010010B00DDA2000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010010B00DDA2000.jpg",
+    "size": "6.27 GB",
+    "genres": [
+      "Phiêu lưu"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=E4P_FFI9yRs",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "su thi an do.rar",
+        "url": "https://drive.google.com/file/d/1-dLHFAZFqmk1wJium-SMBr1mqOVHU7pM/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.4)",
+        "file_name": "cap nhat su thi an do.rar",
+        "url": "https://drive.google.com/file/d/1Jk-jF6h4HvrLABQIuZ_KoaTrCd-opw4H/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi TheRedTeam",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1jdfsCF1wtNu6DeKV4qDJRg4SBqSKQFft/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "14.1.2",
+    "is_new": true,
+    "added_at": "2026-09-15T03:28:01Z"
+  },
+  {
     "name": "Ravenous Devils",
     "game_id": "010013F017A3E000",
     "is_viet_hoa": true,
@@ -12320,6 +12571,38 @@
       }
     ],
     "required_firmware": "6.2.0"
+  },
+  {
+    "name": "Realm of Ink",
+    "game_id": "0100DE3026A5400",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100DE3026A5400.jpg",
+    "size": "3.54 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Hành động"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=FhKV3nFfgrc",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "vuong quoc muc.rar",
+        "url": "https://drive.google.com/file/d/1S04xVAed941xBleOLtJGLnYdxzJ93vaB/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.4)",
+        "file_name": "cap nhat vuong quoc muc.rar",
+        "url": "https://drive.google.com/file/d/1nspkXnAmSU_ES_MNucnYCgbSUBM-xlbc/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi Nguyễn Minh Vương",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1HDEOwoCAN8JALE4xLCnPiPRNzHAWBsTM/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.5.0",
+    "is_new": true,
+    "added_at": "2026-09-15T03:28:01Z"
   },
   {
     "name": "Red Dead Redemption",
@@ -12549,6 +12832,32 @@
       }
     ],
     "required_firmware": "16.1.0"
+  },
+  {
+    "name": "River City Saga: Journey to the West",
+    "game_id": "0100F850264EA000",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100F850264EA000.jpg",
+    "size": "779 MB",
+    "genres": [
+      "Hành động"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=sXIbMgJqEBM",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "thinh kinh pixel.rar",
+        "url": "https://drive.google.com/file/d/1fJxdBt0E3QPEo6aFOg45nSCOJbpKNkCO/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.3)",
+        "file_name": "cap nhat thinh kinh pixel.rar",
+        "url": "https://drive.google.com/file/d/1OjOw1vJbmxgIpVUkUHI9_ILtAZGEUGi7/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.5.0",
+    "is_new": true,
+    "added_at": "2026-09-15T03:28:01Z"
   },
   {
     "name": "Rogue Flight",
@@ -12915,68 +13224,6 @@
       }
     ],
     "required_firmware": "16.1.0"
-  },
-  {
-    "name": "STEINS GATE 0",
-    "game_id": "010037700E9B8000",
-    "is_viet_hoa": false,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010037700E9B8000.jpg",
-    "size": "3.84 GB",
-    "genres": [
-      "Phiêu lưu"
-    ],
-    "review_url": "https://www.youtube.com/watch?v=dgjf-35BDYI",
-    "links": [
-      {
-        "label": "Base",
-        "file_name": "du hanh thoi gian.rar",
-        "url": "https://drive.google.com/file/d/1F3MF195BaWh4q5w4upXf-HyWz5vOB-MC/view?usp=drive_link"
-      }
-    ],
-    "required_firmware": "9.0.1"
-  },
-  {
-    "name": "STEINS GATE ELITE",
-    "game_id": "010040000C596000",
-    "is_viet_hoa": false,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010040000C596000.jpg",
-    "size": "7.42 GB",
-    "genres": [
-      "Phiêu lưu"
-    ],
-    "review_url": "https://www.youtube.com/watch?v=NQu42YxI4vY",
-    "links": [
-      {
-        "label": "Base",
-        "file_name": "bai hoc chinh",
-        "url": "https://drive.google.com/drive/folders/1WjcekBdAqmPe7-HMuwCl5ntosUhGx2TQ?usp=drive_link"
-      },
-      {
-        "label": "Update (1.0.2E)",
-        "file_name": "cap nhat qua khu hien tai.rar",
-        "url": "https://drive.google.com/file/d/1CNYWEYoiGTTDxXvJ1UYvhBHaaTvDGQlH/view?usp=drive_link"
-      }
-    ],
-    "required_firmware": "7.0.0"
-  },
-  {
-    "name": "STEINS GATE: My Darling’s Embrace",
-    "game_id": "0100CB400E9BC000",
-    "is_viet_hoa": false,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100CB400E9BC000.jpg",
-    "size": "2.8 GB",
-    "genres": [
-      "Phiêu lưu"
-    ],
-    "review_url": "https://www.youtube.com/watch?v=fArXlOYYsuo",
-    "links": [
-      {
-        "label": "Base",
-        "file_name": "tinh yeu khoa hoc.rar",
-        "url": "https://drive.google.com/file/d/1QPr6MpoTq_8dCeNYAkDRTi-pKAsC6T8N/view?usp=drive_link"
-      }
-    ],
-    "required_firmware": "9.0.1"
   },
   {
     "name": "SUPER BOMBERMAN R 2",
@@ -13663,33 +13910,36 @@
     "required_firmware": "6.2.0"
   },
   {
-    "name": "SnowRunner",
-    "game_id": "0100FBD013AB6000",
-    "is_viet_hoa": false,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100FBD013AB6000.jpg",
-    "size": "13.6 GB",
+    "name": "Solateria",
+    "game_id": "01000D7024C08000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01000D7024C08000.jpg",
+    "size": "2.11 GB",
     "genres": [
-      "Mô phỏng"
+      "Phiêu lưu",
+      "Hành động"
     ],
-    "review_url": "https://www.youtube.com/watch?v=zjAxxAeXt7c",
+    "review_url": "https://www.youtube.com/watch?v=B3csuqRsdg4",
     "links": [
       {
         "label": "Base",
-        "file_name": "gia lap lai xe.rar",
-        "url": "https://drive.google.com/file/d/1kIT-D_w8C_Qqn-SZtetIe0UBGqGDXhEM/view?usp=drive_link"
+        "file_name": "lai gem di ngang.rar",
+        "url": "https://drive.google.com/file/d/1TyncrXmngjFhKewd7d7TEPe_d4JzfyfY/view?usp=drive_link"
       },
       {
-        "label": "Update (1.0.39)",
-        "file_name": "cap nhat gia lap lai xe.rar",
-        "url": "https://drive.google.com/file/d/1pAMF6EfnzfDMQ-JLVA9SkPNOuI34uUD5/view?usp=drive_link"
+        "label": "Update (1.0.3)",
+        "file_name": "cap nhat lai gem di ngang.rar",
+        "url": "https://drive.google.com/file/d/1sMJ0B_FD4fHmL-5Gg7VrhyCgcffJXkA0/view?usp=drive_link"
       },
       {
-        "label": "DLC Pack (42 DLCs)",
-        "file_name": "bo sung gia lap lai xe.rar",
-        "url": "https://drive.google.com/file/d/1UWCAdMjIaQUUHj-9ffJvga4Qp8YtINQH/view?usp=drive_link"
+        "label": "Việt hóa được port bởi Nguyễn Minh Vương",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1URtUvP8iYJ7ywy8xFPdEOQ_MA_U6BKzP/view?usp=drive_link"
       }
     ],
-    "required_firmware": "11.0.1"
+    "required_firmware": "22.5.0",
+    "is_new": true,
+    "added_at": "2026-09-15T03:28:01Z"
   },
   {
     "name": "Song of Nunu: A League of Legends Story",
@@ -13824,36 +14074,6 @@
       }
     ],
     "required_firmware": "7.0.0"
-  },
-  {
-    "name": "South Park: The Fractured But Whole",
-    "game_id": "01008F2005154000",
-    "is_viet_hoa": false,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01008F2005154000.jpg",
-    "size": "22.19 GB",
-    "genres": [
-      "Phiêu lưu",
-      "Nhập vai"
-    ],
-    "review_url": "https://www.youtube.com/watch?v=7Y8jtWYdNsg",
-    "links": [
-      {
-        "label": "Base",
-        "file_name": "bai hoc chinh",
-        "url": "https://drive.google.com/drive/folders/1XIbrPaBbB0o3Rexp6Vy0KaOvVzPLRAne?usp=drive_link"
-      },
-      {
-        "label": "Update (1.0.5)",
-        "file_name": "bai hoc them",
-        "url": "https://drive.google.com/drive/folders/1R52R_ANWbsg9KQrS8RYoo5oz9XyPkiGR?usp=drive_link"
-      },
-      {
-        "label": "DLC Pack (6 DLCs)",
-        "file_name": "bo sung tre con tinh nghich.rar",
-        "url": "https://drive.google.com/file/d/12rVfnIvNAwvgt6K0HQo0uxeyyrzGDxjj/view?usp=drive_link"
-      }
-    ],
-    "required_firmware": "5.1.0"
   },
   {
     "name": "Spiritfarer",
@@ -15693,6 +15913,33 @@
     "required_firmware": ""
   },
   {
+    "name": "The Lord of the Rings: War in the North –",
+    "game_id": "01004D501F078000",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01004D501F078000.jpg",
+    "size": "17.44 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Hành động"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=-XXl9NVpOuo",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "bai hoc chinh",
+        "url": "https://drive.google.com/drive/folders/1uayxOzVAKocGxqOVkQoD3n6MnL3KVhnE?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.1)",
+        "file_name": "cap nhat chua nhan.rar",
+        "url": "https://drive.google.com/file/d/10TP_CpMMQoq2qdX1BPLAqpT8VZ00vPsQ/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.5.0",
+    "is_new": true,
+    "added_at": "2026-09-15T03:28:01Z"
+  },
+  {
     "name": "The MISSING:",
     "game_id": "0100F1B00B456000",
     "is_viet_hoa": false,
@@ -16237,30 +16484,6 @@
     "required_firmware": "22.1.0"
   },
   {
-    "name": "Tomoyo After -It’s a Wonderful Life- CS Edition",
-    "game_id": "0100398010314000",
-    "is_viet_hoa": false,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100398010314000.jpg",
-    "size": "1.46 GB",
-    "genres": [
-      "visual novel"
-    ],
-    "review_url": "https://www.youtube.com/watch?v=UJ_QUoVaLuc",
-    "links": [
-      {
-        "label": "Base",
-        "file_name": "gai xinh.rar",
-        "url": "https://drive.google.com/file/d/1-9WRzKmElhDWdgUdbxEEeYZYZWLJr_tZ/view?usp=drive_link"
-      },
-      {
-        "label": "Update (1.0.1)",
-        "file_name": "cap nhat gai xinh.rar",
-        "url": "https://drive.google.com/file/d/1Yl_tBqfq5VKHLTr03YT-cPAeG3RjfgxY/view?usp=drive_link"
-      }
-    ],
-    "required_firmware": "10.0.4"
-  },
-  {
     "name": "Tony Hawk’s Pro Skater 3 + 4",
     "game_id": "01000AD01F94A000",
     "is_viet_hoa": false,
@@ -16648,6 +16871,33 @@
     "required_firmware": "17.0.1"
   },
   {
+    "name": "Valiant Hearts: The Great War",
+    "game_id": "010099700B01A000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010099700B01A000.jpg",
+    "size": "1.35 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Hành động"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=XTKh7EOT7bA",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "vong xoay chien tranh.rar",
+        "url": "https://drive.google.com/file/d/18QK6ZJrZl1Rr5q-thVVtpJkYaMhC69_t/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi TheRedTeam",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1N5alR9G1ukImMIWU5gAl91FEtrftOUsF/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "19.0.0",
+    "is_new": true,
+    "added_at": "2026-09-15T03:28:01Z"
+  },
+  {
     "name": "Vanity Fair: The Pursuit",
     "game_id": "0100F18020F6C000",
     "is_viet_hoa": true,
@@ -16675,6 +16925,38 @@
       }
     ],
     "required_firmware": "19.0.1"
+  },
+  {
+    "name": "WARRIORS: Abyss",
+    "game_id": "01005AE0209A8000",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01005AE0209A8000.jpg",
+    "size": "4.18 GB",
+    "genres": [
+      "Hành động",
+      "Nhập vai"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=TNCVLe9Eu9c",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "fong cach 3 quoc.rar",
+        "url": "https://drive.google.com/file/d/19lbQH38Bmyxl6385-Mybyu85a9Z9NX2z/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.8.0)",
+        "file_name": "cap nhat fong cach 3 quoc.rar",
+        "url": "https://drive.google.com/file/d/1k3tDT32r0Zlhi4WWpAy3l79QohdtIvs5/view?usp=drive_link"
+      },
+      {
+        "label": "DLC Pack (19 DLCs)",
+        "file_name": "bo sung fong cach 3 quoc.rar",
+        "url": "https://drive.google.com/file/d/1QB5hWBwjL6HPwb36UDhOIlBCTdEst4E-/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "21.2.0",
+    "is_new": true,
+    "added_at": "2026-09-15T03:28:01Z"
   },
   {
     "name": "WORLD OF HORROR",
@@ -16729,6 +17011,43 @@
       }
     ],
     "required_firmware": "16.0.1"
+  },
+  {
+    "name": "Wall World",
+    "game_id": "0100E4C01CE9E000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100E4C01CE9E000.jpg",
+    "size": "533 MB",
+    "genres": [
+      "Phiêu lưu",
+      "Hành động"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=lMCa1QgZGmA",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "de doa tiem tang.rar",
+        "url": "https://drive.google.com/file/d/1Wr-_uyXKdIySD3CL7a163YYQLFBJ1Qt8/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.2.5.1)",
+        "file_name": "cap nhat de doa tiem tang.rar",
+        "url": "https://drive.google.com/file/d/1_z46VNCyNv6sHp1m79iLX_dOgmQOmJRm/view?usp=drive_link"
+      },
+      {
+        "label": "Deep Threat DLC",
+        "file_name": "bo sung de doa tiem tang.rar",
+        "url": "https://drive.google.com/file/d/1lb-xb-dt9Oe1HxxseEi4iRpKONxZdq1h/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi Bánh Team",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1xOuu69ccFnIpXK-4ZnbNAK6p88oeEnFo/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "20.3.0",
+    "is_new": true,
+    "added_at": "2026-09-15T03:28:01Z"
   },
   {
     "name": "Warhammer 40,000: Boltgun",
@@ -16924,6 +17243,38 @@
       }
     ],
     "required_firmware": "4.1.0"
+  },
+  {
+    "name": "Winter Burrow",
+    "game_id": "",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/winter_burrow.jpg",
+    "size": "1.94 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Hành động"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=hBHBi_2ZnBw",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "chuot sinh ton.rar",
+        "url": "https://drive.google.com/file/d/1-8F7fibsCUSUx1TpAdbf437G6P3mr3Hy/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.2)",
+        "file_name": "cap nhat chuot sinh ton.rar",
+        "url": "https://drive.google.com/file/d/16McuaFBm3oF0hWbez4mximeQIpfR_E-R/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi TheRedTeam",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1REjwMqYant1iAMn29w0qqN_Ahmrf5yq3/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "20.5.0",
+    "is_new": true,
+    "added_at": "2026-09-15T03:28:01Z"
   },
   {
     "name": "Wizard of Legend",
