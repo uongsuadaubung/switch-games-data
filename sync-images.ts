@@ -25,6 +25,8 @@ async function main() {
   console.log("📊 KẾT QUẢ ĐỒNG BỘ ẢNH:");
   console.log(`   ✅ Ảnh đã có sẵn từ trước : ${stats.alreadyExisted}`);
   console.log(`   ⬇️  Ảnh mới vừa tải về    : ${stats.downloaded}`);
+  console.log(`   🔄 Ảnh được đổi tên       : ${stats.renamed}`);
+  console.log(`   🗑️  Ảnh rác/mồ côi đã dọn : ${stats.cleanedOrphans}`);
   console.log(`   ⚠️  Ảnh tải thất bại       : ${stats.failed}`);
   console.log("=========================================");
 }

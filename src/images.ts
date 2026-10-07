@@ -1,3 +1,5 @@
+import * as fs from "node:fs/promises";
+import * as path from "node:path";
 import * as v from "valibot";
 import { SheetCellSchema, type ParsedGame } from "./types";
 
@@ -5,6 +7,8 @@ export interface ImageSyncStats {
   alreadyExisted: number;
   downloaded: number;
   failed: number;
+  cleanedOrphans: number;
+  renamed: number;
 }
 
 /**
@@ -35,8 +39,10 @@ export function getImageFileName(game: { game_id?: string; name: string }): stri
 
 /**
  * Tự động tải và đồng bộ ảnh vào thư mục images/
- * - Nếu file ảnh đã có sẵn trong images/ -> Bỏ qua không tải lại (tiết kiệm bandwidth)
- * - Nếu game mới chưa có file ảnh và có link từ formula -> Tải về và lưu thành .jpg
+ * - Đổi tên ảnh nếu game trước đó chưa có ID, nay đã có ID
+ * - Bỏ qua ảnh đã tồn tại
+ * - Tải ảnh mới từ Google Sheet formula
+ * - Dọn dẹp ảnh mồ côi (file ảnh thừa trong images/ không còn trong games.json)
  */
 export async function syncGameImages(
   games: ParsedGame[],
@@ -45,10 +51,35 @@ export async function syncGameImages(
   let alreadyExisted = 0;
   let downloaded = 0;
   let failed = 0;
+  let renamed = 0;
+  let cleanedOrphans = 0;
+
+  // Tập hợp các tên file hợp lệ đang có trong games.json
+  const validFilenames = new Set<string>();
 
   for (const game of games) {
     const filename = getImageFileName(game);
+    validFilenames.add(filename);
     const localFilePath = `${imagesDir}/${filename}`;
+
+    // Kiểm tra đổi tên nếu trước đó dùng slug, giờ đã có game_id
+    if (game.game_id && game.game_id.trim()) {
+      const oldSlugFilename = `${getImageFileName({ name: game.name })}.jpg`;
+      const oldFilePath = `${imagesDir}/${oldSlugFilename}`;
+      if (oldSlugFilename !== filename) {
+        try {
+          const oldFile = Bun.file(oldFilePath);
+          if (await oldFile.exists()) {
+            await fs.rename(oldFilePath, localFilePath);
+            console.log(`  🔄 Đổi tên ảnh: ${oldSlugFilename} -> ${filename}`);
+            renamed++;
+          }
+        } catch {
+          // Bỏ qua lỗi đổi tên
+        }
+      }
+    }
+
     const file = Bun.file(localFilePath);
 
     // 1. Nếu file ảnh đã tồn tại trên disk local -> bỏ qua
@@ -66,7 +97,6 @@ export async function syncGameImages(
             "User-Agent":
               "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
           },
-          // Nintendo CDN thường bị lỗi leaf signature trên một số môi trường Windows Node/Bun
           tls: {
             rejectUnauthorized: false,
           },
@@ -88,5 +118,26 @@ export async function syncGameImages(
     }
   }
 
-  return { alreadyExisted, downloaded, failed };
+  // 3. Dọn dẹp ảnh mồ côi (file không còn tồn tại trong games.json)
+  try {
+    const entries = await fs.readdir(imagesDir, { withFileTypes: true });
+    for (const entry of entries) {
+      if (entry.isFile() && entry.name.endsWith(".jpg")) {
+        if (!validFilenames.has(entry.name)) {
+          const orphanPath = path.join(imagesDir, entry.name);
+          try {
+            await fs.unlink(orphanPath);
+            console.log(`  🗑️ Đã xóa ảnh rác/mồ côi: ${entry.name}`);
+            cleanedOrphans++;
+          } catch {
+            // Âm thầm bỏ qua lỗi xóa
+          }
+        }
+      }
+    }
+  } catch {
+    // Thư mục images có thể chưa tồn tại hoặc lỗi đọc, bỏ qua an toàn
+  }
+
+  return { alreadyExisted, downloaded, failed, renamed, cleanedOrphans };
 }
