@@ -4,11 +4,9 @@
 client_secret*.json
 credentials*.json
 token.json
-auth.ts
 
 # Dependencies
 node_modules/
-bun.lock
 
 # Staging & Test files
 data.json
