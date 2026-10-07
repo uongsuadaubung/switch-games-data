@@ -2,71 +2,60 @@
 
 Repo dữ liệu tập trung cho [Switch Games Manager](https://github.com/uongsuadaubung/switch-games).
 
-> **Chỉ admin mới push dữ liệu. Người dùng không cần làm gì — app tự fetch.**
+> **Dữ liệu được tự động đồng bộ hàng ngày từ Google Sheets qua GitHub Actions.**
 
-## Cấu trúc
+---
 
-```
+## 📁 Cấu trúc Thư mục
+
+```text
 switch-games-data/
-├── source/
-│   └── *.zip               ← Admin push file ZIP HTML bất kỳ vào đây
+├── src/                    ← Các modules nghiệp vụ (Bun + TypeScript)
+│   ├── config.ts           ← Hằng số cấu hình (Spreadsheet ID, GID, paths)
+│   ├── types.ts            ← Schemas (Valibot) & Types
+│   ├── google.ts           ← Google Sheets API OAuth2 Client
+│   ├── parser.ts           ← Trích xuất link ẩn, Smart Chips & Firmware
+│   ├── validator.ts        ← Hàng rào bảo vệ Circuit Breaker (Valibot safeParse)
+│   ├── notifier.ts         ← Module gửi cảnh báo khẩn cấp qua Telegram Bot
+│   ├── lifecycle.ts        ← Quản lý vòng đời (game mới, hết hạn 14 ngày, xóa/sửa)
+│   └── images.ts           ← Module đồng bộ hình ảnh
 ├── data/
-│   └── games.json          ← Tự động tạo bởi GitHub Actions
+│   ├── games.json          ← Dữ liệu chính thức phục vụ app
+│   └── games.backup.json   ← Bản sao lưu tự động trước mỗi lần ghi
 ├── images/
-│   └── *.jpg               ← Ảnh game, tự động tải bởi GitHub Actions
-├── scripts/
-│   ├── parse_zip.py        ← Parser trích xuất dữ liệu từ ZIP
-│   └── download_images.py  ← Tải ảnh game và cập nhật image_url trong games.json
+│   └── *.jpg               ← Ảnh cover game (định danh theo game_id.jpg)
+├── fetch-data.ts           ← Script chính kéo dữ liệu từ Google Sheets
+├── compare.ts              ← Script so sánh dữ liệu mới vs hiện tại
+├── sync-images.ts          ← Script riêng đồng bộ tải ảnh game
 └── .github/workflows/
-    └── parse.yml           ← Trigger khi push latest.zip
+    └── sync.yml            ← Tự động chạy cron job hàng ngày lúc 00:00 UTC
 ```
 
-## Luồng hoạt động (GitHub Actions)
+---
 
-Khi admin push file ZIP bất kỳ vào thư mục `source/` (ví dụ `source/latest.zip` hoặc `source/data.zip`):
-
-1. **Parse ZIP** → trích xuất toàn bộ game → ghi `data/games.json`
-2. **Xoá ZIP** → file ZIP bị xoá sau khi parse xong để giữ repo gọn nhẹ
-3. **Download ảnh** → tải ảnh từ URL gốc, convert sang JPG → lưu vào `images/`
-4. **Commit & push** → bot commit `games.json`, ảnh mới về repo
-
-> Toàn bộ quá trình mất khoảng 1–2 phút tuỳ số lượng ảnh mới.
-
-## Cập nhật dữ liệu (Admin)
+## ⚡ Các lệnh vận hành (Bun)
 
 ```bash
-# Chỉ cần copy file ZIP bất kỳ vào thư mục source/ và push
-cp /path/to/new_data.zip source/my_data.zip
-git add source/my_data.zip
-git commit -m "Update data"
-git push
-# → GitHub Action tự chạy, parse, tải ảnh, commit lại trong ~1-2 phút
+# 1. Kéo và cập nhật dữ liệu tự động từ Google Sheets
+bun run fetch
+
+# 2. So sánh dữ liệu mới cào với dữ liệu hiện tại
+bun run compare
+
+# 3. Đồng bộ tải ảnh mới về thư mục images/ (quy trình riêng)
+bun run sync-images
 ```
 
-## API endpoints (public)
+---
 
-```
-# Danh sách game đầy đủ (kèm image_url, links tải, ...)
+## 🌐 Public Endpoints
+
+```text
+# Dữ liệu game đầy đủ
 https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/data/games.json
 
 # Ảnh game
 https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/{game_id}.jpg
 ```
 
-## Chạy parser thủ công (local)
-
-```bash
-pip install Pillow
-
-# Parse ZIP → games.json (ZIP sẽ bị xoá sau khi xong)
-python scripts/parse_zip.py source/my_data.zip
-
-# Giữ lại ZIP sau khi parse
-python scripts/parse_zip.py source/my_data.zip --keep-zip
-
-# Tải ảnh → images/
-python scripts/download_images.py
-
-# Tải ảnh nhưng không ghi file (dry run)
-python scripts/download_images.py --dry-run
-```
+Chi tiết tài liệu kiến trúc và hướng dẫn cài đặt xem tại [`WORKFLOW.md`](./WORKFLOW.md).

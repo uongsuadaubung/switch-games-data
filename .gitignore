@@ -1,18 +1,23 @@
-# Python cache
-__pycache__/
-*.pyc
-*.pyo
+# Sensitive credentials
+.env
+.env.*
+client_secret*.json
+credentials*.json
+token.json
+auth.ts
 
-# Editor
+# Dependencies
+node_modules/
+bun.lock
+
+# Staging & Test files
+data.json
+diff_report.json
+data/*.backup.json
+
+# Editor & OS
 .vscode/
 .idea/
-
-# OS
 .DS_Store
 Thumbs.db
-
-# Test scripts & output
-test/
-/source/all.html
 .agents/
-compare_links_output.txt

@@ -1,0 +1,21 @@
+{
+  "name": "switch-games-data",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "scripts": {
+    "fetch": "bun run fetch-data.ts",
+    "compare": "bun run compare.ts",
+    "sync-images": "bun run sync-images.ts"
+  },
+  "dependencies": {
+    "googleapis": "^183.0.0",
+    "valibot": "^1.5.0"
+  }
+}

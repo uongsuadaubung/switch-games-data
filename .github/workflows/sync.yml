@@ -1,0 +1,47 @@
+name: Auto Sync Switch Games Data
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Chạy tự động lúc 00:00 UTC hàng ngày
+  workflow_dispatch:      # Nút bấm chạy thủ công trên web GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install Dependencies
+        run: bun install
+
+      - name: Fetch & Validate Data
+        env:
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+          SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+          SPREADSHEET_GID: ${{ secrets.SPREADSHEET_GID }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: bun run fetch
+
+      - name: Sync Images
+        continue-on-error: true
+        run: bun run sync-images
+
+      - name: Commit & Push Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ images/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🎮 Update games data & images [skip ci]" && git push)
+
