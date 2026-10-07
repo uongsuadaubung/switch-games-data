@@ -1,5 +1,4 @@
 import * as v from "valibot";
-import { CONFIG } from "./config";
 import { SheetCellSchema, type ParsedGame } from "./types";
 
 export interface ImageSyncStats {

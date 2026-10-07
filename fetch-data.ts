@@ -1,4 +1,4 @@
-import { CONFIG } from "./src/config";
+import { CONFIG, validateSpreadsheetConfig } from "./src/config";
 import { getGoogleSheetsClient } from "./src/google";
 import { parseGameRow } from "./src/parser";
 import { validateGamesData } from "./src/validator";
@@ -9,6 +9,7 @@ import type { ParsedGame } from "./src/types";
 export * from "./src/types";
 
 async function main() {
+  validateSpreadsheetConfig();
   const sheets = getGoogleSheetsClient();
 
   console.log("⏳ [1/4] Đang kết nối Google Sheets API...");
