@@ -1122,6 +1122,39 @@
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/c_scale,w_1300/ncom/software/switch/70010000001597/7a08ebbb6eea7cb55e3b22554ceca76682663d46dd511b818de85ced682155f5"
   },
   {
+    "name": "Backbone",
+    "game_id": "01006DC012B00000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01006DC012B00000.jpg",
+    "size": "3.3 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Nhập vai"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=f__HmFefNKM",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "xuong song.rar",
+        "url": "https://drive.google.com/file/d/1MzGXTeElbocgrS2iKpSZjwT-UV9P_IIK/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.1)",
+        "file_name": "cap nhat xuong song.rar",
+        "url": "https://drive.google.com/file/d/1DKVIT8RepqRBnXfbdzPWJKBPZPsB5z_b/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1PoeqIISp3qU4zsgH7IVTk6dPRW1yWd5T/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "13.2.0",
+    "raw_image_url": "https://image.api.playstation.com/vulcan/ap/rnd/202308/1110/981c2d2e08800de13698650bfeaf142a1af35a0f06330e4f.jpg",
+    "is_new": true,
+    "added_at": "2026-10-18T01:45:06.182Z"
+  },
+  {
     "name": "BAKERU",
     "game_id": "01007CD01FAE0000",
     "is_viet_hoa": false,
@@ -1737,9 +1770,9 @@
   {
     "name": "Blazblue Entropy Effect X",
     "game_id": "01003DA0254A4000",
-    "is_viet_hoa": false,
+    "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01003DA0254A4000.jpg",
-    "size": "4.56 GB",
+    "size": "4.8 GB",
     "genres": [
       "Hành động",
       "Nhập vai"
@@ -1760,9 +1793,14 @@
         "label": "DLC Pack (44 DLCs)",
         "file_name": "bo sung di canh zui.rar",
         "url": "https://drive.google.com/file/d/1ZTadgk37gTRhzjva8V8qpGEJ9Yr63kRv/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1JHrOs0RbAqGiQX0XX0ojKleB0zOerdJC/view?usp=drive_link"
       }
     ],
-    "required_firmware": "22.0.0",
+    "required_firmware": "22.5.0",
     "raw_image_url": "https://images.eshop-prices.com/games/19531/480w.avif"
   },
   {
@@ -2089,6 +2127,28 @@
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/store/software/switch/70010000101134/2e1c877ec872ea2b3be90e913f611047f6d1b4d55e4a8d71bb762172bf19fe33"
   },
   {
+    "name": "Call of Duty 4: Modern Warfare",
+    "game_id": "",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/call_of_duty_4_modern_warfare.jpg",
+    "size": "6.01 GB",
+    "genres": [
+      "Bắn súng"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=BaZfKqDqqtY",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "sieu pham bang chiu",
+        "url": "https://drive.google.com/drive/folders/1SOJcVNx09hdMgqi41SEvzPyWsCGlEChE?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.5.0",
+    "raw_image_url": "https://i1.sndcdn.com/artworks-z3Dqly5lrQjzahG6-xebUmg-t1080x1080.jpg",
+    "is_new": true,
+    "added_at": "2026-10-18T01:45:06.182Z"
+  },
+  {
     "name": "Call of Juarez: Gunslinger",
     "game_id": "0100B4700BFC6000",
     "is_viet_hoa": false,
@@ -2353,6 +2413,44 @@
     ],
     "required_firmware": "18.1.0",
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/ncom/software/switch/70010000065729/03971f9d9efecca6b16e7f9701bc866fd9c05375987697097ea0c401d02bcc7d"
+  },
+  {
+    "name": "Castlevania: Belmont’s Curse",
+    "game_id": "0100BA4026E94000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100BA4026E94000.jpg",
+    "size": "3.5 GB",
+    "genres": [
+      "Hành động",
+      "Nhập vai"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=fVRmZT8Ve7k",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "nhiu nguoi me.rar",
+        "url": "https://drive.google.com/file/d/1wTyXpfQ3TlQp6k07a8wpMYVKjFopvw2S/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.1.0)",
+        "file_name": "cap nhat nhiu nguoi me.rar",
+        "url": "https://drive.google.com/file/d/12TunhoqGo0l8gjUmFOYWzNPPeagQoxpY/view?usp=drive_link"
+      },
+      {
+        "label": "DLC Pack (2 DLCs)",
+        "file_name": "bo sung nhiu nguoi me.rar",
+        "url": "https://drive.google.com/file/d/1SciNtDls9N9Z9WhE0rqBtNTWvLglxOkX/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1IyqC9M00US9DkCXR6A0w-3kFu3jJ532P/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.5.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/store/software/switch/70010000116851/316832b5a2c5f3d34b658274354e1d1f41f81e0d51d4d3eb8cfdf95e86f89b76",
+    "is_new": true,
+    "added_at": "2026-10-18T01:45:06.182Z"
   },
   {
     "name": "Catherine: Full Body",
@@ -5732,14 +5830,9 @@
         "url": "https://drive.google.com/drive/folders/13QDpEMytVqfm_SVNRMD5pG2SiWHZNwNT?usp=drive_link"
       },
       {
-        "label": "Update (1.0.3)",
-        "file_name": "cap nhat ko dc ban do.rar",
-        "url": "https://drive.google.com/file/d/1IWi0R5cB7Bv0GZ9H4aHUrEorwEhUv3ZF/view?usp=drive_link"
-      },
-      {
         "label": "Cập nhật chuyển nhượng mới nhất hỗ trợ FF 23 & hướng dẫn",
-        "file_name": "chuyen nhuong moi nhat.rar",
-        "url": "https://drive.google.com/file/d/1cVsk63GWmUZGDKMc3YU5rxfim9Xc3ZtE/view?usp=drive_link"
+        "file_name": "sờ quát mới nhất",
+        "url": "https://drive.google.com/drive/folders/1OXgx7771BZaS3zgcvjU26n5fo9FPFhgD?usp=drive_link"
       }
     ],
     "required_firmware": "14.1.0",
@@ -7808,6 +7901,39 @@
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/c_scale,w_1300/ncom/software/switch/70010000068263/cedea23c12f2f118578231d4426809bc2cbbb37ede6dc84bd031bc0d1f2972bb"
   },
   {
+    "name": "inKONBINI: One Store. Many Stories",
+    "game_id": "0100DFD026430000",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100DFD026430000.jpg",
+    "size": "2.15 GB",
+    "genres": [
+      "Mô phỏng",
+      "Giải đố"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=ntiwADNJ97o",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "gem chua lanh ne.rar",
+        "url": "https://drive.google.com/file/d/1qGVFrOPEyBsjpNEehaI7ZLXGz31oJjxC/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.208.0)",
+        "file_name": "cap nhat gem chua lanh ne.rar",
+        "url": "https://drive.google.com/file/d/1-8iBUz3d_1vw3cRlphT_iB8Xqo7MzUjH/view?usp=drive_link"
+      },
+      {
+        "label": "DLC Pack (2 DLCs)",
+        "file_name": "bo sung gem chua lanh ne.rar",
+        "url": "https://drive.google.com/file/d/12T0OdEAEIDzMlyUe6zZkmRTFq5PdzrQT/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.5.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/store/software/switch/70010000113080/5760d68948dc277517fd315fd5b152fc148af9737699b6105ffc548527d962aa",
+    "is_new": true,
+    "added_at": "2026-10-18T01:45:06.182Z"
+  },
+  {
     "name": "Inscryption",
     "game_id": "010027F017B12000",
     "is_viet_hoa": false,
@@ -8535,6 +8661,34 @@
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/store/software/switch/70010000070176/258c19c07f88ee5f29817ff0ad4178816732287d6d9a1deba75a3780dd7783ae"
   },
   {
+    "name": "Kong: Survivor Instinct",
+    "game_id": "0100D400244D4000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100D400244D4000.jpg",
+    "size": "1.76 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Hành động"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=hPlwdWwpQTQ",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "tim con gai.rar",
+        "url": "https://drive.google.com/file/d/106FFu8pHSpo4K9mtnrQR55gil4GEf0tA/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1HquoHesGRb9oqJGnBVTzV0qcVBm9m2UP/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.5.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/store/software/switch/70010000100939/d04e009e7565f383f812b0d33c8507b7affe58d0b98d4693f21b60c5b3360328",
+    "is_new": true,
+    "added_at": "2026-10-18T01:45:06.182Z"
+  },
+  {
     "name": "L.A. Noire",
     "game_id": "0100830004FB6000",
     "is_viet_hoa": true,
@@ -9197,6 +9351,33 @@
     ],
     "required_firmware": "20.0.1",
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/store/software/switch/70010000103511/886a2e61429fdba94d85cc560899aa011b2f4c6c950c4eeacf65a70a74089ea8"
+  },
+  {
+    "name": "Love Too Easily 2: Summer Pocha",
+    "game_id": "0100b6d026ff0000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100b6d026ff0000.jpg",
+    "size": "6.5 GB",
+    "genres": [
+      "Mô phỏng"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=hEQqzvY9Wks",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "bai hoc chinh",
+        "url": "https://drive.google.com/drive/folders/1kR3bJbZ6NE5OMlZJorLs831F1yh9Ni9r?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi Nguyễn Nhân",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1-XZghyrUK7nIvt2_DPtzwoieu5e4MgAP/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "21.1.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/store/software/switch/70010000117379/3c85e814d9b98c66e838313c2a09774dd2560405bc688debeb4525f965dfbfc2",
+    "is_new": true,
+    "added_at": "2026-10-18T01:45:06.182Z"
   },
   {
     "name": "Lovers in a Dangerous Spacetime",
@@ -10003,6 +10184,44 @@
     "raw_image_url": "https://images.eshop-prices.com/games/774/480w.webp"
   },
   {
+    "name": "Mega Man Star Force Legacy Collection",
+    "game_id": "0100C99024EDE000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100C99024EDE000.jpg",
+    "size": "7.65 GB",
+    "genres": [
+      "Hành động",
+      "Nhập vai"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=Wfzh0ofxVMU",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "tong hop siu hay.rar",
+        "url": "https://drive.google.com/file/d/1H-iNnZ3awDx_avfq9SsZWfGFD5KeyXiG/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.1.0)",
+        "file_name": "cap nhat tong hop siu hay.rar",
+        "url": "https://drive.google.com/file/d/1PsusLmnAGhGRQSK1z95MMI1x0WPxeI8m/view?usp=drive_link"
+      },
+      {
+        "label": "DLC Pack (2 DLCs)",
+        "file_name": "bo sung tong hop siu hay.rar",
+        "url": "https://drive.google.com/file/d/1Ii13uPodL8w13urObfk5PxUjwriPGdaH/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi Phước Dưỡng",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1K-tnRRaiMBX3p4Xz4lPBIUvfrJhoBXsS/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.1.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/store/software/switch/70010000104078/c02553bc27ae198ecfb694ad3616d1e6da45b44fbafad2597eb4dad269c1bae7",
+    "is_new": true,
+    "added_at": "2026-10-18T01:45:06.182Z"
+  },
+  {
     "name": "Mega Man X Legacy Collection",
     "game_id": "01005C60086BE000",
     "is_viet_hoa": false,
@@ -10326,7 +10545,7 @@
   {
     "name": "Mina the Hollower",
     "game_id": "0100DCD01F306000",
-    "is_viet_hoa": false,
+    "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100DCD01F306000.jpg",
     "size": "869 MB",
     "genres": [
@@ -10344,6 +10563,11 @@
         "label": "Update (1.0.5)",
         "file_name": "cap nhat cu bi cuon.rar",
         "url": "https://drive.google.com/file/d/1sgLIQ75YslP7Q4bCRYi0PNsfr-Fl3xWe/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1vOArNom6LFrxTQtznAMnyEtv-fVjre2L/view?usp=drive_link"
       }
     ],
     "required_firmware": "22.1.0",
@@ -10735,6 +10959,38 @@
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/ncom/software/switch/70010000087394/f3a4c8a7b241848ee36f0a403daea6844d1808da1f28657f2c37b187436d5894"
   },
   {
+    "name": "Montabi",
+    "game_id": "010025f0249ce000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010025f0249ce000.jpg",
+    "size": "1.43 GB",
+    "genres": [
+      "Chiến thuật"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=3Rs7Ngraoog",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "bui the bai.rar",
+        "url": "https://drive.google.com/file/d/1gJQzX79JAlrabCMMTLtM-PZ19i3XYG8B/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.1.1)",
+        "file_name": "cap nhat bui the bai.rar",
+        "url": "https://drive.google.com/file/d/1rlg4LkTCN-lDQSxvZs9k-wWOdefJhZv4/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi Phước Dưỡng",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1zITU67dkggELuU-BhPylmur3uF8hwprJ/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.5.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/store/software/switch/70010000102485/cc842a48515d5979e005c1cfe98f127056b50e107f29933608c7b5477a85b9ba",
+    "is_new": true,
+    "added_at": "2026-10-18T01:45:06.182Z"
+  },
+  {
     "name": "Moorhuhn Collection",
     "game_id": "",
     "is_viet_hoa": false,
@@ -11101,6 +11357,28 @@
     ],
     "required_firmware": "10.1.0",
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/c_scale,w_1300/ncom/software/switch/70010000029278/db1a656b6d00996f978483999ddd9221aa6c5680d6cfae60ccf9566d4e444a5d"
+  },
+  {
+    "name": "Need for Speed: Most Wanted (2005)",
+    "game_id": "",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/need_for_speed_most_wanted_2005.jpg",
+    "size": "5.05 GB",
+    "genres": [
+      "Thể thao"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=_-5q3xI11Hc",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "qua nhanh",
+        "url": "https://drive.google.com/drive/folders/1lpsfqOJn88YEmwlpQ934r8n0Qd4y56fp?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.5.0",
+    "raw_image_url": "https://genk.mediacdn.vn/qHYx0eDsUHhZXXxDGFrAWJ0bYJgWc/Image/2012/05/nfsmostwanted_2ac57.jpg",
+    "is_new": true,
+    "added_at": "2026-10-18T01:45:06.182Z"
   },
   {
     "name": "Neighbours back From Hell",
@@ -12308,6 +12586,28 @@
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/c_scale,w_1300/ncom/software/switch/70070000017952/726730414c4a58b3060437db374d8d5bc35effd9ab63fa86553283f3092fffe5"
   },
   {
+    "name": "PES 21 Mobile",
+    "game_id": "",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/pes_21_mobile.jpg",
+    "size": "2.98 GB",
+    "genres": [
+      "Thể thao"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=_Fc1uAYQsZ0",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "da banh",
+        "url": "https://drive.google.com/drive/folders/1C0RkcMQzDyIck3-WcjEqbiq6WZ5pXMLF?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.5.0",
+    "raw_image_url": "https://file.hstatic.net/1000190106/article/2_9ad4b5c59366498d90b3b57b4a04f26c.jpeg",
+    "is_new": true,
+    "added_at": "2026-10-18T01:45:06.182Z"
+  },
+  {
     "name": "Phoenix Wright Ace Attorney Trilogy",
     "game_id": "0100CB000A142000",
     "is_viet_hoa": true,
@@ -12942,16 +13242,21 @@
   {
     "name": "PPSSPP",
     "game_id": "",
-    "is_viet_hoa": false,
+    "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/ppsspp.jpg",
     "size": "1 GB",
     "genres": [],
     "review_url": "",
     "links": [
       {
-        "label": "Base",
+        "label": "Bộ cài",
         "file_name": "cam tay soni",
         "url": "https://drive.google.com/drive/folders/1oAJ4Ci6TOgoYOD6CVcbvaVahdp6d1wZ2?usp=drive_link"
+      },
+      {
+        "label": "Kho game việt hóa (cập nhật 17/10/26)",
+        "file_name": "kho gem vit hoa",
+        "url": "https://drive.google.com/drive/folders/1kYcBvWnACK2jVmjeDIuMRrfWKtthpSQS?usp=drive_link"
       }
     ],
     "required_firmware": "",
@@ -14320,6 +14625,34 @@
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/c_scale,w_1300/ncom/software/switch/70010000050837/221d18c197f954ed3de6b8c4c602b240b65ec105ef92de34aa89dcf0b75a3975"
   },
   {
+    "name": "Silver Pines",
+    "game_id": "0100D5B026844000",
+    "is_viet_hoa": false,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100D5B026844000.jpg",
+    "size": "4 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Giải đố"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=LwKZRr08u8c",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "thi tran bo hoang.rar",
+        "url": "https://drive.google.com/file/d/1Aam4AXLvzQ9aiKCGVp7Xh48I4m2Ci4pH/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.1)",
+        "file_name": "cap nhat thi tran bo hoang.rar",
+        "url": "https://drive.google.com/file/d/1UH4l6rdfs3UJDeKCbABxta_gRbsvNoNd/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.5.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/store/software/switch/70010000130803/84fd3cf7b74aad7b3d806477a05d7325629cc152777264882840c9996af1488a",
+    "is_new": true,
+    "added_at": "2026-10-18T01:45:06.182Z"
+  },
+  {
     "name": "Skul: The Hero Slayer",
     "game_id": "0100ACF013E9A000",
     "is_viet_hoa": true,
@@ -15540,7 +15873,7 @@
   {
     "name": "Tactics Ogre: Reborn",
     "game_id": "0100E12013C1A000",
-    "is_viet_hoa": false,
+    "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100E12013C1A000.jpg",
     "size": "7.49 GB",
     "genres": [
@@ -15557,6 +15890,11 @@
         "label": "Update (1.0.4)",
         "file_name": "cap nhat chien thuat gay can.rar",
         "url": "https://drive.google.com/file/d/101L98vF73cXBkn-xXA_TvQBLMkA4WYLL/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi Phước Dưỡng",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1UtV9dJzJh25IyHiO4b1GreGEMKxS9_Ws/view?usp=drive_link"
       }
     ],
     "required_firmware": "14.1.0",
@@ -16554,7 +16892,7 @@
   {
     "name": "The Legend of Zelda: Echoes of Wisdom",
     "game_id": "01008CF01BAAC000",
-    "is_viet_hoa": false,
+    "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01008CF01BAAC000.jpg",
     "size": "5.57 GB",
     "genres": [
@@ -16572,6 +16910,11 @@
         "label": "Update (1.0.1)",
         "file_name": "cap nhat da den tieng vong tri tue.rar",
         "url": "https://drive.google.com/file/d/1w8T-KuueciQnmG0EsI364Ju7b0RMvQJN/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được sửa lỗi font và port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1cbfw7DwW-1vzPFAyTXTphXLKikNvX4Mr/view?usp=drive_link"
       }
     ],
     "required_firmware": "18.1.0",
@@ -17197,7 +17540,7 @@
   {
     "name": "Tomb Raider: Definitive Edition",
     "game_id": "0100092021C80000",
-    "is_viet_hoa": false,
+    "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100092021C80000.jpg",
     "size": "27.1 GB",
     "genres": [
@@ -17215,6 +17558,11 @@
         "label": "Update (1.0.1)",
         "file_name": "cap nhat nu tham hiem.rar",
         "url": "https://drive.google.com/file/d/1kWLNOGD2n5up3iUXCl8bC8ipSOLm3VQT/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi Thành Đạt",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1Ky3UqXgzIGP-l08IrpCpYxF7gf2z0dtj/view?usp=drive_link"
       }
     ],
     "required_firmware": "20.3.0",
@@ -17340,7 +17688,7 @@
   {
     "name": "Trails in the Sky 1st Chapter",
     "game_id": "01002C9022770000",
-    "is_viet_hoa": false,
+    "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01002C9022770000.jpg",
     "size": "9.65 GB",
     "genres": [
@@ -17363,6 +17711,11 @@
         "label": "DLC Pack (29 DLCs)",
         "file_name": "bo sung tro lai huyen thoai.rar",
         "url": "https://drive.google.com/file/d/1tU-qa9ORTYrZmC24u6kXq6SHFAtPiwdQ/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi Xuân Luân",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1YHzDqrvVFBIi7J7oBXUha10IKbpEmM2D/view?usp=drive_link"
       }
     ],
     "required_firmware": "20.1.5",
@@ -18125,6 +18478,43 @@
     ],
     "required_firmware": "20.5.0",
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/store/software/switch/70010000098407/9168fb8e4f32b40d957cc3d97ef4c16395c8014d5bfa49f48bf4b1a08a27851a"
+  },
+  {
+    "name": "WitchSpring R",
+    "game_id": "010018401EEA8000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010018401EEA8000.jpg",
+    "size": "6.9 GB",
+    "genres": [
+      "Nhập vai"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=9k11GJsjyVk",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "bai hoc chinh",
+        "url": "https://drive.google.com/drive/folders/1ues65r8TKX1U3syK6-8Id6Unoc3g3aP_?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.5)",
+        "file_name": "cap nhat phu thuy xuan.rar",
+        "url": "https://drive.google.com/file/d/1cCCoCzkHlC-Mi3jAkDi_EuZ1YKnSanJ4/view?usp=drive_link"
+      },
+      {
+        "label": "DLC Pack (4 DLCs)",
+        "file_name": "bo sung phu thuy xuan.rar",
+        "url": "https://drive.google.com/file/d/1d_OTPqlURdkBxdrMqBvZoS0YNheYpLB0/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được lấy từ AowVN",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1SPtGuGJk96nlY2TjBPyONtI8Wz9VYKEa/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "20.3.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/store/software/switch/70010000080737/ac3333176969ebbd8d8ee302eb51fcf7e1cc3af88c39aa440da5edc0475af0da",
+    "is_new": true,
+    "added_at": "2026-10-18T01:45:06.182Z"
   },
   {
     "name": "Wizard of Legend",
