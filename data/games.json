@@ -5775,11 +5775,6 @@
         "url": "https://drive.google.com/drive/folders/1O_ks7lxH2z_qmsZAwib8IRrqjgrRcux-?usp=drive_link"
       },
       {
-        "label": "Bắt buộc phải xem cái này trước mới cài chạy đc fullgame",
-        "file_name": "fix patch 2300",
-        "url": "https://drive.google.com/drive/folders/1FvY_q5xH63q3UbDF2DVhtuPRbUki1eVT?usp=drive_link"
-      },
-      {
         "label": "File update squads mới nhất + dàn cầu thủ huyền thoại",
         "file_name": "Doi hinh sieu pham",
         "url": "https://drive.google.com/drive/folders/1Lat9cyJ5-P1V_SboPUALKZWkn1pCPqem?usp=drive_link"
@@ -6417,24 +6412,6 @@
     ],
     "required_firmware": "18.1.0",
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/ncom/software/switch/70010000071079/d08fc33e504e0bb244d31c38d1dfa15e1b8465c4992d57a989e31f1ed3bbc026"
-  },
-  {
-    "name": "Fix Patch cho fw 22.5.0 chơi full game đòi 23.0.0",
-    "game_id": "",
-    "is_viet_hoa": false,
-    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/fix_patch_cho_fw_2250_chơi_full_game_đòi_2300.jpg",
-    "size": "10.7 MB",
-    "genres": [],
-    "review_url": "",
-    "links": [
-      {
-        "label": "Base",
-        "file_name": "fix patch 2300",
-        "url": "https://drive.google.com/drive/folders/1FvY_q5xH63q3UbDF2DVhtuPRbUki1eVT?usp=drive_link"
-      }
-    ],
-    "required_firmware": "",
-    "raw_image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqdQh-THUKk1_C5G5Mp81cYJ3SeKrEcI5UKqKyMYPTeFLnJn5w6bxmbpFE&s=10"
   },
   {
     "name": "Football Manager 26 Touch",
