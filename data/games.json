@@ -418,6 +418,72 @@
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/c_scale,w_1300/ncom/software/switch/70010000052217/95bd2288580227159d0785c26a39a78775e39dfc16e62e9e9b8cf048b15a80d2"
   },
   {
+    "name": "Aggelos",
+    "game_id": "010004D00A9C0000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010004D00A9C0000.jpg",
+    "size": "228 MB",
+    "genres": [
+      "Hành động",
+      "Đi cảnh"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=uN2U_Bl9FzA",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "di canh co dien.rar",
+        "url": "https://drive.google.com/file/d/1TFP-iiJpBJAyA2GZRQhlcR3cj5rLGNw6/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.2)",
+        "file_name": "cap nhat di canh co dien.rar",
+        "url": "https://drive.google.com/file/d/1zAYDcQ3iuowdtBdOm4vWPs7II4R_oqYJ/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1mUQmcuasrV1Hdiivg0-EvBsNXXeUg7YJ/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "8.0.1",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000012683/4413ce130900f8e73a92dafa0164dc36b3bf56190a412c5d33c3117a5d1a434e",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
+  },
+  {
+    "name": "Aggelos 2",
+    "game_id": "010040f01ec60000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010040f01ec60000.jpg",
+    "size": "232 MB",
+    "genres": [
+      "Hành động",
+      "Đi cảnh"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=8LI9SEqCpPA",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "di canh co dien p2.rar",
+        "url": "https://drive.google.com/file/d/1khiH_O5CW_5Ry8bGuPnXCSbsa3K2Oszm/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.6)",
+        "file_name": "cap nhat di canh co dien p2.rar",
+        "url": "https://drive.google.com/file/d/1PMPSkraRpn4cWYGGfH4FJMRjTRFUsDme/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/18WYqayEaMJunDcVKRLXP9Sy7b1xDgqi4/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.5.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000087201/5b6edfef6836353f8a16ef7436042219a2bc31a3f65c8c83ae8c5d4c22de1040",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
+  },
+  {
     "name": "Air Twister",
     "game_id": "010055701AFB4000",
     "is_viet_hoa": true,
@@ -803,7 +869,7 @@
       }
     ],
     "required_firmware": "8.1.0",
-    "raw_image_url": "https://i0.wp.com/www.vooks.net/img/2017/06/arms_review-1.jpg?w=1424&ssl=1"
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000000392/f904982d4ad208926f0ae354b7295548d37ae4389e78192fae941fbd0e94f46b"
   },
   {
     "name": "Army of Ruin",
@@ -1122,6 +1188,44 @@
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/c_scale,w_1300/ncom/software/switch/70010000001597/7a08ebbb6eea7cb55e3b22554ceca76682663d46dd511b818de85ced682155f5"
   },
   {
+    "name": "Back to the Dawn",
+    "game_id": "010016E025E60000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010016E025E60000.jpg",
+    "size": "2.52 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Hành động"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=frAf5tUjON8",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "san khau nguc tu.rar",
+        "url": "https://drive.google.com/file/d/1rOSXsLQkm3wF3Z6wNtpQt5J8iEh6j7LO/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.0.5)",
+        "file_name": "cap nhat san khau nguc tu.rar",
+        "url": "https://drive.google.com/file/d/170ylOcF5c1G0YOi_9r9s4AINVpDMCKIh/view?usp=drive_link"
+      },
+      {
+        "label": "DLC Pack (3 DLCs)",
+        "file_name": "bo sung san khau nguc tu.rar",
+        "url": "https://drive.google.com/file/d/1zDDJ7VWKSD2lw2DzQ9o8VTxl0Alk593W/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1ML6CY3-jC_VDGnu0DTBpYqQY7cVPxPk9/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "21.2.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000110581/5318ec49b14c508169ae60a708a800cfe8fa23a4bbb14d7c43dfce82f5c5ef5e",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
+  },
+  {
     "name": "Backbone (Tails Noir)",
     "game_id": "01006DC012B00000",
     "is_viet_hoa": true,
@@ -1229,6 +1333,39 @@
     "raw_image_url": "https://img-eshop.cdn.nintendo.net/i/260fd1cca85d12431c9e63248666df07f797660e194309dffc10747db108f315.jpg"
   },
   {
+    "name": "Bandle Tale:",
+    "game_id": "010052B01BEC0000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010052B01BEC0000.jpg",
+    "size": "1.82 GB",
+    "genres": [
+      "Nhập vai",
+      "Mô phỏng"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=iiZ5VpRD82E",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "lien minh cute.rar",
+        "url": "https://drive.google.com/file/d/1Gd9hSJxQHzvykX56xMHn_WP3FM0i_C1X/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.062)",
+        "file_name": "cap nhat lien minh cute.rar",
+        "url": "https://drive.google.com/file/d/1tCJbn4kdjMu6OpVh0kBkhQgsTOQztWEf/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1MyFkO5_r4xh7yzImIzwhJcPSxRhhuH3d/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "17.0.1",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70070000019973/2ecdd2ea626c3c0bcbdd9f25aa5b9e438e572bd9e943792cdd188b9545102ed0",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
+  },
+  {
     "name": "Batman: Arkham Asylum",
     "game_id": "01009E300F83A000",
     "is_viet_hoa": false,
@@ -1251,7 +1388,7 @@
   {
     "name": "Batman: Arkham City",
     "game_id": "01003F00163CE000",
-    "is_viet_hoa": false,
+    "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01003F00163CE000.jpg",
     "size": "11.8 GB",
     "genres": [
@@ -1265,9 +1402,14 @@
         "url": "https://drive.google.com/file/d/1lTw_UTBUjVibIU0qPbxM6weOGRMjD3v_/view?usp=drive_link"
       },
       {
-        "label": "Update (1.0.1)",
+        "label": "Update (1.0.2)",
         "file_name": "bai hoc them",
         "url": "https://drive.google.com/drive/folders/1kRkJ4EfSuS8roSOacy1nMjreoy-JwaBI?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1MkDBfg8iMxBBYFbyDmu0kn85oTpsCW4g/view?usp=drive_link"
       }
     ],
     "required_firmware": "16.1.0",
@@ -1420,6 +1562,39 @@
     ],
     "required_firmware": "15.0.1",
     "raw_image_url": "https://paytonpawprint.files.wordpress.com/2023/05/bayonetta-origins-cereza-and-the-lost-demon.jpg"
+  },
+  {
+    "name": "Beacon Pines",
+    "game_id": "0100D3C017780000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100D3C017780000.jpg",
+    "size": "1.1 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Giải đố"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=UJWAM7fFR5A",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "cay thong bao hieu.rar",
+        "url": "https://drive.google.com/file/d/14BC0d5__33fDQ_wbS-gyibXOn1vKM-ce/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.2)",
+        "file_name": "cap nhat cay thong bao hieu.rar",
+        "url": "https://drive.google.com/file/d/1f2XBQ3688xZSDSrXF-oOLnogq_PMH2i1/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1kinC2VOBas92PmAHFvRUbrHdAGncD085/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "14.1.2",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000049969/bf81938f735de8f243510e414075e1959fef124cf95ded5fab08a12217a47ec8",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
   },
   {
     "name": "Bear and Breakfast",
@@ -1836,6 +2011,39 @@
     ],
     "required_firmware": "17.0.0",
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/ncom/software/switch/70010000019475/f72161fbe4fe452c6ec3a10f81fd7fba661a2b6da7011e5b2cfc358505772402"
+  },
+  {
+    "name": "Bloomtown: A Different Story",
+    "game_id": "0100AF401C8E4000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100AF401C8E4000.jpg",
+    "size": "845 MB",
+    "genres": [
+      "Phiêu lưu",
+      "Nhập vai"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=5nYiP-jqNT8",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "thi tran no hoa.rar",
+        "url": "https://drive.google.com/file/d/1Udj2w_GB2FZeGvwIMffGaehLhckiHjfd/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.6)",
+        "file_name": "cap nhat thi tran no hoa.rar",
+        "url": "https://drive.google.com/file/d/1oosftW3YoCfefLHn_-Qa7GbMkjIoPj4j/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1EtzcbJsxUIpseaNd9JOAHNFlFwwK_m3M/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "18.1.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000071047/91ac145631c275a17b3f4bb8a335342143207dc72729df3072c01762823d6e6c",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
   },
   {
     "name": "Blossom Voyage",
@@ -2535,7 +2743,7 @@
   {
     "name": "Chants of Sennaar",
     "game_id": "0100543019CB0000",
-    "is_viet_hoa": false,
+    "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100543019CB0000.jpg",
     "size": "689 MB",
     "genres": [
@@ -2553,6 +2761,11 @@
         "label": "Update (1.0.3)",
         "file_name": "cap nhat phiu liu giai do.rar",
         "url": "https://drive.google.com/file/d/1gwlW_VCZxTf-VkMXWWHoWKjgQ1g6d52F/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/13xRLrtTY2urMFsIOvMvI4jKugJl3DKPw/view?usp=drive_link"
       }
     ],
     "required_firmware": "16.0.3",
@@ -2741,6 +2954,39 @@
     ],
     "required_firmware": "8.0.1",
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/c_scale,w_1300/ncom/en_US/games/switch/c/cities-skylines-nintendo-switch-edition-switch/hero"
+  },
+  {
+    "name": "CLeM",
+    "game_id": "010063401D45A000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010063401D45A000.jpg",
+    "size": "1.7 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Giải đố"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=_qxim0_ErnQ",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "u toi phet.rar",
+        "url": "https://drive.google.com/file/d/1036Mds9Cf5flBfvtzh5ZoyPCz3p6wjP7/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.2)",
+        "file_name": "cap nhat u toi phet.rar",
+        "url": "https://drive.google.com/file/d/1_g-fIePd0R2SSJtfgbTHHe5YaLB7-mLo/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/11IC5FItiP4QnTNlahUWYdKlA7VehGSIB/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "17.0.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000073741/5a9d4355675dd768b2a36f64504785221ec8faf15a12acdc7863e00cd6c005a7",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
   },
   {
     "name": "Clock Tower: Rewind",
@@ -4164,6 +4410,38 @@
     ],
     "required_firmware": "12.1.0",
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/ncom/software/switch/70010000044922/df5237749af09dda942147e22f49a0118b98fa7b5081cf53b31e1bd6530e7a23"
+  },
+  {
+    "name": "Discounty",
+    "game_id": "0100D7401D59A000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100D7401D59A000.jpg",
+    "size": "861 MB",
+    "genres": [
+      "Mô phỏng"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=UAHdvggwUmc",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "giam gia.rar",
+        "url": "https://drive.google.com/file/d/1so6WabJfE97gRewrcuHngbcebVGEEHkA/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.2.1)",
+        "file_name": "cap nhat giam gia.rar",
+        "url": "https://drive.google.com/file/d/168zASNcuuvt6SUNyqoyl8xDLbhDp3-I0/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1qHbDcE0ChKdxynCvoA19NuQNBLz0Ysqx/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "20.3.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000074119/eb404e817111a02dba6f2938de9e218b28048492d37fc3b9e4c994eb1f62e613",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
   },
   {
     "name": "Disgaea 1 Complete",
@@ -5611,6 +5889,72 @@
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/ncom/software/switch/70010000078577/3ca719465b7a5054b2a5e4aefe98b382386b0bdc600605c48177714a2c4dc5f7"
   },
   {
+    "name": "Farlands",
+    "game_id": "0100F4601CBA6000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100F4601CBA6000.jpg",
+    "size": "2.39 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Mô phỏng"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=3t7nZ4jMsZk",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "vung dat xa xoi.rar",
+        "url": "https://drive.google.com/file/d/1KqTYIJzqfODy9aYAjMX3NvOEkp7Hmsp8/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.4)",
+        "file_name": "cap nhat vung dat xa xoi.rar",
+        "url": "https://drive.google.com/file/d/1kdgPh7RAdlcV8rKyIR2lM2QmFDKTjP9M/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1loDHvxjlLIVJ937CQa2rpAgmiBuZJUBo/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "23.0.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000071473/a42c62dea3317c70e57ee42c771bcaeb5ee025f6fcf027944431f9683e271ab4",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
+  },
+  {
+    "name": "Farming Camp",
+    "game_id": "0100EEB026E2E000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100EEB026E2E000.jpg",
+    "size": "1 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Nhập vai"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=FtsFZ5QOKMk",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "trai he nong nghiep.rar",
+        "url": "https://drive.google.com/file/d/1KqzY64HIN0im5CYdqoVGtyjW43PSlroe/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.3)",
+        "file_name": "cap nhat trai he nong nghiep.rar",
+        "url": "https://drive.google.com/file/d/17tGyEsE2rAWSoF3lKgc9DFPDrndcqTmR/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1X2-gf6ySrnja2Vu-f18uQcZ00CAJLrC9/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "23.0.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000115744/8801708c0dfbded73b6d59d97a8a373f14007301451360c65af784cac60daf14",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
+  },
+  {
     "name": "FATAL FRAME: Maiden of Black Water",
     "game_id": "0100BEB015604000",
     "is_viet_hoa": true,
@@ -5990,6 +6334,44 @@
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/ncom/software/switch/70010000010582/55386ada9d124145f6112072d63958dc69982870a06e02cdef735abbfdba36e7"
   },
   {
+    "name": "Final Fantasy Resonance",
+    "game_id": "0100606026F12000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100606026F12000.jpg",
+    "size": "8.59 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Nhập vai"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=jyYlpv-N-wA",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "sieu pham mien ban.rar",
+        "url": "https://drive.google.com/file/d/1NVIciByR00RYyM93WA5K00feuhxVeR3R/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.1)",
+        "file_name": "cap nhat sieu pham mien ban.rar",
+        "url": "https://drive.google.com/file/d/1WVzQu11h7b-r6j5_0kFyj3wHbjITHOAp/view?usp=drive_link"
+      },
+      {
+        "label": "DLC Pack (3 DLCs)",
+        "file_name": "bo sung sieu pham mien ban.rar",
+        "url": "https://drive.google.com/file/d/1ssARyq6mk0HYR2C0C2gmGKXxtzhjMr01/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1INY_LvtfqKjOKGj9Qn3-sNycsx8bnK-F/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.5.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000117093/f32f745bc141f4b1f238254f9710c4269b26e315307b3263e558b20ef2c331ac",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
+  },
+  {
     "name": "FINAL FANTASY TACTICS –",
     "game_id": "010038B015560000",
     "is_viet_hoa": false,
@@ -6222,7 +6604,7 @@
         "url": "https://drive.google.com/file/d/1DHn3aSgGCcH0bxRyKES1QKKwi9JkGPw2/view?usp=drive_link"
       },
       {
-        "label": "Việt hóa được lấy từ LPhamDev97",
+        "label": "Việt hóa được port bởi Hoang Trung",
         "file_name": "yeu tieng viet.rar",
         "url": "https://drive.google.com/file/d/15jxQ1q8lHfsl7uSXWvc_AkSuHH3P2eSh/view?usp=drive_link"
       }
@@ -7127,6 +7509,44 @@
     ],
     "required_firmware": "16.0.3",
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/c_scale,w_1300/ncom/software/switch/70010000053606/39d52fc510464498ee2c40c297ca8aa96e40454e27a3bc7ae0a6feaa9c4f41a6"
+  },
+  {
+    "name": "Harvest Moon: Echoes of Teradea",
+    "game_id": "0100839022642000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100839022642000.jpg",
+    "size": "4.44 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Mô phỏng"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=9Ibxa3zvZgk",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "cs nong trai.rar",
+        "url": "https://drive.google.com/file/d/1ezuooYSPvIb1NMvqbL3VEKA5Y5pjZTvO/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.2.0)",
+        "file_name": "cap nhat cs nong trai.rar",
+        "url": "https://drive.google.com/file/d/1VdxUd673aOBAH4t8GOrtBUF5MtlXOM2j/view?usp=drive_link"
+      },
+      {
+        "label": "Meruss Dilemma DLC",
+        "file_name": "bo sung cs nong trai.rar",
+        "url": "https://drive.google.com/file/d/19csZBz5s89hte5FcnTocLYh5i4Nxkgxu/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi Lan Hoa",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1B8l2PFPBGD43c9P6ecmaREaL6jPYQV4H/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "23.0.1",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000093554/4a7900193d6c1485d9310059620d8275ee6a7148fd7d3a1b73b94d15f9fed0a2",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
   },
   {
     "name": "Harvest Moon: Home Sweet Home Special Edition",
@@ -8284,6 +8704,66 @@
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/c_scale,w_1300/ncom/software/switch/70010000017136/58ff94c4934232a14fd6f3ee93730cd04c32dc248bae5514b582f2bc635a0d65"
   },
   {
+    "name": "Kathy Rain: Director’s Cut",
+    "game_id": "0100892015238000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100892015238000.jpg",
+    "size": "961 MB",
+    "genres": [
+      "Phiêu lưu",
+      "Giải đố"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=FIKhzQvTbJQ",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "giai do khum.rar",
+        "url": "https://drive.google.com/file/d/1VLVym2Rm-OpHxc2T06HVp7mNF8efOXQF/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.4)",
+        "file_name": "cap nhat giai do khum.rar",
+        "url": "https://drive.google.com/file/d/1O1wOmGxPXoJuNW7Rk7dCkUDwMlA7eskm/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1sWRE4pGdcwj7-kwNBgX0oQ4B2HcV8JW_/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "13.1.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000046120/64f1381857cd30940d0f08d2b54749a877cd9a4815d7720f5c04569c8cbfae32",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
+  },
+  {
+    "name": "Keep Driving",
+    "game_id": "0100f57025f44000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100f57025f44000.jpg",
+    "size": "736 MB",
+    "genres": [
+      "Nhập vai"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=joR-7h5sq20",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "tiep tuc lai.rar",
+        "url": "https://drive.google.com/file/d/1VeVSzlIGxNRIABlJHaerji3SGoMEf8RN/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1P_e7cnyKox84YrtzY8nJ-RayIOa2OQ87/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.5.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000111010/11abdf12d425baad37b0d0c639743332936925dc4159f50dc4dd017a5ece782a",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
+  },
+  {
     "name": "Kholat",
     "game_id": "0100F680116A2000",
     "is_viet_hoa": true,
@@ -8493,7 +8973,7 @@
   {
     "name": "Kingdoms of Amalur: Re-Reckoning",
     "game_id": "0100EF50132BE000",
-    "is_viet_hoa": false,
+    "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100EF50132BE000.jpg",
     "size": "12.3 GB",
     "genres": [
@@ -8508,9 +8988,19 @@
         "url": "https://drive.google.com/drive/folders/1cHnBffn7UcrPwo5OxQVVTQCdWwbpiJ4-?usp=drive_link"
       },
       {
-        "label": "Update (1.0.4)",
+        "label": "Update (1.0.7)",
         "file_name": "cap nhat nhap vai dang choi.rar",
         "url": "https://drive.google.com/file/d/1HgwK4PdoR6iUfxm1ZWGnUzW8yQggkvDG/view?usp=drive_link"
+      },
+      {
+        "label": "DLC Pack",
+        "file_name": "bo sung nhap vai dang choi.rar",
+        "url": "https://drive.google.com/file/d/1nbTSpdNs4CU6fmO71HIDTSgcADelCB27/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1Xbf1hlZP-rQNzH4_R_T97an0gqIRBMQE/view?usp=drive_link"
       }
     ],
     "required_firmware": "11.0.1",
@@ -8519,7 +9009,7 @@
   {
     "name": "Kirby and the Forgotten Land",
     "game_id": "01004D300C5AE000",
-    "is_viet_hoa": false,
+    "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01004D300C5AE000.jpg",
     "size": "5.74 GB",
     "genres": [
@@ -8529,8 +9019,18 @@
     "links": [
       {
         "label": "Base",
-        "file_name": "cach lam keo bong",
-        "url": "https://drive.google.com/drive/folders/1f95qFySrKC48NUcQIOa6-BONFtFG1WpO?usp=drive_link"
+        "file_name": "bai hoc chinh",
+        "url": "https://drive.google.com/drive/folders/1Aw45h_vM-djgtYoyTsTS59xscIQFcbCn?usp=drive_link"
+      },
+      {
+        "label": "Update (1.1.0)",
+        "file_name": "cap nhat cach lam keo bong.rar",
+        "url": "https://drive.google.com/file/d/1QIhYCsGIrduATWTKLf7Ux5h7eJM_BDBi/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1udEF43nr2FfDsTDC2sMmN_2ui_cVxAlj/view?usp=drive_link"
       }
     ],
     "required_firmware": "12.0.0",
@@ -9951,6 +10451,39 @@
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/ncom/software/switch/70010000077523/1a42108b5573691b59d9f4d4cb8b36fb6e86ddabaad8f06d180195aeb4607e43"
   },
   {
+    "name": "Master Lemon: The Quest for Iceland",
+    "game_id": "0100DA6024362000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100DA6024362000.jpg",
+    "size": "1.86 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Giải đố"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=TYMnUz5DCvg",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "thay chanh.rar",
+        "url": "https://drive.google.com/file/d/1zmDwZRLHFRUXC3mJfQ-RRuUfff08dFyY/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.2.0.0)",
+        "file_name": "cap nhat thay chanh.rar",
+        "url": "https://drive.google.com/file/d/1ZMf85PbADg9-9BzOpCI0dZKxKTMWrNmm/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1nPGGA6exVXN_WJfPOin055N-N64tooDZ/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "21.0.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000100578/4d528396925ad8d7368e560ad539aec054262644583a016be09c182807eeeadf",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
+  },
+  {
     "name": "Matchpoint – Tennis Championships",
     "game_id": "010088D014258000",
     "is_viet_hoa": false,
@@ -10940,6 +11473,38 @@
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/store/software/switch/70010000102485/cc842a48515d5979e005c1cfe98f127056b50e107f29933608c7b5477a85b9ba"
   },
   {
+    "name": "Moomintroll Winter’s Warmth",
+    "game_id": "0100F1B026B30000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100F1B026B30000.jpg",
+    "size": "1.76 GB",
+    "genres": [
+      "Phiêu lưu"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=JVo7YIszazQ",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "am ap mua dong.rar",
+        "url": "https://drive.google.com/file/d/1mMf1M36lC_Z5yF7YREOtzT2WYlHg1-xx/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.7)",
+        "file_name": "cap nhat am ap mua dong.rar",
+        "url": "https://drive.google.com/file/d/1ariSXZJWTZW9C2IS20T0z_AVT1nWMAGd/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1n9VmdhsO5u-_PrC5ZVI_i_T28CVhGr0A/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.0.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000115660/0e9a4148c84dd5f83c20cb1871074d7864ab107c3e1f9c3237bed68efe15432c",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
+  },
+  {
     "name": "Moorhuhn Collection",
     "game_id": "",
     "is_viet_hoa": false,
@@ -11126,6 +11691,38 @@
     ],
     "required_firmware": "19.0.0",
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/store/software/switch/70010000019330/d54a558a05c9806f3bee6aaa559c930517d062f823b790e958467aef2ec78811"
+  },
+  {
+    "name": "Mutazione",
+    "game_id": "0100D750132D8000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100D750132D8000.jpg",
+    "size": "2.54 GB",
+    "genres": [
+      "Phiêu lưu"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=Lh9kZRcGEBI",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "dot bien.rar",
+        "url": "https://drive.google.com/file/d/1W8ZpAYBAda3et16RXGC7DZ10nnsu5o2v/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.1)",
+        "file_name": "cap nhat dot bien.rar",
+        "url": "https://drive.google.com/file/d/1pstyuRBJQ46rmbC8KvNkvCJLi6B_9TbK/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1Q5Jv74UiOVoYl9se-6TeQAsF_xiL6sdk/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "12.0.2",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000034908/748d4e5ce0a2aa2c519dd1e00da628627c47ad6cba7b3b1acf90ee7c692b035e",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
   },
   {
     "name": "MY HERO ONE’S JUSTICE 2",
@@ -11433,7 +12030,7 @@
   {
     "name": "Ni no Kuni: Wrath of the White Witch",
     "game_id": "0100E5600D446000",
-    "is_viet_hoa": false,
+    "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100E5600D446000.jpg",
     "size": "5.76 GB",
     "genres": [
@@ -11451,6 +12048,11 @@
         "label": "Update (1.0.2)",
         "file_name": "cap nhat alime rpg.rar",
         "url": "https://drive.google.com/file/d/1YD_43CV2Fhv-ULTXXwxhFHi9ec0FA2iD/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1NQptoUveyOh_eDM_VX6KB8kLVYQJ4cvX/view?usp=drive_link"
       }
     ],
     "required_firmware": "8.1.0",
@@ -11644,7 +12246,7 @@
   {
     "name": "Nintendo Switch Sports",
     "game_id": "0100D2F00D5C0000",
-    "is_viet_hoa": false,
+    "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100D2F00D5C0000.jpg",
     "size": "3 GB",
     "genres": [
@@ -11661,6 +12263,11 @@
         "label": "Update (1.5.0)",
         "file_name": "cap nhat de cuong the duc.rar",
         "url": "https://drive.google.com/file/d/1kLQPgZ7oFGdxp6y97xB9xzTuPE92kH4B/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi Đình Tuấn",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1L_Sf8wid4Oq2H_Equv4IK8LzSnQWmxZj/view?usp=drive_link"
       }
     ],
     "required_firmware": "18.1.0",
@@ -11792,7 +12399,7 @@
   {
     "name": "OCTOPATH TRAVELER 0",
     "game_id": "01005270232F2000",
-    "is_viet_hoa": false,
+    "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01005270232F2000.jpg",
     "size": "3.71 GB",
     "genres": [
@@ -11807,9 +12414,19 @@
         "url": "https://drive.google.com/file/d/1IMPQTBfFaIcGqJXDfUsyYRUYmzmOXl77/view?usp=drive_link"
       },
       {
-        "label": "Update (1.0.2)",
+        "label": "Update (1.0.5)",
         "file_name": "cap nhat khoi nguyen siu pham.rar",
         "url": "https://drive.google.com/file/d/1NAUG4XxGiwiow53HL2U0mjJ0IOeeEzcT/view?usp=drive_link"
+      },
+      {
+        "label": "DLC Pack (2 DLCs)",
+        "file_name": "bo sung khoi nguyen siu pham.rar",
+        "url": "https://drive.google.com/file/d/1g6shG-8FcyZhm8sNTv2j67edfAZJVdoK/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1U77BZqZqy-j_LNl17yClcUUPyH8YpJq-/view?usp=drive_link"
       }
     ],
     "required_firmware": "20.4.0",
@@ -13197,7 +13814,7 @@
         "url": "https://drive.google.com/drive/folders/1oAJ4Ci6TOgoYOD6CVcbvaVahdp6d1wZ2?usp=drive_link"
       },
       {
-        "label": "Kho game việt hóa (cập nhật 17/10/26)",
+        "label": "Kho game việt hóa (cập nhật 09/11/26)",
         "file_name": "kho gem vit hoa",
         "url": "https://drive.google.com/drive/folders/1kYcBvWnACK2jVmjeDIuMRrfWKtthpSQS?usp=drive_link"
       }
@@ -13509,7 +14126,7 @@
   {
     "name": "Red Dead Redemption",
     "game_id": "01007820196A6000",
-    "is_viet_hoa": false,
+    "is_viet_hoa": true,
     "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01007820196A6000.jpg",
     "size": "11.5 GB",
     "genres": [
@@ -13524,9 +14141,14 @@
         "url": "https://drive.google.com/drive/folders/1xGfj7cbiNqN4u6ni4Wrw8uXayIxlDlBw?usp=drive_link"
       },
       {
-        "label": "Update (1.0.2)",
+        "label": "Update (1.0.7)",
         "file_name": "cap nhat mien tay toi yeu.rar",
         "url": "https://drive.google.com/file/d/1VsflUhEvW4rLzV2FbMZ1GhOXgTODHJyP/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi 98Team",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1xTIvmY9UoDvPumXMNoN62Ru8LLPBvP5q/view?usp=drive_link"
       }
     ],
     "required_firmware": "16.0.2",
@@ -13826,6 +14448,39 @@
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/ncom/software/switch/70010000059862/2976adf0da5b08ea32ec2d1218cdb9f9d6fe91b5ebad2f4fafd3d69c56f19944"
   },
   {
+    "name": "Roki",
+    "game_id": "010022600E4AE000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010022600E4AE000.jpg",
+    "size": "1.94 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Giải đố"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=dpf9hW9AGWE",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "tiep tuc giai do.rar",
+        "url": "https://drive.google.com/file/d/1Wl9zemhrSUs-eO-olI1UWDaaXFYaec90/view?usp=drive_link"
+      },
+      {
+        "label": "Update (3.2)",
+        "file_name": "cap nhat tiep tuc giai do.rar",
+        "url": "https://drive.google.com/file/d/12hZYLVhLj1I4MG6WW_FImNSfadZH6U1k/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1xx-d3AtR77_Oi5llyl76CC-mato252oV/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "10.2.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000022089/e4d322b964bb8fe2f366a8ca941c5a49309154fad4d574735f5ecc0d30ba5623",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
+  },
+  {
     "name": "Romance of the Three Kingdoms 8 Remake",
     "game_id": "0100C2A01A730000",
     "is_viet_hoa": false,
@@ -14111,6 +14766,39 @@
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/ncom/software/switch/70010000013514/7883a9cb430c498a09d37bfa31d6f57143977919e349ec51a4585b135d755421"
   },
   {
+    "name": "Sally Face",
+    "game_id": "0100BBF0122B4000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100BBF0122B4000.jpg",
+    "size": "2.41 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Giải đố"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=MymoTbV6OJg",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "mat gom.rar",
+        "url": "https://drive.google.com/file/d/1QKqcRBNWHCcI6KH0PpK8bNNpG_hTHui4/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.5.50)",
+        "file_name": "cap nhat mat gom.rar",
+        "url": "https://drive.google.com/file/d/1EjBklgcZpk4vtXugFrH-nOLTIXxTX3E_/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1mWw46v5Q8wA6QbRTMDI1pPu9YE6eQLrz/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "11.0.1",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000031667/6438ac23eeac15e9e0eb97a6f3b36a42c3e964fe8e99589367cc30aead7e85d0",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
+  },
+  {
     "name": "Salt and Sanctuary",
     "game_id": "0100D250083B4000",
     "is_viet_hoa": false,
@@ -14129,6 +14817,38 @@
     ],
     "required_firmware": "11.0.1",
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/c_scale,w_1300/ncom/en_US/games/switch/s/salt-and-sanctuary-switch/hero"
+  },
+  {
+    "name": "Saltsea Chronicles",
+    "game_id": "01000D90199EA000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01000D90199EA000.jpg",
+    "size": "3.17 GB",
+    "genres": [
+      "Phiêu lưu"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=YSCm_5YV_uQ",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "bien nien su.rar",
+        "url": "https://drive.google.com/file/d/1Wd82a0EktG8nojIHjVVmCTdvYL-6Rhy0/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.1)",
+        "file_name": "cap nhat bien nien su.rar",
+        "url": "https://drive.google.com/file/d/1-DMPpr1EmuZmbdl4VQevYaGlWBm3GRW9/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1e_e_TE-_Xwb_oIv_jKAXuKM1WoBQ0gSI/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "16.1.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000066373/2bc727a7bfa402ab1e274d6404f1382c658d0f219b8b6aec68cc25d110153ab3",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
   },
   {
     "name": "Samurai Shodown",
@@ -14302,6 +15022,39 @@
     ],
     "required_firmware": "12.0.0",
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/ncom/en_US/dlc/switch-dlc/shadowverse-champions-battle-dlc/rom-bundle/shadowverse-champions-battle-legendary-edition/image"
+  },
+  {
+    "name": "Shantae and the Pirate’s Curse",
+    "game_id": "0100EFD00A4FA000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100EFD00A4FA000.jpg",
+    "size": "485 MB",
+    "genres": [
+      "Hành động",
+      "Đi cảnh"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=VXu_JLY-LN0",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "loi nguyen hai tac.rar",
+        "url": "https://drive.google.com/file/d/12J2NKgVWtkyPTSL4bgVz2q9k1BHoXVWE/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.1)",
+        "file_name": "cap nhat loi nguyen hai tac.rar",
+        "url": "https://drive.google.com/file/d/1uSN1qRJ2hFyilJS9JDx2YgOtvbozT94n/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1cvlnquGvaAjp8lc9p1Cy9rnI98fP2bIo/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "6.2.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000008545/13eab61b97be0d7032f1065f07a4402d1bb5b283dc65e1b1fcbb85d45ab07341",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
   },
   {
     "name": "Sherlock Holmes The Awakened",
@@ -14594,6 +15347,43 @@
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/store/software/switch/70010000130803/84fd3cf7b74aad7b3d806477a05d7325629cc152777264882840c9996af1488a"
   },
   {
+    "name": "Simon the Sorcerer Origins",
+    "game_id": "01004220240B8000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01004220240B8000.jpg",
+    "size": "1.72 GB",
+    "genres": [
+      "Phiêu lưu"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=qAJI4fJIcZY",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "phu thuy kia.rar",
+        "url": "https://drive.google.com/file/d/1dnegQz-y-cXXwR69RIwujEVveFynJe0q/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.4)",
+        "file_name": "cap nhat phu thuy kia.rar",
+        "url": "https://drive.google.com/file/d/1cnGQ4AL6mZKrPhFXUFH8cjIKJO2AtBoi/view?usp=drive_link"
+      },
+      {
+        "label": "DLC Pack",
+        "file_name": "bo sung phu thuy kia.rar",
+        "url": "https://drive.google.com/file/d/1hzE7LSs46rtnyPi6y4y-nJ9Ki8wfks3L/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1B4iBoVdpSs88WFXugfIBlGwX6XUJf95S/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "20.1.5",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000099975/50a0568c4f5736749342b40f0421f3b727a101d94d0124baf29c2bc40e4d63f4",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
+  },
+  {
     "name": "Skul: The Hero Slayer",
     "game_id": "0100ACF013E9A000",
     "is_viet_hoa": true,
@@ -14689,6 +15479,43 @@
     ],
     "required_firmware": "6.2.0",
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/store/software/switch/70010000000142/b692e801076e7a4be1a87a2135d20bc5414b639de0cf1e44e91d67a6ca9f7229"
+  },
+  {
+    "name": "Snufkin Melody of Moominvalley",
+    "game_id": "010085001A17C000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010085001A17C000.jpg",
+    "size": "2.23 GB",
+    "genres": [
+      "Phiêu lưu"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=awbDFG9AH_8",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "giai dieu thung lung.rar",
+        "url": "https://drive.google.com/file/d/1wg0XXqc3fJBHd0Pj8TH-Pp_134Ju9cF1/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.5.2)",
+        "file_name": "cap nhat giai dieu thung lung.rar",
+        "url": "https://drive.google.com/file/d/1kF_k27OgdZpHNNdDhCfp76m5PrYnMsfr/view?usp=drive_link"
+      },
+      {
+        "label": "Cherished Keepsakes DLC",
+        "file_name": "bo sung giai dieu thung lung.rar",
+        "url": "https://drive.google.com/file/d/14kUNNCZMQhqNi1EsrfOmtgCSXZK6DdEM/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1RWfPVxVi_yfm6ObJv7xGOQEtOxprEiQH/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "19.0.1",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000069115/dee0077eacb21537b86566f9cec04dccc052cb7ae7ae5d35267c6c7b7b452b6a",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
   },
   {
     "name": "Solateria",
@@ -17895,6 +18722,38 @@
     "raw_image_url": "https://img-eshop.cdn.nintendo.net/i/2b3f60c4eb8e016d9fad398e1cea9d783b269d2af00d920d19ee897e6f513f40.jpg?w=1000"
   },
   {
+    "name": "Undertale",
+    "game_id": "010080b00ad66000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010080b00ad66000.jpg",
+    "size": "243 MB",
+    "genres": [
+      "Nhập vai"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=cx2Jhoc0rgQ",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "nhin xau xau.rar",
+        "url": "https://drive.google.com/file/d/1ZgXSbF4MMFEP-MTvZme0hrtxUI898Q0g/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.11)",
+        "file_name": "cap nhat nhin xau xau.rar",
+        "url": "https://drive.google.com/file/d/1dQLIk5MVidmcvfb6q-il-fVA-dtSk40L/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1Oamr3WE397RkpBQmU5j5SxSded9O890A/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "5.1.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000009921/44bea8c565db26c0c470a6325a47c9ea031633945cb91e4b5e1b1a39b01a2cdb",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
+  },
+  {
     "name": "Undying",
     "game_id": "010086501BC88000",
     "is_viet_hoa": false,
@@ -18088,6 +18947,38 @@
     ],
     "required_firmware": "19.0.1",
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/ncom/software/switch/70010000088674/38336aad3512120c7c18f8828906c65007adb37d5d22616b8d8e05ef5b5720d9"
+  },
+  {
+    "name": "Village in the Shade",
+    "game_id": "0100254027E50000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100254027E50000.jpg",
+    "size": "4.03 GB",
+    "genres": [
+      "Mô phỏng"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=b0Gfn3jidJg",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "lang trong bong ram.rar",
+        "url": "https://drive.google.com/file/d/12EdVFne0tLbWoK_IXTosEVr7_O95sjkP/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.3.0)",
+        "file_name": "cap nhat lang trong bong ram.rar",
+        "url": "https://drive.google.com/file/d/14de2WBCj3wfmMmQLHJ5zayFcjalXXlKu/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/157uiMPELKCYuNj3cHEnARBryGjS1frJo/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "23.0.1",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000123450/bb2209ec474b9bbd59ff67775c7dfc936db2cd725773909e0d5d6f93b9226463",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
   },
   {
     "name": "Wall World",
@@ -18309,6 +19200,39 @@
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/store/software/switch/70010000066200/b73500af4fb5b400be3ccd1a1e656250527c447585d56ae1b1275ce5c0b087e6"
   },
   {
+    "name": "Wax Heads",
+    "game_id": "01001480270DA000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/01001480270DA000.jpg",
+    "size": "3.56 GB",
+    "genres": [
+      "Phiêu lưu",
+      "Mô phỏng"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=DapX8Jd5oWo",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "dau sap.rar",
+        "url": "https://drive.google.com/file/d/1aIDjWyZv710e20E2crN3ZYbvh9WSsqu8/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.5)",
+        "file_name": "cap nhat dau sap.rar",
+        "url": "https://drive.google.com/file/d/1kPAR01FY0y-RFTSws-xZTbOrGwnC7ZA_/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1CrzNDUguu94jTRvscF__TK-5jMVusM7c/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "22.5.0",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000117694/cd316bb18b344bbd6c43d1ea3e3c23afd656f5f30967c507d807ff343a156d4d",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
+  },
+  {
     "name": "Well Dweller",
     "game_id": "0100217023F6C000",
     "is_viet_hoa": false,
@@ -18384,6 +19308,71 @@
     ],
     "required_firmware": "4.1.0",
     "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1300/store/software/switch/70010000007982/c84361b3050040fed84ef26c44b567bc9ec99316351b82f72e68c902ff4eb271"
+  },
+  {
+    "name": "Wind Peaks",
+    "game_id": "0100E9101405A000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/0100E9101405A000.jpg",
+    "size": "1.12 GB",
+    "genres": [
+      "Phiêu lưu"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=nXxNuu0YKDM",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "dinh gio.rar",
+        "url": "https://drive.google.com/file/d/1fytUx3iS-bLMoNWB9nzJwO3GMf18DsiY/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.8.1)",
+        "file_name": "cap nhat dinh gio.rar",
+        "url": "https://drive.google.com/file/d/1qwCdlaiAQBQ4BFsXJMGOmTfvlyz9Le7g/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/1_hUiahEKB-Q5eSeX_hRzlk-UO9XfclUa/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "11.0.1",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000037780/7f974c06890f27eef438defb3353e44d0e639faf1606eee159d627d0bf5a601a",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
+  },
+  {
+    "name": "Wings of Endless",
+    "game_id": "010018B022CCC000",
+    "is_viet_hoa": true,
+    "image_url": "https://raw.githubusercontent.com/uongsuadaubung/switch-games-data/main/images/010018B022CCC000.jpg",
+    "size": "422 MB",
+    "genres": [
+      "Hành động",
+      "Đi cảnh"
+    ],
+    "review_url": "https://www.youtube.com/watch?v=BthilQP_dpA",
+    "links": [
+      {
+        "label": "Base",
+        "file_name": "canh vo tan.rar",
+        "url": "https://drive.google.com/file/d/1wipQcV2soI35o1673Ke9sYPOEQOx85aT/view?usp=drive_link"
+      },
+      {
+        "label": "Update (1.0.2)",
+        "file_name": "canh vo tan.rar",
+        "url": "https://drive.google.com/file/d/1wipQcV2soI35o1673Ke9sYPOEQOx85aT/view?usp=drive_link"
+      },
+      {
+        "label": "Việt hóa được port bởi DUCNH.89",
+        "file_name": "yeu tieng viet.rar",
+        "url": "https://drive.google.com/file/d/121tyCZsQjjq03gJBCcD0H5_fRbCumdA9/view?usp=drive_link"
+      }
+    ],
+    "required_firmware": "20.0.1",
+    "raw_image_url": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000095004/81dd0fc1993f8ee3a4cf86cbb708b42c6b809d5d9ef5244d332b850266264b9a",
+    "is_new": true,
+    "added_at": "2026-11-10T04:54:56.447Z"
   },
   {
     "name": "Winter Burrow",
